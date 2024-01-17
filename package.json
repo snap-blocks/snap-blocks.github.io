@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "browserify": "^17.0.0",
+    "codemirror": "^6.0.1",
+    "watchify": "^4.0.0"
+  },
+  "scripts": {
+    "build": "browserify lib/codemirror.src.js -o lib/codemirror.build.js",
+    "watch": "watchify lib/codemirror.src.js -o lib/codemirror.build.js --debug --verbose"
+  }
+}
