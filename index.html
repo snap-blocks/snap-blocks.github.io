@@ -74,6 +74,18 @@
     extensions: [
       codemirror.view.keymap.of(codemirror.commands.defaultKeymap),
       codemirror.view.keymap.of(codemirror.commands.indentWithTab),
+      codemirror.view.keymap.of([{
+        key: "Mod-z",
+        run: codemirror.commands.undo,
+      },
+      {
+        key: "Mod-Shift-z",
+        run: codemirror.commands.redo,
+      },
+      {
+        key: "Mod-y",
+        run: codemirror.commands.redo,
+      }]),
       codemirror.language.indentUnit.of('  '),
       codemirror.EditorView.updateListener.of((v) => {
         if (v.docChanged) {
@@ -84,6 +96,7 @@
         }
       }),
       codemirror.view.placeholder('. . .'),
+      codemirror.commands.history(),
     ],
   });
 
