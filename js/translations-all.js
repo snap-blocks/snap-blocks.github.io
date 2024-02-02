@@ -1,6 +1,6 @@
 /**
  * snapblocks v1.0.0
- * https://ego-lay-atman-bay.github.io/snapblocks
+ * https://snap-blocks.github.io/
  * Make pictures of Snap blocks from text. This is a fork of Scratchblocks.
  *
  * Copyright 2013–2024, ego-lay-atman-bay
@@ -83,6 +83,7 @@
   	CONTROL_REPEAT: "инагӡалатәуп %1 - нтә",
   	CONTROL_FOREVER: "инагӡалатәуп еснагь",
   	CONTROL_IF: "%1 акәзар",
+  	CONTROL_ELSE: "акәымзар",
   	CONTROL_WAITUNTIL: "иԥштәуп %1 -нӡа",
   	CONTROL_REPEATUNTIL: "инагӡалатәуп %1 акәымзар",
   	CONTROL_STOP: "иаанкылатәуп %1",
@@ -156,7 +157,6 @@
   	DATA_ITEMNUMOFLIST: "аелемент %1 № %2 аҟны",
   	DATA_LENGTHOFLIST: "асиа %1 аура",
   	DATA_LISTCONTAINSITEM: "%1 иаҵанакуама %2?",
-  	CONTROL_ELSE: "акәымзар",
   	SENSING_USERID: "Ахархәаҩ ID",
   	SENSING_LOUD: "абжьы дуума?",
   	"text2speech.speakAndWaitBlock": "иҳәатәуп %1",
@@ -221,6 +221,8 @@
   	"boost.getTiltAngle": "арнаара акәакь %1",
   	"boost.setLightHue": "иқәыргылатәуп  арлашага аԥштәы %1"
   };
+  var fullBlocks$1e = [
+  ];
   var dropdowns$1e = {
   };
   var ignorelt$1e = [
@@ -253,28 +255,35 @@
   	Variables: "Аҽеиҭакқәа",
   	"My Blocks": "Сара сблокқәа"
   };
-  var math$1e = [
-  	"abs",
-  	"еиҵоу еибгоу",
-  	"еиҳау еибгоу",
-  	"sqrt",
-  	"sin",
-  	"cos",
-  	"tan",
-  	"asin",
-  	"acos",
-  	"atan",
-  	"ln",
-  	"log",
-  	"e ^",
-  	"10 ^"
-  ];
+  var of$1e = {
+  	math: [
+  		"abs",
+  		"еиҵоу еибгоу",
+  		"еиҳау еибгоу",
+  		"sqrt",
+  		"sin",
+  		"cos",
+  		"tan",
+  		"asin",
+  		"acos",
+  		"atan",
+  		"ln",
+  		"log",
+  		"e ^",
+  		"10 ^"
+  	],
+  	list: [
+  	],
+  	text: [
+  	]
+  };
   var aliases$1e = {
   };
   var name$1e = "Аҧсшәа";
   var percentTranslated$1e = 100;
   var ab = {
   	commands: commands$1e,
+  	fullBlocks: fullBlocks$1e,
   	dropdowns: dropdowns$1e,
   	ignorelt: ignorelt$1e,
   	soundEffects: soundEffects$1e,
@@ -283,7 +292,7 @@
   	definePrefix: definePrefix$1e,
   	defineSuffix: defineSuffix$1e,
   	palette: palette$1e,
-  	math: math$1e,
+  	of: of$1e,
   	aliases: aliases$1e,
   	name: name$1e,
   	percentTranslated: percentTranslated$1e
@@ -362,6 +371,7 @@
   	CONTROL_REPEAT: "herhaal %1 keer",
   	CONTROL_FOREVER: "vir ewig",
   	CONTROL_IF: "indien %1 dan",
+  	CONTROL_ELSE: "anders",
   	CONTROL_WAITUNTIL: "wag totdat %1",
   	CONTROL_REPEATUNTIL: "herhaal totdat %1",
   	CONTROL_STOP: "stop %1",
@@ -435,7 +445,6 @@
   	DATA_ITEMNUMOFLIST: "item # van %1 in %2",
   	DATA_LENGTHOFLIST: "lengte van %1",
   	DATA_LISTCONTAINSITEM: "%1 bevat %2?",
-  	CONTROL_ELSE: "anders",
   	SENSING_USERID: "gebruikers id",
   	SENSING_LOUD: "hard?",
   	"text2speech.speakAndWaitBlock": "praat %1",
@@ -500,6 +509,8 @@
   	"boost.getTiltAngle": "kantel hoek %1",
   	"boost.setLightHue": "stel ligkleur na %1"
   };
+  var fullBlocks$1d = [
+  ];
   var dropdowns$1d = {
   };
   var ignorelt$1d = [
@@ -532,28 +543,35 @@
   	Variables: "Veranderlikes",
   	"My Blocks": "My Blokke"
   };
-  var math$1d = [
-  	"abs",
-  	"afrond",
-  	"oprond",
-  	"vierkantswortel",
-  	"sin",
-  	"cos",
-  	"tan",
-  	"asin",
-  	"acos",
-  	"atan",
-  	"ln",
-  	"log",
-  	"e ^",
-  	"10 ^"
-  ];
+  var of$1d = {
+  	math: [
+  		"abs",
+  		"afrond",
+  		"oprond",
+  		"vierkantswortel",
+  		"sin",
+  		"cos",
+  		"tan",
+  		"asin",
+  		"acos",
+  		"atan",
+  		"ln",
+  		"log",
+  		"e ^",
+  		"10 ^"
+  	],
+  	list: [
+  	],
+  	text: [
+  	]
+  };
   var aliases$1d = {
   };
   var name$1d = "Afrikaans";
   var percentTranslated$1d = 100;
   var af = {
   	commands: commands$1d,
+  	fullBlocks: fullBlocks$1d,
   	dropdowns: dropdowns$1d,
   	ignorelt: ignorelt$1d,
   	soundEffects: soundEffects$1d,
@@ -562,7 +580,7 @@
   	definePrefix: definePrefix$1d,
   	defineSuffix: defineSuffix$1d,
   	palette: palette$1d,
-  	math: math$1d,
+  	of: of$1d,
   	aliases: aliases$1d,
   	name: name$1d,
   	percentTranslated: percentTranslated$1d
@@ -641,6 +659,7 @@
   	CONTROL_REPEAT: "%1ን ድገም",
   	CONTROL_FOREVER: "ለዘላለም",
   	CONTROL_IF: "%1 ከሆነ",
+  	CONTROL_ELSE: "ካልሆነ",
   	CONTROL_WAITUNTIL: "ጠብቅ እስከ %1",
   	CONTROL_REPEATUNTIL: "ድገም እስከ %1",
   	CONTROL_STOP: "አቁም %1",
@@ -714,7 +733,6 @@
   	DATA_ITEMNUMOFLIST: "item # of %1 in %2",
   	DATA_LENGTHOFLIST: "%1 ርዝመት",
   	DATA_LISTCONTAINSITEM: "%2 %1 አለበት?",
-  	CONTROL_ELSE: "ካልሆነ",
   	SENSING_USERID: "የተጠቃሚ መታወቂያ",
   	SENSING_LOUD: "ጮክ ነው?",
   	"text2speech.speakAndWaitBlock": "%1ን ተናገር",
@@ -779,6 +797,8 @@
   	"boost.getTiltAngle": "tilt angle %1",
   	"boost.setLightHue": "set light color to %1"
   };
+  var fullBlocks$1c = [
+  ];
   var dropdowns$1c = {
   };
   var ignorelt$1c = [
@@ -812,28 +832,35 @@
   	Variables: "ተለዋዋጮች",
   	"My Blocks": "የኔ ጥምሮች"
   };
-  var math$1c = [
-  	"abs",
-  	"መሬት",
-  	"ጣራ",
-  	"sqrt",
-  	"sin",
-  	"cos",
-  	"tan",
-  	"asin",
-  	"acos",
-  	"atan",
-  	"ውስጥ",
-  	"ግባ",
-  	"e^",
-  	"10 ^"
-  ];
+  var of$1c = {
+  	math: [
+  		"abs",
+  		"መሬት",
+  		"ጣራ",
+  		"sqrt",
+  		"sin",
+  		"cos",
+  		"tan",
+  		"asin",
+  		"acos",
+  		"atan",
+  		"ውስጥ",
+  		"ግባ",
+  		"e^",
+  		"10 ^"
+  	],
+  	list: [
+  	],
+  	text: [
+  	]
+  };
   var aliases$1c = {
   };
   var name$1c = "አማርኛ";
   var percentTranslated$1c = 100;
   var am = {
   	commands: commands$1c,
+  	fullBlocks: fullBlocks$1c,
   	dropdowns: dropdowns$1c,
   	ignorelt: ignorelt$1c,
   	soundEffects: soundEffects$1c,
@@ -842,7 +869,7 @@
   	definePrefix: definePrefix$1c,
   	defineSuffix: defineSuffix$1c,
   	palette: palette$1c,
-  	math: math$1c,
+  	of: of$1c,
   	aliases: aliases$1c,
   	name: name$1c,
   	percentTranslated: percentTranslated$1c
@@ -921,6 +948,7 @@
   	CONTROL_REPEAT: "repetir %1",
   	CONTROL_FOREVER: "pa cutio",
   	CONTROL_IF: "si %1 allora",
+  	CONTROL_ELSE: "si no",
   	CONTROL_WAITUNTIL: "aguardar dica que %1",
   	CONTROL_REPEATUNTIL: "repetir dica que %1",
   	CONTROL_STOP: "aturar %1",
@@ -994,7 +1022,6 @@
   	DATA_ITEMNUMOFLIST: "# d'elementos de %1 en %2",
   	DATA_LENGTHOFLIST: "longaria de %1",
   	DATA_LISTCONTAINSITEM: "%2 ye en %1?",
-  	CONTROL_ELSE: "si no",
   	SENSING_USERID: "identificación d'usuario",
   	SENSING_LOUD: "masiau alto?",
   	"text2speech.speakAndWaitBlock": "decir %1",
@@ -1059,6 +1086,8 @@
   	"boost.getTiltAngle": "anglo d'inclinación enta %1",
   	"boost.setLightHue": "fixar color d'a luz a %1"
   };
+  var fullBlocks$1b = [
+  ];
   var dropdowns$1b = {
   };
   var ignorelt$1b = [
@@ -1091,28 +1120,35 @@
   	Variables: "Variables",
   	"My Blocks": "Los míos bloques"
   };
-  var math$1b = [
-  	"valor absoluta",
-  	"suelo",
-  	"teito",
-  	"radiz quadrada",
-  	"sen",
-  	"cos",
-  	"tan",
-  	"arcsen",
-  	"arccos",
-  	"arctan",
-  	"ln",
-  	"log",
-  	"e ^",
-  	"10 ^"
-  ];
+  var of$1b = {
+  	math: [
+  		"valor absoluta",
+  		"suelo",
+  		"teito",
+  		"radiz quadrada",
+  		"sen",
+  		"cos",
+  		"tan",
+  		"arcsen",
+  		"arccos",
+  		"arctan",
+  		"ln",
+  		"log",
+  		"e ^",
+  		"10 ^"
+  	],
+  	list: [
+  	],
+  	text: [
+  	]
+  };
   var aliases$1b = {
   };
   var name$1b = "Aragonés";
   var percentTranslated$1b = 100;
   var an = {
   	commands: commands$1b,
+  	fullBlocks: fullBlocks$1b,
   	dropdowns: dropdowns$1b,
   	ignorelt: ignorelt$1b,
   	soundEffects: soundEffects$1b,
@@ -1121,7 +1157,7 @@
   	definePrefix: definePrefix$1b,
   	defineSuffix: defineSuffix$1b,
   	palette: palette$1b,
-  	math: math$1b,
+  	of: of$1b,
   	aliases: aliases$1b,
   	name: name$1b,
   	percentTranslated: percentTranslated$1b
@@ -1200,6 +1236,7 @@
   	CONTROL_REPEAT: "كرِّر %1 مرة",
   	CONTROL_FOREVER: "كرِّر باستمرار",
   	CONTROL_IF: "إذا %1",
+  	CONTROL_ELSE: "وإلا",
   	CONTROL_WAITUNTIL: "انتظر حتى %1",
   	CONTROL_REPEATUNTIL: "كرِّر حتى %1",
   	CONTROL_STOP: "أوقف %1",
@@ -1273,7 +1310,6 @@
   	DATA_ITEMNUMOFLIST: "رقم العنصر ذي القيمة %1 في %2",
   	DATA_LENGTHOFLIST: "طول %1",
   	DATA_LISTCONTAINSITEM: "%1 تحتوي %2؟",
-  	CONTROL_ELSE: "وإلا",
   	SENSING_USERID: "رقم المستخدم",
   	SENSING_LOUD: "الصوت مرتفع؟",
   	"text2speech.speakAndWaitBlock": "تكلم %1",
@@ -1338,6 +1374,8 @@
   	"boost.getTiltAngle": "زاوية الميلان %1",
   	"boost.setLightHue": "اجعل لون المصباح مساويًا %1"
   };
+  var fullBlocks$1a = [
+  ];
   var dropdowns$1a = {
   };
   var ignorelt$1a = [
@@ -1370,28 +1408,35 @@
   	Variables: "المتغيرات",
   	"My Blocks": "لبناتي"
   };
-  var math$1a = [
-  	"القيمة المطلقة",
-  	"الجزء الصحيح",
-  	"السقف",
-  	"الجذر التربيعي",
-  	"الجيب (sin)",
-  	"جيب التمام (cos)",
-  	"الظل (tan)",
-  	"الجيب العكسي (asin)",
-  	"جيب التمام العكسي (acos)",
-  	"الظل العكسي (atan)",
-  	"اللوغارتم الطبيعي",
-  	"اللوغارتم العشري",
-  	"هـ^",
-  	"10^"
-  ];
+  var of$1a = {
+  	math: [
+  		"القيمة المطلقة",
+  		"الجزء الصحيح",
+  		"السقف",
+  		"الجذر التربيعي",
+  		"الجيب (sin)",
+  		"جيب التمام (cos)",
+  		"الظل (tan)",
+  		"الجيب العكسي (asin)",
+  		"جيب التمام العكسي (acos)",
+  		"الظل العكسي (atan)",
+  		"اللوغارتم الطبيعي",
+  		"اللوغارتم العشري",
+  		"هـ^",
+  		"10^"
+  	],
+  	list: [
+  	],
+  	text: [
+  	]
+  };
   var aliases$1a = {
   };
   var name$1a = "العربية";
   var percentTranslated$1a = 100;
   var ar = {
   	commands: commands$1a,
+  	fullBlocks: fullBlocks$1a,
   	dropdowns: dropdowns$1a,
   	ignorelt: ignorelt$1a,
   	soundEffects: soundEffects$1a,
@@ -1400,7 +1445,7 @@
   	definePrefix: definePrefix$1a,
   	defineSuffix: defineSuffix$1a,
   	palette: palette$1a,
-  	math: math$1a,
+  	of: of$1a,
   	aliases: aliases$1a,
   	name: name$1a,
   	percentTranslated: percentTranslated$1a
@@ -1479,6 +1524,7 @@
   	CONTROL_REPEAT: "repetir %1",
   	CONTROL_FOREVER: "pa siempres",
   	CONTROL_IF: "si %1 entós",
+  	CONTROL_ELSE: "sinón",
   	CONTROL_WAITUNTIL: "esperar hasta %1",
   	CONTROL_REPEATUNTIL: "repetir hasta %1",
   	CONTROL_STOP: "parar %1",
@@ -1552,7 +1598,6 @@
   	DATA_ITEMNUMOFLIST: "item # de %1 en %2",
   	DATA_LENGTHOFLIST: "llonxitú de %1",
   	DATA_LISTCONTAINSITEM: "%1 contién %2?",
-  	CONTROL_ELSE: "sinón",
   	SENSING_USERID: "id d'usuariu",
   	SENSING_LOUD: "¿ruidosu?",
   	"text2speech.speakAndWaitBlock": "falar %1",
@@ -1617,6 +1662,8 @@
   	"boost.getTiltAngle": "ángulu d'enclín %1",
   	"boost.setLightHue": "afitar color de lluz pa %1"
   };
+  var fullBlocks$19 = [
+  ];
   var dropdowns$19 = {
   };
   var ignorelt$19 = [
@@ -1649,28 +1696,35 @@
   	Variables: "Variables",
   	"My Blocks": "Los Mios Bloques"
   };
-  var math$19 = [
-  	"abs",
-  	"suelu",
-  	"techu",
-  	"raíz",
-  	"sen",
-  	"cos",
-  	"tan",
-  	"asin",
-  	"acos",
-  	"atan",
-  	"ln",
-  	"log",
-  	"e ^",
-  	"10 ^"
-  ];
+  var of$19 = {
+  	math: [
+  		"abs",
+  		"suelu",
+  		"techu",
+  		"raíz",
+  		"sen",
+  		"cos",
+  		"tan",
+  		"asin",
+  		"acos",
+  		"atan",
+  		"ln",
+  		"log",
+  		"e ^",
+  		"10 ^"
+  	],
+  	list: [
+  	],
+  	text: [
+  	]
+  };
   var aliases$19 = {
   };
   var name$19 = "Asturianu";
   var percentTranslated$19 = 100;
   var ast = {
   	commands: commands$19,
+  	fullBlocks: fullBlocks$19,
   	dropdowns: dropdowns$19,
   	ignorelt: ignorelt$19,
   	soundEffects: soundEffects$19,
@@ -1679,7 +1733,7 @@
   	definePrefix: definePrefix$19,
   	defineSuffix: defineSuffix$19,
   	palette: palette$19,
-  	math: math$19,
+  	of: of$19,
   	aliases: aliases$19,
   	name: name$19,
   	percentTranslated: percentTranslated$19
@@ -1758,6 +1812,7 @@
   	CONTROL_REPEAT: "təkrarla %1 dəfə",
   	CONTROL_FOREVER: "həmişə",
   	CONTROL_IF: "əgər %1, onda",
+  	CONTROL_ELSE: "əks halda",
   	CONTROL_WAITUNTIL: "%1 qədər gözlə",
   	CONTROL_REPEATUNTIL: "təkrarla nə qədər ki, %1 deyil",
   	CONTROL_STOP: "dayandır %1",
@@ -1831,7 +1886,6 @@
   	DATA_ITEMNUMOFLIST: "item # of %1 in %2",
   	DATA_LENGTHOFLIST: "%1 siyahısının uzunluğu",
   	DATA_LISTCONTAINSITEM: "%1 tərkibində %2 var?",
-  	CONTROL_ELSE: "əks halda",
   	SENSING_USERID: "istifadəçi adı",
   	SENSING_LOUD: "ucadır?",
   	"text2speech.speakAndWaitBlock": "speak %1",
@@ -1896,6 +1950,8 @@
   	"boost.getTiltAngle": "tilt angle %1",
   	"boost.setLightHue": "set light color to %1"
   };
+  var fullBlocks$18 = [
+  ];
   var dropdowns$18 = {
   };
   var ignorelt$18 = [
@@ -1929,28 +1985,35 @@
   	Variables: "Dəyişənlər",
   	"My Blocks": "Mənim Bloklarım"
   };
-  var math$18 = [
-  	"modul",
-  	"aşağı yuvarlaqlaşdır",
-  	"yuxarı yuvarlaqlaşdır",
-  	"kvadrat kök",
-  	"sin",
-  	"cos",
-  	"tg",
-  	"arcsin",
-  	"arccos",
-  	"arctg",
-  	"ln",
-  	"log",
-  	"e ^",
-  	"10 ^"
-  ];
+  var of$18 = {
+  	math: [
+  		"modul",
+  		"aşağı yuvarlaqlaşdır",
+  		"yuxarı yuvarlaqlaşdır",
+  		"kvadrat kök",
+  		"sin",
+  		"cos",
+  		"tg",
+  		"arcsin",
+  		"arccos",
+  		"arctg",
+  		"ln",
+  		"log",
+  		"e ^",
+  		"10 ^"
+  	],
+  	list: [
+  	],
+  	text: [
+  	]
+  };
   var aliases$18 = {
   };
   var name$18 = "Azeri";
   var percentTranslated$18 = 100;
   var az = {
   	commands: commands$18,
+  	fullBlocks: fullBlocks$18,
   	dropdowns: dropdowns$18,
   	ignorelt: ignorelt$18,
   	soundEffects: soundEffects$18,
@@ -1959,7 +2022,7 @@
   	definePrefix: definePrefix$18,
   	defineSuffix: defineSuffix$18,
   	palette: palette$18,
-  	math: math$18,
+  	of: of$18,
   	aliases: aliases$18,
   	name: name$18,
   	percentTranslated: percentTranslated$18
@@ -2038,6 +2101,7 @@
   	CONTROL_REPEAT: "паўтарыць %1",
   	CONTROL_FOREVER: "заўжды",
   	CONTROL_IF: "калі %1 , то",
+  	CONTROL_ELSE: "інакш",
   	CONTROL_WAITUNTIL: "чакаць да %1",
   	CONTROL_REPEATUNTIL: "паўтараць, пакуль не %1",
   	CONTROL_STOP: "стоп %1",
@@ -2111,7 +2175,6 @@
   	DATA_ITEMNUMOFLIST: "элемент # з %1 у %2",
   	DATA_LENGTHOFLIST: "даўжыня %1",
   	DATA_LISTCONTAINSITEM: "%1 змяшчае %2?",
-  	CONTROL_ELSE: "інакш",
   	SENSING_USERID: "id ўдзельніка",
   	SENSING_LOUD: "гучна?",
   	"text2speech.speakAndWaitBlock": "сказаць %1",
@@ -2176,6 +2239,8 @@
   	"boost.getTiltAngle": "вугал нахілу %1",
   	"boost.setLightHue": "устанавіць колер святла %1"
   };
+  var fullBlocks$17 = [
+  ];
   var dropdowns$17 = {
   };
   var ignorelt$17 = [
@@ -2208,28 +2273,35 @@
   	Variables: "Зменныя",
   	"My Blocks": "Уласныя блокі"
   };
-  var math$17 = [
-  	"модуль",
-  	"меншае цэлае",
-  	"ліміт",
-  	"квадратны корань",
-  	"sin",
-  	"cos",
-  	"tan",
-  	"asin",
-  	"acos",
-  	"atan",
-  	"ln",
-  	"log",
-  	"e ^",
-  	"10 ^"
-  ];
+  var of$17 = {
+  	math: [
+  		"модуль",
+  		"меншае цэлае",
+  		"ліміт",
+  		"квадратны корань",
+  		"sin",
+  		"cos",
+  		"tan",
+  		"asin",
+  		"acos",
+  		"atan",
+  		"ln",
+  		"log",
+  		"e ^",
+  		"10 ^"
+  	],
+  	list: [
+  	],
+  	text: [
+  	]
+  };
   var aliases$17 = {
   };
   var name$17 = "Беларуская";
   var percentTranslated$17 = 100;
   var be = {
   	commands: commands$17,
+  	fullBlocks: fullBlocks$17,
   	dropdowns: dropdowns$17,
   	ignorelt: ignorelt$17,
   	soundEffects: soundEffects$17,
@@ -2238,7 +2310,7 @@
   	definePrefix: definePrefix$17,
   	defineSuffix: defineSuffix$17,
   	palette: palette$17,
-  	math: math$17,
+  	of: of$17,
   	aliases: aliases$17,
   	name: name$17,
   	percentTranslated: percentTranslated$17
@@ -2317,6 +2389,7 @@
   	CONTROL_REPEAT: "повтори %1",
   	CONTROL_FOREVER: "винаги",
   	CONTROL_IF: "ако %1 тогава",
+  	CONTROL_ELSE: "иначе",
   	CONTROL_WAITUNTIL: "чакай докато %1",
   	CONTROL_REPEATUNTIL: "повтаряй докато %1",
   	CONTROL_STOP: "спри %1",
@@ -2390,7 +2463,6 @@
   	DATA_ITEMNUMOFLIST: "номер на елемента %1 в %2",
   	DATA_LENGTHOFLIST: "големина на %1",
   	DATA_LISTCONTAINSITEM: "%1 съдържа %2?",
-  	CONTROL_ELSE: "иначе",
   	SENSING_USERID: "потребителски идентификатор",
   	SENSING_LOUD: "шумно ли е?",
   	"text2speech.speakAndWaitBlock": "кажи %1",
@@ -2455,6 +2527,8 @@
   	"boost.getTiltAngle": "наклон на ъгъла %1",
   	"boost.setLightHue": "направи светлината на цвета на %1"
   };
+  var fullBlocks$16 = [
+  ];
   var dropdowns$16 = {
   };
   var ignorelt$16 = [
@@ -2487,28 +2561,35 @@
   	Variables: "Променливи",
   	"My Blocks": "Моите Блокове"
   };
-  var math$16 = [
-  	"абсолютна стойност",
-  	"закръглено надолу",
-  	"закръглено нагоре",
-  	"квадратен корен",
-  	"sin",
-  	"cos",
-  	"tan",
-  	"asin",
-  	"acos",
-  	"atan",
-  	"ln",
-  	"log",
-  	"e^",
-  	"10 ^"
-  ];
+  var of$16 = {
+  	math: [
+  		"абсолютна стойност",
+  		"закръглено надолу",
+  		"закръглено нагоре",
+  		"квадратен корен",
+  		"sin",
+  		"cos",
+  		"tan",
+  		"asin",
+  		"acos",
+  		"atan",
+  		"ln",
+  		"log",
+  		"e^",
+  		"10 ^"
+  	],
+  	list: [
+  	],
+  	text: [
+  	]
+  };
   var aliases$16 = {
   };
   var name$16 = "Български";
   var percentTranslated$16 = 100;
   var bg = {
   	commands: commands$16,
+  	fullBlocks: fullBlocks$16,
   	dropdowns: dropdowns$16,
   	ignorelt: ignorelt$16,
   	soundEffects: soundEffects$16,
@@ -2517,7 +2598,7 @@
   	definePrefix: definePrefix$16,
   	defineSuffix: defineSuffix$16,
   	palette: palette$16,
-  	math: math$16,
+  	of: of$16,
   	aliases: aliases$16,
   	name: name$16,
   	percentTranslated: percentTranslated$16
@@ -2596,6 +2677,7 @@
   	CONTROL_REPEAT: "পুনরাবৃত্তি %1 বার",
   	CONTROL_FOREVER: "চিরকালের জন্য",
   	CONTROL_IF: "যদি %1 তাহলে",
+  	CONTROL_ELSE: "অন্যথায়",
   	CONTROL_WAITUNTIL: "%1 পর্যন্ত অপেক্ষা কর",
   	CONTROL_REPEATUNTIL: "%1 পর্যন্ত পুনরাবৃত্তি কর",
   	CONTROL_STOP: "থামাও %1",
@@ -2669,7 +2751,6 @@
   	DATA_ITEMNUMOFLIST: "%2 এর মধ্যে %1 এর আইটেম #",
   	DATA_LENGTHOFLIST: "%1 শব্দের দৈর্ঘ্য",
   	DATA_LISTCONTAINSITEM: "%1 এর মধ্যে কি %2 আছে?",
-  	CONTROL_ELSE: "অন্যথায়",
   	SENSING_USERID: "user id",
   	SENSING_LOUD: "জোরে?",
   	"text2speech.speakAndWaitBlock": "বল %1",
@@ -2734,6 +2815,8 @@
   	"boost.getTiltAngle": "টিল্ট কোণ %1",
   	"boost.setLightHue": "লাইটের রঙ %1 কর"
   };
+  var fullBlocks$15 = [
+  ];
   var dropdowns$15 = {
   };
   var ignorelt$15 = [
@@ -2766,28 +2849,35 @@
   	Variables: "ভ্যারিয়েবল",
   	"My Blocks": "আমার ব্লকগুলো"
   };
-  var math$15 = [
-  	"abs",
-  	"floor",
-  	"ceiling",
-  	"sqrt",
-  	"sin",
-  	"cos",
-  	"tan",
-  	"asin",
-  	"acos",
-  	"atan",
-  	"ln",
-  	"log",
-  	"e ^",
-  	"10 ^"
-  ];
+  var of$15 = {
+  	math: [
+  		"abs",
+  		"floor",
+  		"ceiling",
+  		"sqrt",
+  		"sin",
+  		"cos",
+  		"tan",
+  		"asin",
+  		"acos",
+  		"atan",
+  		"ln",
+  		"log",
+  		"e ^",
+  		"10 ^"
+  	],
+  	list: [
+  	],
+  	text: [
+  	]
+  };
   var aliases$15 = {
   };
   var name$15 = "বাংলা";
   var percentTranslated$15 = 100;
   var bn = {
   	commands: commands$15,
+  	fullBlocks: fullBlocks$15,
   	dropdowns: dropdowns$15,
   	ignorelt: ignorelt$15,
   	soundEffects: soundEffects$15,
@@ -2796,7 +2886,7 @@
   	definePrefix: definePrefix$15,
   	defineSuffix: defineSuffix$15,
   	palette: palette$15,
-  	math: math$15,
+  	of: of$15,
   	aliases: aliases$15,
   	name: name$15,
   	percentTranslated: percentTranslated$15
@@ -2875,6 +2965,7 @@
   	CONTROL_REPEAT: "repeteix %1",
   	CONTROL_FOREVER: "per sempre",
   	CONTROL_IF: "si %1 llavors",
+  	CONTROL_ELSE: "si no",
   	CONTROL_WAITUNTIL: "espera fins %1",
   	CONTROL_REPEATUNTIL: "repeteix fins %1",
   	CONTROL_STOP: "atura %1",
@@ -2948,7 +3039,6 @@
   	DATA_ITEMNUMOFLIST: "element # de %1 en %2",
   	DATA_LENGTHOFLIST: "llargada de %1",
   	DATA_LISTCONTAINSITEM: "%1 conté %2?",
-  	CONTROL_ELSE: "si no",
   	SENSING_USERID: "ID d'usuari",
   	SENSING_LOUD: "so fort?",
   	"text2speech.speakAndWaitBlock": "parla %1",
@@ -3013,6 +3103,8 @@
   	"boost.getTiltAngle": "angle d'inclinació %1",
   	"boost.setLightHue": "fixa el color del llum a %1"
   };
+  var fullBlocks$14 = [
+  ];
   var dropdowns$14 = {
   };
   var ignorelt$14 = [
@@ -3045,22 +3137,28 @@
   	Variables: "Variables",
   	"My Blocks": "Els meus blocs"
   };
-  var math$14 = [
-  	"abs",
-  	"part sencera",
-  	"sostre",
-  	"arrel quadrada",
-  	"sin",
-  	"cos",
-  	"tan",
-  	"asin",
-  	"acos",
-  	"atan",
-  	"ln",
-  	"log",
-  	"e ^",
-  	"10 ^"
-  ];
+  var of$14 = {
+  	math: [
+  		"abs",
+  		"part sencera",
+  		"sostre",
+  		"arrel quadrada",
+  		"sin",
+  		"cos",
+  		"tan",
+  		"asin",
+  		"acos",
+  		"atan",
+  		"ln",
+  		"log",
+  		"e ^",
+  		"10 ^"
+  	],
+  	list: [
+  	],
+  	text: [
+  	]
+  };
   var aliases$14 = {
   	"gira a l'esquerra %1 graus": "MOTION_TURNLEFT",
   	"gira a la dreta %1 graus": "MOTION_TURNRIGHT",
@@ -3072,6 +3170,7 @@
   var percentTranslated$14 = 100;
   var ca = {
   	commands: commands$14,
+  	fullBlocks: fullBlocks$14,
   	dropdowns: dropdowns$14,
   	ignorelt: ignorelt$14,
   	soundEffects: soundEffects$14,
@@ -3080,7 +3179,7 @@
   	definePrefix: definePrefix$14,
   	defineSuffix: defineSuffix$14,
   	palette: palette$14,
-  	math: math$14,
+  	of: of$14,
   	aliases: aliases$14,
   	name: name$14,
   	percentTranslated: percentTranslated$14
@@ -3159,6 +3258,7 @@
   	CONTROL_REPEAT: "دوبارەکردنەوە %1",
   	CONTROL_FOREVER: "بۆهەتایە",
   	CONTROL_IF: "ئەگەر %1 ئینجا",
+  	CONTROL_ELSE: "ئەگەرنا",
   	CONTROL_WAITUNTIL: "چاوەڕێ بکە تا %1",
   	CONTROL_REPEATUNTIL: "دوبارەکردنەوە تا %1",
   	CONTROL_STOP: "وەستان %1",
@@ -3232,7 +3332,6 @@
   	DATA_ITEMNUMOFLIST: "دانەی # %1 لە %2",
   	DATA_LENGTHOFLIST: "درێژی لە %1",
   	DATA_LISTCONTAINSITEM: "%1 تێیدایە %2؟",
-  	CONTROL_ELSE: "ئەگەرنا",
   	SENSING_USERID: "ژمارەی بەکارهێنەر",
   	SENSING_LOUD: "بەدەنگی بەرز؟",
   	"text2speech.speakAndWaitBlock": "قسە بکە %1",
@@ -3297,6 +3396,8 @@
   	"boost.getTiltAngle": "گۆشەی لاری %1",
   	"boost.setLightHue": "دانانی ڕووناکی ڕەنگ بە %1"
   };
+  var fullBlocks$13 = [
+  ];
   var dropdowns$13 = {
   };
   var ignorelt$13 = [
@@ -3329,28 +3430,35 @@
   	Variables: "گۆڕاوەکان",
   	"My Blocks": "بلۆکەکانم"
   };
-  var math$13 = [
-  	"ڕەگی دووجا",
-  	"زەوی",
-  	"بنمیچ",
-  	"ڕەگی دووجا",
-  	"تەژێ",
-  	"تەژێ تەواو",
-  	"تانجێنت",
-  	"asin",
-  	"acos",
-  	"atan",
-  	"لن",
-  	"لۆگاریتم",
-  	"e ^",
-  	"10 ^"
-  ];
+  var of$13 = {
+  	math: [
+  		"ڕەگی دووجا",
+  		"زەوی",
+  		"بنمیچ",
+  		"ڕەگی دووجا",
+  		"تەژێ",
+  		"تەژێ تەواو",
+  		"تانجێنت",
+  		"asin",
+  		"acos",
+  		"atan",
+  		"لن",
+  		"لۆگاریتم",
+  		"e ^",
+  		"10 ^"
+  	],
+  	list: [
+  	],
+  	text: [
+  	]
+  };
   var aliases$13 = {
   };
   var name$13 = "کوردیی ناوەندی";
   var percentTranslated$13 = 100;
   var ckb = {
   	commands: commands$13,
+  	fullBlocks: fullBlocks$13,
   	dropdowns: dropdowns$13,
   	ignorelt: ignorelt$13,
   	soundEffects: soundEffects$13,
@@ -3359,7 +3467,7 @@
   	definePrefix: definePrefix$13,
   	defineSuffix: defineSuffix$13,
   	palette: palette$13,
-  	math: math$13,
+  	of: of$13,
   	aliases: aliases$13,
   	name: name$13,
   	percentTranslated: percentTranslated$13
@@ -3438,6 +3546,7 @@
   	CONTROL_REPEAT: "opakuj %1 krát",
   	CONTROL_FOREVER: "opakuj stále",
   	CONTROL_IF: "když %1 tak",
+  	CONTROL_ELSE: "jinak",
   	CONTROL_WAITUNTIL: "čekej dokud nenastane %1",
   	CONTROL_REPEATUNTIL: "opakuj dokud nenastane %1",
   	CONTROL_STOP: "zastav %1",
@@ -3511,7 +3620,6 @@
   	DATA_ITEMNUMOFLIST: "pořadí %1 ve %2",
   	DATA_LENGTHOFLIST: "délka %1",
   	DATA_LISTCONTAINSITEM: "%1 obsahuje %2",
-  	CONTROL_ELSE: "jinak",
   	SENSING_USERID: "ID uživatele",
   	SENSING_LOUD: "hlasité?",
   	"text2speech.speakAndWaitBlock": "řekni %1",
@@ -3576,6 +3684,8 @@
   	"boost.getTiltAngle": "úhel náklonu %1",
   	"boost.setLightHue": "nastav barvu světla na %1"
   };
+  var fullBlocks$12 = [
+  ];
   var dropdowns$12 = {
   };
   var ignorelt$12 = [
@@ -3609,22 +3719,28 @@
   	Variables: "Proměnné",
   	"My Blocks": "Moje bloky"
   };
-  var math$12 = [
-  	"abs",
-  	"zaokr. dolů",
-  	"zaokr. nahoru",
-  	"odmocnina",
-  	"sin",
-  	"cos",
-  	"tg",
-  	"arcsin",
-  	"arccos",
-  	"arctg",
-  	"ln",
-  	"log",
-  	"e ^",
-  	"10 ^"
-  ];
+  var of$12 = {
+  	math: [
+  		"abs",
+  		"zaokr. dolů",
+  		"zaokr. nahoru",
+  		"odmocnina",
+  		"sin",
+  		"cos",
+  		"tg",
+  		"arcsin",
+  		"arccos",
+  		"arctg",
+  		"ln",
+  		"log",
+  		"e ^",
+  		"10 ^"
+  	],
+  	list: [
+  	],
+  	text: [
+  	]
+  };
   var aliases$12 = {
   	"otoč se o %1 stupňů doleva": "MOTION_TURNLEFT",
   	"otoč se o %1 stupňů doprava": "MOTION_TURNRIGHT",
@@ -3635,6 +3751,7 @@
   var percentTranslated$12 = 100;
   var cs = {
   	commands: commands$12,
+  	fullBlocks: fullBlocks$12,
   	dropdowns: dropdowns$12,
   	ignorelt: ignorelt$12,
   	soundEffects: soundEffects$12,
@@ -3643,7 +3760,7 @@
   	definePrefix: definePrefix$12,
   	defineSuffix: defineSuffix$12,
   	palette: palette$12,
-  	math: math$12,
+  	of: of$12,
   	aliases: aliases$12,
   	name: name$12,
   	percentTranslated: percentTranslated$12
@@ -3722,6 +3839,7 @@
   	CONTROL_REPEAT: "ailadrodd %1",
   	CONTROL_FOREVER: "am byth",
   	CONTROL_IF: "os %1 yna",
+  	CONTROL_ELSE: "fel arall",
   	CONTROL_WAITUNTIL: "aros hyd at %1",
   	CONTROL_REPEATUNTIL: "ailadrodd hyd at %1",
   	CONTROL_STOP: "aros %1",
@@ -3795,7 +3913,6 @@
   	DATA_ITEMNUMOFLIST: "eitem # %1 yn %2",
   	DATA_LENGTHOFLIST: "hyd %1",
   	DATA_LISTCONTAINSITEM: "%1 yn cynnwys %2?",
-  	CONTROL_ELSE: "fel arall",
   	SENSING_USERID: "id defnyddiwr",
   	SENSING_LOUD: "sain gref?",
   	"text2speech.speakAndWaitBlock": "siarad %1",
@@ -3860,6 +3977,8 @@
   	"boost.getTiltAngle": "ongl gogwyddo %1",
   	"boost.setLightHue": "gosod lliw'r golau i %1"
   };
+  var fullBlocks$11 = [
+  ];
   var dropdowns$11 = {
   };
   var ignorelt$11 = [
@@ -3892,22 +4011,28 @@
   	Variables: "Newidynnau",
   	"My Blocks": "Fy Mlociau"
   };
-  var math$11 = [
-  	"abs",
-  	"llawr",
-  	"nenfwd",
-  	"ail isradd",
-  	"sin",
-  	"cos",
-  	"tan",
-  	"asin",
-  	"acos",
-  	"atan",
-  	"Yn",
-  	"log",
-  	"e ^",
-  	"10 ^"
-  ];
+  var of$11 = {
+  	math: [
+  		"abs",
+  		"llawr",
+  		"nenfwd",
+  		"ail isradd",
+  		"sin",
+  		"cos",
+  		"tan",
+  		"asin",
+  		"acos",
+  		"atan",
+  		"Yn",
+  		"log",
+  		"e ^",
+  		"10 ^"
+  	],
+  	list: [
+  	],
+  	text: [
+  	]
+  };
   var aliases$11 = {
   	"troi %1 gradd i'r chwith": "MOTION_TURNLEFT",
   	"troi %1 gradd i'r dde": "MOTION_TURNRIGHT",
@@ -3918,6 +4043,7 @@
   var percentTranslated$11 = 100;
   var cy = {
   	commands: commands$11,
+  	fullBlocks: fullBlocks$11,
   	dropdowns: dropdowns$11,
   	ignorelt: ignorelt$11,
   	soundEffects: soundEffects$11,
@@ -3926,7 +4052,7 @@
   	definePrefix: definePrefix$11,
   	defineSuffix: defineSuffix$11,
   	palette: palette$11,
-  	math: math$11,
+  	of: of$11,
   	aliases: aliases$11,
   	name: name$11,
   	percentTranslated: percentTranslated$11
@@ -4005,6 +4131,7 @@
   	CONTROL_REPEAT: "gentag %1 gange",
   	CONTROL_FOREVER: "for evigt",
   	CONTROL_IF: "hvis %1 så",
+  	CONTROL_ELSE: "ellers",
   	CONTROL_WAITUNTIL: "vent indtil %1",
   	CONTROL_REPEATUNTIL: "gentag indtil %1",
   	CONTROL_STOP: "stop %1",
@@ -4078,7 +4205,6 @@
   	DATA_ITEMNUMOFLIST: "nummer # af %1 i %2",
   	DATA_LENGTHOFLIST: "længden af %1",
   	DATA_LISTCONTAINSITEM: "%1 indeholder %2?",
-  	CONTROL_ELSE: "ellers",
   	SENSING_USERID: "bruger id",
   	SENSING_LOUD: "højt?",
   	"text2speech.speakAndWaitBlock": "sig %1",
@@ -4143,6 +4269,8 @@
   	"boost.getTiltAngle": "vippet vinkel %1",
   	"boost.setLightHue": "sæt farven på lyset til %1"
   };
+  var fullBlocks$10 = [
+  ];
   var dropdowns$10 = {
   };
   var ignorelt$10 = [
@@ -4175,28 +4303,35 @@
   	Variables: "Variabler",
   	"My Blocks": "Mine brikker"
   };
-  var math$10 = [
-  	"abs",
-  	"rund ned",
-  	"rund op",
-  	"kvrod",
-  	"sin",
-  	"cos",
-  	"tan",
-  	"asin",
-  	"acos",
-  	"atan",
-  	"ln",
-  	"log",
-  	"e ^",
-  	"10 ^"
-  ];
+  var of$10 = {
+  	math: [
+  		"abs",
+  		"rund ned",
+  		"rund op",
+  		"kvrod",
+  		"sin",
+  		"cos",
+  		"tan",
+  		"asin",
+  		"acos",
+  		"atan",
+  		"ln",
+  		"log",
+  		"e ^",
+  		"10 ^"
+  	],
+  	list: [
+  	],
+  	text: [
+  	]
+  };
   var aliases$10 = {
   };
   var name$10 = "Dansk";
   var percentTranslated$10 = 100;
   var da = {
   	commands: commands$10,
+  	fullBlocks: fullBlocks$10,
   	dropdowns: dropdowns$10,
   	ignorelt: ignorelt$10,
   	soundEffects: soundEffects$10,
@@ -4205,7 +4340,7 @@
   	definePrefix: definePrefix$10,
   	defineSuffix: defineSuffix$10,
   	palette: palette$10,
-  	math: math$10,
+  	of: of$10,
   	aliases: aliases$10,
   	name: name$10,
   	percentTranslated: percentTranslated$10
@@ -4284,6 +4419,7 @@
   	CONTROL_REPEAT: "wiederhole %1 mal",
   	CONTROL_FOREVER: "wiederhole fortlaufend",
   	CONTROL_IF: "falls %1, dann",
+  	CONTROL_ELSE: "sonst",
   	CONTROL_WAITUNTIL: "warte bis %1",
   	CONTROL_REPEATUNTIL: "wiederhole bis %1",
   	CONTROL_STOP: "stoppe %1",
@@ -4357,7 +4493,6 @@
   	DATA_ITEMNUMOFLIST: "Nummer von %1 in %2",
   	DATA_LENGTHOFLIST: "Länge von %1",
   	DATA_LISTCONTAINSITEM: "%1 enthält %2?",
-  	CONTROL_ELSE: "sonst",
   	SENSING_USERID: "Benutzer-ID",
   	SENSING_LOUD: "laut?",
   	"text2speech.speakAndWaitBlock": "sage %1",
@@ -4422,6 +4557,23 @@
   	"boost.getTiltAngle": "Neigungswinkel %1",
   	"boost.setLightHue": "setze Lichtfarbe auf %1"
   };
+  var fullBlocks$$ = [
+  	{
+  		spec: "{if}",
+  		specDefs: {
+  			"if": [
+  				"falls %1 %2",
+  				"falls %1 %2 {else}"
+  			],
+  			"else": [
+  				"@addInput",
+  				"@delInput @addInput",
+  				"sonst {if}"
+  			]
+  		},
+  		id: "snap:doIf"
+  	}
+  ];
   var dropdowns$$ = {
   };
   var ignorelt$$ = [
@@ -4454,22 +4606,28 @@
   	Variables: "Variablen",
   	"My Blocks": "Meine Blöcke"
   };
-  var math$$ = [
-  	"Betrag",
-  	"abrunden",
-  	"aufrunden",
-  	"Wurzel",
-  	"sin",
-  	"cos",
-  	"tan",
-  	"asin",
-  	"acos",
-  	"atan",
-  	"ln",
-  	"log",
-  	"e^",
-  	"10^"
-  ];
+  var of$$ = {
+  	math: [
+  		"Betrag",
+  		"abrunden",
+  		"aufrunden",
+  		"Wurzel",
+  		"sin",
+  		"cos",
+  		"tan",
+  		"asin",
+  		"acos",
+  		"atan",
+  		"ln",
+  		"log",
+  		"e^",
+  		"10^"
+  	],
+  	list: [
+  	],
+  	text: [
+  	]
+  };
   var aliases$$ = {
   	"drehe dich nach links um %1 Grad": "MOTION_TURNLEFT",
   	"drehe dich nach rechts um %1 Grad": "MOTION_TURNRIGHT",
@@ -4480,6 +4638,7 @@
   var percentTranslated$$ = 100;
   var de = {
   	commands: commands$$,
+  	fullBlocks: fullBlocks$$,
   	dropdowns: dropdowns$$,
   	ignorelt: ignorelt$$,
   	soundEffects: soundEffects$$,
@@ -4488,7 +4647,7 @@
   	definePrefix: definePrefix$$,
   	defineSuffix: defineSuffix$$,
   	palette: palette$$,
-  	math: math$$,
+  	of: of$$,
   	aliases: aliases$$,
   	name: name$$,
   	percentTranslated: percentTranslated$$
@@ -4567,6 +4726,7 @@
   	CONTROL_REPEAT: "επανάλαβε %1",
   	CONTROL_FOREVER: "για πάντα",
   	CONTROL_IF: "εάν %1 τότε",
+  	CONTROL_ELSE: "αλλιώς",
   	CONTROL_WAITUNTIL: "περίμενε ώσπου %1",
   	CONTROL_REPEATUNTIL: "επανάλαβε ώσπου %1",
   	CONTROL_STOP: "σταμάτησε %1",
@@ -4640,7 +4800,6 @@
   	DATA_ITEMNUMOFLIST: "# στοιχείου %1 σε %2",
   	DATA_LENGTHOFLIST: "μήκος λίστας %1",
   	DATA_LISTCONTAINSITEM: "%1 περιέχει %2;",
-  	CONTROL_ELSE: "αλλιώς",
   	SENSING_USERID: "αναγνωριστικό χρήστη",
   	SENSING_LOUD: "δυνατά;",
   	"text2speech.speakAndWaitBlock": "μίλησε %1",
@@ -4705,6 +4864,8 @@
   	"boost.getTiltAngle": "γωνία κλίσης %1",
   	"boost.setLightHue": "όρισε χρώμα φωτός σε %1"
   };
+  var fullBlocks$_ = [
+  ];
   var dropdowns$_ = {
   };
   var ignorelt$_ = [
@@ -4737,22 +4898,28 @@
   	Variables: "Μεταβλητές",
   	"My Blocks": "Οι Εντολές μου"
   };
-  var math$_ = [
-  	"απόλυτο",
-  	"στρογγυλ. κάτω",
-  	"στρογγυλ. άνω",
-  	"τετρ. ρίζα",
-  	"ημ",
-  	"συν",
-  	"εφ",
-  	"τοξημ",
-  	"τοξσυν",
-  	"τοξεφ",
-  	"ln",
-  	"log",
-  	"e ^",
-  	"10 ^"
-  ];
+  var of$_ = {
+  	math: [
+  		"απόλυτο",
+  		"στρογγυλ. κάτω",
+  		"στρογγυλ. άνω",
+  		"τετρ. ρίζα",
+  		"ημ",
+  		"συν",
+  		"εφ",
+  		"τοξημ",
+  		"τοξσυν",
+  		"τοξεφ",
+  		"ln",
+  		"log",
+  		"e ^",
+  		"10 ^"
+  	],
+  	list: [
+  	],
+  	text: [
+  	]
+  };
   var aliases$_ = {
   	"στρίψε αριστερά %1 μοίρες": "MOTION_TURNLEFT",
   	"στρίψε αριστερόστροφα %1 μοίρες": "MOTION_TURNLEFT",
@@ -4765,6 +4932,7 @@
   var percentTranslated$_ = 100;
   var el = {
   	commands: commands$_,
+  	fullBlocks: fullBlocks$_,
   	dropdowns: dropdowns$_,
   	ignorelt: ignorelt$_,
   	soundEffects: soundEffects$_,
@@ -4773,7 +4941,7 @@
   	definePrefix: definePrefix$_,
   	defineSuffix: defineSuffix$_,
   	palette: palette$_,
-  	math: math$_,
+  	of: of$_,
   	aliases: aliases$_,
   	name: name$_,
   	percentTranslated: percentTranslated$_
@@ -4852,6 +5020,7 @@
   	CONTROL_REPEAT: "ripeti %1-foje",
   	CONTROL_FOREVER: "ripeti senfine",
   	CONTROL_IF: "se %1 do",
+  	CONTROL_ELSE: "alikaze",
   	CONTROL_WAITUNTIL: "atendi ĝis %1",
   	CONTROL_REPEATUNTIL: "ripeti ĝis %1",
   	CONTROL_STOP: "haltigi %1",
@@ -4925,7 +5094,6 @@
   	DATA_ITEMNUMOFLIST: "vica numero de %1 en %2",
   	DATA_LENGTHOFLIST: "longo de %1",
   	DATA_LISTCONTAINSITEM: "ĉu %1 enhavas %2?",
-  	CONTROL_ELSE: "alikaze",
   	SENSING_USERID: "ID de uzanto",
   	SENSING_LOUD: "ĉu laŭta?",
   	"text2speech.speakAndWaitBlock": "diri %1",
@@ -4990,6 +5158,8 @@
   	"boost.getTiltAngle": "angulo de klino %1",
   	"boost.setLightHue": "kolorigi LED al %1"
   };
+  var fullBlocks$Z = [
+  ];
   var dropdowns$Z = {
   };
   var ignorelt$Z = [
@@ -5022,28 +5192,35 @@
   	Variables: "Variabloj",
   	"My Blocks": "Miaj Blokoj"
   };
-  var math$Z = [
-  	"abs",
-  	"planko",
-  	"plafono",
-  	"radiko",
-  	"sin",
-  	"cos",
-  	"tan",
-  	"asin",
-  	"acos",
-  	"atan",
-  	"ln",
-  	"log",
-  	"e ^",
-  	"10 ^"
-  ];
+  var of$Z = {
+  	math: [
+  		"abs",
+  		"planko",
+  		"plafono",
+  		"radiko",
+  		"sin",
+  		"cos",
+  		"tan",
+  		"asin",
+  		"acos",
+  		"atan",
+  		"ln",
+  		"log",
+  		"e ^",
+  		"10 ^"
+  	],
+  	list: [
+  	],
+  	text: [
+  	]
+  };
   var aliases$Z = {
   };
   var name$Z = "Esperanto";
   var percentTranslated$Z = 100;
   var eo = {
   	commands: commands$Z,
+  	fullBlocks: fullBlocks$Z,
   	dropdowns: dropdowns$Z,
   	ignorelt: ignorelt$Z,
   	soundEffects: soundEffects$Z,
@@ -5052,7 +5229,7 @@
   	definePrefix: definePrefix$Z,
   	defineSuffix: defineSuffix$Z,
   	palette: palette$Z,
-  	math: math$Z,
+  	of: of$Z,
   	aliases: aliases$Z,
   	name: name$Z,
   	percentTranslated: percentTranslated$Z
@@ -5131,6 +5308,7 @@
   	CONTROL_REPEAT: "repetir %1",
   	CONTROL_FOREVER: "por siempre",
   	CONTROL_IF: "si %1 entonces",
+  	CONTROL_ELSE: "si no",
   	CONTROL_WAITUNTIL: "esperar hasta que %1",
   	CONTROL_REPEATUNTIL: "repetir hasta que %1",
   	CONTROL_STOP: "detener %1",
@@ -5204,7 +5382,6 @@
   	DATA_ITEMNUMOFLIST: "# de elemento de %1 en %2",
   	DATA_LENGTHOFLIST: "longitud de %1",
   	DATA_LISTCONTAINSITEM: "¿%2 está en %1?",
-  	CONTROL_ELSE: "si no",
   	SENSING_USERID: "id de usuario",
   	SENSING_LOUD: "¿ruidoso?",
   	"text2speech.speakAndWaitBlock": "decir %1",
@@ -5269,6 +5446,8 @@
   	"boost.getTiltAngle": "ángulo de inclinación hacia %1",
   	"boost.setLightHue": "fijar color de la luz a %1"
   };
+  var fullBlocks$Y = [
+  ];
   var dropdowns$Y = {
   };
   var ignorelt$Y = [
@@ -5301,22 +5480,28 @@
   	Variables: "Variables",
   	"My Blocks": "Mis bloques"
   };
-  var math$Y = [
-  	"valor absoluto",
-  	"suelo",
-  	"techo",
-  	"raíz cuadrada",
-  	"sen",
-  	"cos",
-  	"tan",
-  	"arcsen",
-  	"arccos",
-  	"arctan",
-  	"ln",
-  	"log",
-  	"e ^",
-  	"10 ^"
-  ];
+  var of$Y = {
+  	math: [
+  		"valor absoluto",
+  		"suelo",
+  		"techo",
+  		"raíz cuadrada",
+  		"sen",
+  		"cos",
+  		"tan",
+  		"arcsen",
+  		"arccos",
+  		"arctan",
+  		"ln",
+  		"log",
+  		"e ^",
+  		"10 ^"
+  	],
+  	list: [
+  	],
+  	text: [
+  	]
+  };
   var aliases$Y = {
   	"girar a la izquierda %1 grados": "MOTION_TURNLEFT",
   	"girar a la derecha %1 grados": "MOTION_TURNRIGHT",
@@ -5327,6 +5512,7 @@
   var percentTranslated$Y = 100;
   var es = {
   	commands: commands$Y,
+  	fullBlocks: fullBlocks$Y,
   	dropdowns: dropdowns$Y,
   	ignorelt: ignorelt$Y,
   	soundEffects: soundEffects$Y,
@@ -5335,7 +5521,7 @@
   	definePrefix: definePrefix$Y,
   	defineSuffix: defineSuffix$Y,
   	palette: palette$Y,
-  	math: math$Y,
+  	of: of$Y,
   	aliases: aliases$Y,
   	name: name$Y,
   	percentTranslated: percentTranslated$Y
@@ -5414,6 +5600,7 @@
   	CONTROL_REPEAT: "repetir %1",
   	CONTROL_FOREVER: "por siempre",
   	CONTROL_IF: "si %1 entonces",
+  	CONTROL_ELSE: "si no",
   	CONTROL_WAITUNTIL: "esperar hasta que %1",
   	CONTROL_REPEATUNTIL: "repetir hasta que %1",
   	CONTROL_STOP: "detener %1",
@@ -5487,7 +5674,6 @@
   	DATA_ITEMNUMOFLIST: "# de elemento de %1 en %2",
   	DATA_LENGTHOFLIST: "longitud de %1",
   	DATA_LISTCONTAINSITEM: "¿%2 está en %1?",
-  	CONTROL_ELSE: "si no",
   	SENSING_USERID: "nombre de usuario",
   	SENSING_LOUD: "¿fuerte?",
   	"text2speech.speakAndWaitBlock": "decir %1",
@@ -5552,6 +5738,8 @@
   	"boost.getTiltAngle": "ángulo de inclinación hacia %1",
   	"boost.setLightHue": "fijar color de luz a %1"
   };
+  var fullBlocks$X = [
+  ];
   var dropdowns$X = {
   };
   var ignorelt$X = [
@@ -5584,28 +5772,35 @@
   	Variables: "Variables",
   	"My Blocks": "Mis Bloques"
   };
-  var math$X = [
-  	"valor absoluto",
-  	"piso",
-  	"techo",
-  	"raíz cuadrada",
-  	"sen",
-  	"cos",
-  	"tan",
-  	"arcsen",
-  	"arccos",
-  	"arctan",
-  	"ln",
-  	"log",
-  	"e ^",
-  	"10 ^"
-  ];
+  var of$X = {
+  	math: [
+  		"valor absoluto",
+  		"piso",
+  		"techo",
+  		"raíz cuadrada",
+  		"sen",
+  		"cos",
+  		"tan",
+  		"arcsen",
+  		"arccos",
+  		"arctan",
+  		"ln",
+  		"log",
+  		"e ^",
+  		"10 ^"
+  	],
+  	list: [
+  	],
+  	text: [
+  	]
+  };
   var aliases$X = {
   };
   var name$X = "Español Latinoamericano";
   var percentTranslated$X = 100;
   var es_419 = {
   	commands: commands$X,
+  	fullBlocks: fullBlocks$X,
   	dropdowns: dropdowns$X,
   	ignorelt: ignorelt$X,
   	soundEffects: soundEffects$X,
@@ -5614,7 +5809,7 @@
   	definePrefix: definePrefix$X,
   	defineSuffix: defineSuffix$X,
   	palette: palette$X,
-  	math: math$X,
+  	of: of$X,
   	aliases: aliases$X,
   	name: name$X,
   	percentTranslated: percentTranslated$X
@@ -5693,6 +5888,7 @@
   	CONTROL_REPEAT: "korda %1 korda",
   	CONTROL_FOREVER: "korda lõputult",
   	CONTROL_IF: "kui %1 siis",
+  	CONTROL_ELSE: "muidu",
   	CONTROL_WAITUNTIL: "oota kuni %1",
   	CONTROL_REPEATUNTIL: "korda kuni %1",
   	CONTROL_STOP: "stopp %1",
@@ -5766,7 +5962,6 @@
   	DATA_ITEMNUMOFLIST: "%1 jrk nr loendis %2",
   	DATA_LENGTHOFLIST: "%1 pikkus",
   	DATA_LISTCONTAINSITEM: "%1 sisaldab %2?",
-  	CONTROL_ELSE: "muidu",
   	SENSING_USERID: "kasutaja ID",
   	SENSING_LOUD: "väga vali?",
   	"text2speech.speakAndWaitBlock": "ütle %1",
@@ -5831,6 +6026,8 @@
   	"boost.getTiltAngle": "tilt angle %1",
   	"boost.setLightHue": "set light color to %1"
   };
+  var fullBlocks$W = [
+  ];
   var dropdowns$W = {
   };
   var ignorelt$W = [
@@ -5863,28 +6060,35 @@
   	Variables: "Muutujad",
   	"My Blocks": "Minu Plokid"
   };
-  var math$W = [
-  	"abs",
-  	"floor",
-  	"ceiling",
-  	"sqrt",
-  	"sin",
-  	"cos",
-  	"tan",
-  	"asin",
-  	"acos",
-  	"atan",
-  	"ln",
-  	"log",
-  	"e ^",
-  	"10 ^"
-  ];
+  var of$W = {
+  	math: [
+  		"abs",
+  		"floor",
+  		"ceiling",
+  		"sqrt",
+  		"sin",
+  		"cos",
+  		"tan",
+  		"asin",
+  		"acos",
+  		"atan",
+  		"ln",
+  		"log",
+  		"e ^",
+  		"10 ^"
+  	],
+  	list: [
+  	],
+  	text: [
+  	]
+  };
   var aliases$W = {
   };
   var name$W = "Eesti";
   var percentTranslated$W = 100;
   var et = {
   	commands: commands$W,
+  	fullBlocks: fullBlocks$W,
   	dropdowns: dropdowns$W,
   	ignorelt: ignorelt$W,
   	soundEffects: soundEffects$W,
@@ -5893,7 +6097,7 @@
   	definePrefix: definePrefix$W,
   	defineSuffix: defineSuffix$W,
   	palette: palette$W,
-  	math: math$W,
+  	of: of$W,
   	aliases: aliases$W,
   	name: name$W,
   	percentTranslated: percentTranslated$W
@@ -5972,6 +6176,7 @@
   	CONTROL_REPEAT: "errepikatu %1 aldiz",
   	CONTROL_FOREVER: "etengabe",
   	CONTROL_IF: "baldin %1 orduan",
+  	CONTROL_ELSE: "bestela",
   	CONTROL_WAITUNTIL: "itxaron %1 arte",
   	CONTROL_REPEATUNTIL: "errepikatu %1 arte",
   	CONTROL_STOP: "gelditu %1",
@@ -6045,7 +6250,6 @@
   	DATA_ITEMNUMOFLIST: "%1 tik #. elementua %2 n",
   	DATA_LENGTHOFLIST: "%1 ren luzera",
   	DATA_LISTCONTAINSITEM: "%1 k bere baitan al du %2?",
-  	CONTROL_ELSE: "bestela",
   	SENSING_USERID: "erabiltzaile-id",
   	SENSING_LOUD: "ozen?",
   	"text2speech.speakAndWaitBlock": "esan %1",
@@ -6110,6 +6314,8 @@
   	"boost.getTiltAngle": "tilt angle %1",
   	"boost.setLightHue": "set light color to %1"
   };
+  var fullBlocks$V = [
+  ];
   var dropdowns$V = {
   };
   var ignorelt$V = [
@@ -6142,28 +6348,35 @@
   	Variables: "Aldagaiak",
   	"My Blocks": "Nire blokeak"
   };
-  var math$V = [
-  	"balio absolutu",
-  	"zoru-funtzioa",
-  	"sabai-funtzioa",
-  	"erro karratua",
-  	"sin",
-  	"cos",
-  	"tan",
-  	"asin",
-  	"acos",
-  	"atan",
-  	"ln",
-  	"log",
-  	"e ^",
-  	"10 ^"
-  ];
+  var of$V = {
+  	math: [
+  		"balio absolutu",
+  		"zoru-funtzioa",
+  		"sabai-funtzioa",
+  		"erro karratua",
+  		"sin",
+  		"cos",
+  		"tan",
+  		"asin",
+  		"acos",
+  		"atan",
+  		"ln",
+  		"log",
+  		"e ^",
+  		"10 ^"
+  	],
+  	list: [
+  	],
+  	text: [
+  	]
+  };
   var aliases$V = {
   };
   var name$V = "Euskara";
   var percentTranslated$V = 100;
   var eu = {
   	commands: commands$V,
+  	fullBlocks: fullBlocks$V,
   	dropdowns: dropdowns$V,
   	ignorelt: ignorelt$V,
   	soundEffects: soundEffects$V,
@@ -6172,7 +6385,7 @@
   	definePrefix: definePrefix$V,
   	defineSuffix: defineSuffix$V,
   	palette: palette$V,
-  	math: math$V,
+  	of: of$V,
   	aliases: aliases$V,
   	name: name$V,
   	percentTranslated: percentTranslated$V
@@ -6251,6 +6464,7 @@
   	CONTROL_REPEAT: "تکرار کن %1",
   	CONTROL_FOREVER: "برای همیشه",
   	CONTROL_IF: "اگر %1 آنگاه",
+  	CONTROL_ELSE: "وگرنه",
   	CONTROL_WAITUNTIL: "منتظر بمان تا اینکه %1",
   	CONTROL_REPEATUNTIL: "تکرار کن تا اینکه %1",
   	CONTROL_STOP: "توقف %1",
@@ -6324,7 +6538,6 @@
   	DATA_ITEMNUMOFLIST: "# ردیف %1 در %2",
   	DATA_LENGTHOFLIST: "طول %1",
   	DATA_LISTCONTAINSITEM: "در %1 %2 هست؟",
-  	CONTROL_ELSE: "وگرنه",
   	SENSING_USERID: "شناسه‌ی کاربر",
   	SENSING_LOUD: "صدا بلند است؟",
   	"text2speech.speakAndWaitBlock": "بگو %1",
@@ -6389,6 +6602,8 @@
   	"boost.getTiltAngle": "زاویه‌ی کج شدن %1",
   	"boost.setLightHue": "رنگ %1 شود"
   };
+  var fullBlocks$U = [
+  ];
   var dropdowns$U = {
   };
   var ignorelt$U = [
@@ -6421,22 +6636,28 @@
   	Variables: "متغیرها",
   	"My Blocks": "قطعه‌های من"
   };
-  var math$U = [
-  	"قدر مطلق",
-  	"جزء صحیح",
-  	"سقف",
-  	"جذر",
-  	"sin",
-  	"cos",
-  	"tan",
-  	"asin",
-  	"acos",
-  	"atan",
-  	"ln",
-  	"log",
-  	"e به توان",
-  	"۱۰ به توان"
-  ];
+  var of$U = {
+  	math: [
+  		"قدر مطلق",
+  		"جزء صحیح",
+  		"سقف",
+  		"جذر",
+  		"sin",
+  		"cos",
+  		"tan",
+  		"asin",
+  		"acos",
+  		"atan",
+  		"ln",
+  		"log",
+  		"e به توان",
+  		"۱۰ به توان"
+  	],
+  	list: [
+  	],
+  	text: [
+  	]
+  };
   var aliases$U = {
   	"به اندازه %1 درجه به چپ بچرخ": "MOTION_TURNLEFT",
   	"به اندازه %1 درجه به راست بچرخ": "MOTION_TURNRIGHT",
@@ -6447,6 +6668,7 @@
   var percentTranslated$U = 100;
   var fa = {
   	commands: commands$U,
+  	fullBlocks: fullBlocks$U,
   	dropdowns: dropdowns$U,
   	ignorelt: ignorelt$U,
   	soundEffects: soundEffects$U,
@@ -6455,7 +6677,7 @@
   	definePrefix: definePrefix$U,
   	defineSuffix: defineSuffix$U,
   	palette: palette$U,
-  	math: math$U,
+  	of: of$U,
   	aliases: aliases$U,
   	name: name$U,
   	percentTranslated: percentTranslated$U
@@ -6534,6 +6756,7 @@
   	CONTROL_REPEAT: "toista %1 kertaa",
   	CONTROL_FOREVER: "ikuisesti",
   	CONTROL_IF: "jos %1, niin",
+  	CONTROL_ELSE: "tai muuten",
   	CONTROL_WAITUNTIL: "odota kunnes %1",
   	CONTROL_REPEATUNTIL: "toista kunnes %1",
   	CONTROL_STOP: "pysäytä %1",
@@ -6607,7 +6830,6 @@
   	DATA_ITEMNUMOFLIST: "kohteen %1 numero listassa %2",
   	DATA_LENGTHOFLIST: "listan %1 pituus",
   	DATA_LISTCONTAINSITEM: "%1 sisältää %2?",
-  	CONTROL_ELSE: "tai muuten",
   	SENSING_USERID: "käyttäjä-id",
   	SENSING_LOUD: "kova äänentaso?",
   	"text2speech.speakAndWaitBlock": "puhu %1",
@@ -6672,6 +6894,8 @@
   	"boost.getTiltAngle": "kallista suuntaan %1",
   	"boost.setLightHue": "aseta valon väriksi %1"
   };
+  var fullBlocks$T = [
+  ];
   var dropdowns$T = {
   };
   var ignorelt$T = [
@@ -6704,28 +6928,35 @@
   	Variables: "Muuttujat",
   	"My Blocks": "Lohkoni"
   };
-  var math$T = [
-  	"itseisarvo",
-  	"pyöristä alaspäin",
-  	"pyöristä ylöspäin",
-  	"neliöjuuri",
-  	"sini",
-  	"kosini",
-  	"tangentti",
-  	"asin",
-  	"acos",
-  	"atan",
-  	"luonnollinen logaritmi",
-  	"10-kantainen logaritmi",
-  	"e ^",
-  	"10 ^"
-  ];
+  var of$T = {
+  	math: [
+  		"itseisarvo",
+  		"pyöristä alaspäin",
+  		"pyöristä ylöspäin",
+  		"neliöjuuri",
+  		"sini",
+  		"kosini",
+  		"tangentti",
+  		"asin",
+  		"acos",
+  		"atan",
+  		"luonnollinen logaritmi",
+  		"10-kantainen logaritmi",
+  		"e ^",
+  		"10 ^"
+  	],
+  	list: [
+  	],
+  	text: [
+  	]
+  };
   var aliases$T = {
   };
   var name$T = "Suomi";
   var percentTranslated$T = 100;
   var fi = {
   	commands: commands$T,
+  	fullBlocks: fullBlocks$T,
   	dropdowns: dropdowns$T,
   	ignorelt: ignorelt$T,
   	soundEffects: soundEffects$T,
@@ -6734,7 +6965,7 @@
   	definePrefix: definePrefix$T,
   	defineSuffix: defineSuffix$T,
   	palette: palette$T,
-  	math: math$T,
+  	of: of$T,
   	aliases: aliases$T,
   	name: name$T,
   	percentTranslated: percentTranslated$T
@@ -6813,6 +7044,7 @@
   	CONTROL_REPEAT: "ulitin nang %1",
   	CONTROL_FOREVER: "kailanman",
   	CONTROL_IF: "kung %1 edi",
+  	CONTROL_ELSE: "kundi",
   	CONTROL_WAITUNTIL: "maghintay hanggang %1",
   	CONTROL_REPEATUNTIL: "ulitin hanggang %1",
   	CONTROL_STOP: "itigil %1",
@@ -6886,7 +7118,6 @@
   	DATA_ITEMNUMOFLIST: "# ng item na %1 sa %2",
   	DATA_LENGTHOFLIST: "haba ng %1",
   	DATA_LISTCONTAINSITEM: "may %2 ang %1?",
-  	CONTROL_ELSE: "kundi",
   	SENSING_USERID: "user id",
   	SENSING_LOUD: "malakas?",
   	"text2speech.speakAndWaitBlock": "sabihin ang %1",
@@ -6951,6 +7182,8 @@
   	"boost.getTiltAngle": "anggulo ng pagtagilid %1",
   	"boost.setLightHue": "itakda ang kulay ng ilaw bilang %1"
   };
+  var fullBlocks$S = [
+  ];
   var dropdowns$S = {
   };
   var ignorelt$S = [
@@ -6984,28 +7217,35 @@
   	Variables: "Mga Variable",
   	"My Blocks": "Mga Block Ko"
   };
-  var math$S = [
-  	"abs",
-  	"floor",
-  	"ceiling",
-  	"sqrt",
-  	"sin",
-  	"cos",
-  	"tan",
-  	"asin",
-  	"acos",
-  	"atan",
-  	"ln",
-  	"log",
-  	"e ^",
-  	"10 ^"
-  ];
+  var of$S = {
+  	math: [
+  		"abs",
+  		"floor",
+  		"ceiling",
+  		"sqrt",
+  		"sin",
+  		"cos",
+  		"tan",
+  		"asin",
+  		"acos",
+  		"atan",
+  		"ln",
+  		"log",
+  		"e ^",
+  		"10 ^"
+  	],
+  	list: [
+  	],
+  	text: [
+  	]
+  };
   var aliases$S = {
   };
   var name$S = "Filipino";
   var percentTranslated$S = 100;
   var fil = {
   	commands: commands$S,
+  	fullBlocks: fullBlocks$S,
   	dropdowns: dropdowns$S,
   	ignorelt: ignorelt$S,
   	soundEffects: soundEffects$S,
@@ -7014,7 +7254,7 @@
   	definePrefix: definePrefix$S,
   	defineSuffix: defineSuffix$S,
   	palette: palette$S,
-  	math: math$S,
+  	of: of$S,
   	aliases: aliases$S,
   	name: name$S,
   	percentTranslated: percentTranslated$S
@@ -7093,6 +7333,7 @@
   	CONTROL_REPEAT: "répéter %1 fois",
   	CONTROL_FOREVER: "répéter indéfiniment",
   	CONTROL_IF: "si %1 alors",
+  	CONTROL_ELSE: "sinon",
   	CONTROL_WAITUNTIL: "attendre jusqu'à ce que %1",
   	CONTROL_REPEATUNTIL: "répéter jusqu'à ce que %1",
   	CONTROL_STOP: "stop %1",
@@ -7166,7 +7407,6 @@
   	DATA_ITEMNUMOFLIST: "position de %1 dans %2",
   	DATA_LENGTHOFLIST: "longueur de %1",
   	DATA_LISTCONTAINSITEM: "%1 contient %2 ?",
-  	CONTROL_ELSE: "sinon",
   	SENSING_USERID: "id de l'utilisateur",
   	SENSING_LOUD: "fort ?",
   	"text2speech.speakAndWaitBlock": "prononcer %1",
@@ -7231,6 +7471,8 @@
   	"boost.getTiltAngle": "angle d'inclinaison %1",
   	"boost.setLightHue": "mettre la couleur de la lampe à %1"
   };
+  var fullBlocks$R = [
+  ];
   var dropdowns$R = {
   };
   var ignorelt$R = [
@@ -7263,22 +7505,28 @@
   	Variables: "Variables",
   	"My Blocks": "Mes Blocs"
   };
-  var math$R = [
-  	"abs",
-  	"plancher",
-  	"plafond",
-  	"racine",
-  	"sin",
-  	"cos",
-  	"tan",
-  	"asin",
-  	"acos",
-  	"atan",
-  	"ln",
-  	"log",
-  	"e^",
-  	"10^"
-  ];
+  var of$R = {
+  	math: [
+  		"abs",
+  		"plancher",
+  		"plafond",
+  		"racine",
+  		"sin",
+  		"cos",
+  		"tan",
+  		"asin",
+  		"acos",
+  		"atan",
+  		"ln",
+  		"log",
+  		"e^",
+  		"10^"
+  	],
+  	list: [
+  	],
+  	text: [
+  	]
+  };
   var aliases$R = {
   	"tourner gauche de %1 degrés": "MOTION_TURNLEFT",
   	"tourner droite de %1 degrés": "MOTION_TURNRIGHT",
@@ -7289,6 +7537,7 @@
   var percentTranslated$R = 100;
   var fr = {
   	commands: commands$R,
+  	fullBlocks: fullBlocks$R,
   	dropdowns: dropdowns$R,
   	ignorelt: ignorelt$R,
   	soundEffects: soundEffects$R,
@@ -7297,7 +7546,7 @@
   	definePrefix: definePrefix$R,
   	defineSuffix: defineSuffix$R,
   	palette: palette$R,
-  	math: math$R,
+  	of: of$R,
   	aliases: aliases$R,
   	name: name$R,
   	percentTranslated: percentTranslated$R
@@ -7376,6 +7625,7 @@
   	CONTROL_REPEAT: "werhelje %1",
   	CONTROL_FOREVER: "foar altyd",
   	CONTROL_IF: "as %1 dan",
+  	CONTROL_ELSE: "oars",
   	CONTROL_WAITUNTIL: "wachtsje oant %1",
   	CONTROL_REPEATUNTIL: "werhelje oant %1",
   	CONTROL_STOP: "stop %1",
@@ -7449,7 +7699,6 @@
   	DATA_ITEMNUMOFLIST: "ûnderdiel # fan %1 yn %2",
   	DATA_LENGTHOFLIST: "lingte fan %1",
   	DATA_LISTCONTAINSITEM: "%1 befettet %2?",
-  	CONTROL_ELSE: "oars",
   	SENSING_USERID: "brûkers-id",
   	SENSING_LOUD: "lûd?",
   	"text2speech.speakAndWaitBlock": "sprekke %1",
@@ -7514,6 +7763,8 @@
   	"boost.getTiltAngle": "kantelhoek %1",
   	"boost.setLightHue": "stel de kleur fan it ljocht yn op %1"
   };
+  var fullBlocks$Q = [
+  ];
   var dropdowns$Q = {
   };
   var ignorelt$Q = [
@@ -7546,28 +7797,35 @@
   	Variables: "Fariabelen",
   	"My Blocks": "Myn Blokken"
   };
-  var math$Q = [
-  	"abs",
-  	"flier",
-  	"plafond",
-  	"woartel",
-  	"sin",
-  	"cos",
-  	"tan",
-  	"asin",
-  	"acos",
-  	"atan",
-  	"ln",
-  	"log",
-  	"e ^",
-  	"10 ^"
-  ];
+  var of$Q = {
+  	math: [
+  		"abs",
+  		"flier",
+  		"plafond",
+  		"woartel",
+  		"sin",
+  		"cos",
+  		"tan",
+  		"asin",
+  		"acos",
+  		"atan",
+  		"ln",
+  		"log",
+  		"e ^",
+  		"10 ^"
+  	],
+  	list: [
+  	],
+  	text: [
+  	]
+  };
   var aliases$Q = {
   };
   var name$Q = "Frysk";
   var percentTranslated$Q = 100;
   var fy = {
   	commands: commands$Q,
+  	fullBlocks: fullBlocks$Q,
   	dropdowns: dropdowns$Q,
   	ignorelt: ignorelt$Q,
   	soundEffects: soundEffects$Q,
@@ -7576,7 +7834,7 @@
   	definePrefix: definePrefix$Q,
   	defineSuffix: defineSuffix$Q,
   	palette: palette$Q,
-  	math: math$Q,
+  	of: of$Q,
   	aliases: aliases$Q,
   	name: name$Q,
   	percentTranslated: percentTranslated$Q
@@ -7655,6 +7913,7 @@
   	CONTROL_REPEAT: "déan %1 uair",
   	CONTROL_FOREVER: "go deo",
   	CONTROL_IF: "más %1 ansin",
+  	CONTROL_ELSE: "seachas sin",
   	CONTROL_WAITUNTIL: "fan go %1",
   	CONTROL_REPEATUNTIL: "athdhéan go %1",
   	CONTROL_STOP: "stop %1",
@@ -7728,7 +7987,6 @@
   	DATA_ITEMNUMOFLIST: "mír # as %1 in %2",
   	DATA_LENGTHOFLIST: "fad %1",
   	DATA_LISTCONTAINSITEM: "%1 agus %2 ann?",
-  	CONTROL_ELSE: "seachas sin",
   	SENSING_USERID: "aitheantas úsáideora",
   	SENSING_LOUD: "os ard?",
   	"text2speech.speakAndWaitBlock": "abair %1",
@@ -7793,6 +8051,8 @@
   	"boost.getTiltAngle": "uillinn chlaonta %1",
   	"boost.setLightHue": "socraigh dath an tsolais: %1"
   };
+  var fullBlocks$P = [
+  ];
   var dropdowns$P = {
   };
   var ignorelt$P = [
@@ -7825,28 +8085,35 @@
   	Variables: "Athróga",
   	"My Blocks": "Mo Chuid Blocanna"
   };
-  var math$P = [
-  	"abs",
-  	"urlár",
-  	"síleáil",
-  	"sqrt",
-  	"sin",
-  	"cos",
-  	"tan",
-  	"asin",
-  	"acos",
-  	"atan",
-  	"ln",
-  	"log",
-  	"e ^",
-  	"10 ^"
-  ];
+  var of$P = {
+  	math: [
+  		"abs",
+  		"urlár",
+  		"síleáil",
+  		"sqrt",
+  		"sin",
+  		"cos",
+  		"tan",
+  		"asin",
+  		"acos",
+  		"atan",
+  		"ln",
+  		"log",
+  		"e ^",
+  		"10 ^"
+  	],
+  	list: [
+  	],
+  	text: [
+  	]
+  };
   var aliases$P = {
   };
   var name$P = "Gaeilge";
   var percentTranslated$P = 100;
   var ga = {
   	commands: commands$P,
+  	fullBlocks: fullBlocks$P,
   	dropdowns: dropdowns$P,
   	ignorelt: ignorelt$P,
   	soundEffects: soundEffects$P,
@@ -7855,7 +8122,7 @@
   	definePrefix: definePrefix$P,
   	defineSuffix: defineSuffix$P,
   	palette: palette$P,
-  	math: math$P,
+  	of: of$P,
   	aliases: aliases$P,
   	name: name$P,
   	percentTranslated: percentTranslated$P
@@ -7934,6 +8201,7 @@
   	CONTROL_REPEAT: "dèan seo %1 turas",
   	CONTROL_FOREVER: "gu buan",
   	CONTROL_IF: "ma tha %1 a-rèiste",
+  	CONTROL_ELSE: "air neo",
   	CONTROL_WAITUNTIL: "fan gus am bi %1",
   	CONTROL_REPEATUNTIL: "dèan a-rithist e gus am bi %1",
   	CONTROL_STOP: "cuir stad air %1",
@@ -8007,7 +8275,6 @@
   	DATA_ITEMNUMOFLIST: "àireamh an nì %1 air %2",
   	DATA_LENGTHOFLIST: "an fhaide aig %1",
   	DATA_LISTCONTAINSITEM: "%2 am broinn %1",
-  	CONTROL_ELSE: "air neo",
   	SENSING_USERID: "ID a’ chleachdaiche",
   	SENSING_LOUD: "an fhuaim air",
   	"text2speech.speakAndWaitBlock": "can %1 gu h-àrd",
@@ -8072,6 +8339,8 @@
   	"boost.getTiltAngle": "ceàrn claonaidh %1",
   	"boost.setLightHue": "suidhich dath an t-solais air %1"
   };
+  var fullBlocks$O = [
+  ];
   var dropdowns$O = {
   };
   var ignorelt$O = [
@@ -8104,22 +8373,28 @@
   	Variables: "Caochladairean",
   	"My Blocks": "Bloca agamsa"
   };
-  var math$O = [
-  	"an luach absaloideach",
-  	"an cuairteachadh sìos",
-  	"an cuairteachadh suas",
-  	"am freumh ceàrnagach",
-  	"an sìneas",
-  	"an co-shìneas",
-  	"am beantan",
-  	"an t-àrc-shìneas",
-  	"an t-àrc-cho-shìneas",
-  	"an t-àrc-bheantan",
-  	"an log-àireamh nàdarra",
-  	"an log-àireamh",
-  	"e ^",
-  	"10 ^"
-  ];
+  var of$O = {
+  	math: [
+  		"an luach absaloideach",
+  		"an cuairteachadh sìos",
+  		"an cuairteachadh suas",
+  		"am freumh ceàrnagach",
+  		"an sìneas",
+  		"an co-shìneas",
+  		"am beantan",
+  		"an t-àrc-shìneas",
+  		"an t-àrc-cho-shìneas",
+  		"an t-àrc-bheantan",
+  		"an log-àireamh nàdarra",
+  		"an log-àireamh",
+  		"e ^",
+  		"10 ^"
+  	],
+  	list: [
+  	],
+  	text: [
+  	]
+  };
   var aliases$O = {
   	"cuairtich @turnLeft le %1 ceum": "MOTION_TURNLEFT",
   	"cuairtich @turnRight le %1 ceum": "MOTION_TURNRIGHT",
@@ -8130,6 +8405,7 @@
   var percentTranslated$O = 100;
   var gd = {
   	commands: commands$O,
+  	fullBlocks: fullBlocks$O,
   	dropdowns: dropdowns$O,
   	ignorelt: ignorelt$O,
   	soundEffects: soundEffects$O,
@@ -8138,7 +8414,7 @@
   	definePrefix: definePrefix$O,
   	defineSuffix: defineSuffix$O,
   	palette: palette$O,
-  	math: math$O,
+  	of: of$O,
   	aliases: aliases$O,
   	name: name$O,
   	percentTranslated: percentTranslated$O
@@ -8217,6 +8493,7 @@
   	CONTROL_REPEAT: "repetir %1",
   	CONTROL_FOREVER: "para sempre",
   	CONTROL_IF: "se %1 entón",
+  	CONTROL_ELSE: "se non",
   	CONTROL_WAITUNTIL: "agardar até %1",
   	CONTROL_REPEATUNTIL: "repetir até %1",
   	CONTROL_STOP: "parar. %1",
@@ -8290,7 +8567,6 @@
   	DATA_ITEMNUMOFLIST: "posición de %2 que contén %1",
   	DATA_LENGTHOFLIST: "lonxitude de %1",
   	DATA_LISTCONTAINSITEM: "%1 contén %2",
-  	CONTROL_ELSE: "se non",
   	SENSING_USERID: "identificador de usuario",
   	SENSING_LOUD: "forte?",
   	"text2speech.speakAndWaitBlock": "falar %1",
@@ -8355,6 +8631,8 @@
   	"boost.getTiltAngle": "ángulo de inclinación %1",
   	"boost.setLightHue": "pór a cor da luz a %1"
   };
+  var fullBlocks$N = [
+  ];
   var dropdowns$N = {
   };
   var ignorelt$N = [
@@ -8387,28 +8665,35 @@
   	Variables: "Variábeis",
   	"My Blocks": "Os meus bloques"
   };
-  var math$N = [
-  	"valor absoluto",
-  	"chan",
-  	"teito",
-  	"raíz cadrada",
-  	"seno",
-  	"coseno",
-  	"tanxente",
-  	"arco seno",
-  	"arco coseno",
-  	"arco tanxente",
-  	"ln",
-  	"log",
-  	"e ^",
-  	"10 ^"
-  ];
+  var of$N = {
+  	math: [
+  		"valor absoluto",
+  		"chan",
+  		"teito",
+  		"raíz cadrada",
+  		"seno",
+  		"coseno",
+  		"tanxente",
+  		"arco seno",
+  		"arco coseno",
+  		"arco tanxente",
+  		"ln",
+  		"log",
+  		"e ^",
+  		"10 ^"
+  	],
+  	list: [
+  	],
+  	text: [
+  	]
+  };
   var aliases$N = {
   };
   var name$N = "Galego";
   var percentTranslated$N = 100;
   var gl = {
   	commands: commands$N,
+  	fullBlocks: fullBlocks$N,
   	dropdowns: dropdowns$N,
   	ignorelt: ignorelt$N,
   	soundEffects: soundEffects$N,
@@ -8417,7 +8702,7 @@
   	definePrefix: definePrefix$N,
   	defineSuffix: defineSuffix$N,
   	palette: palette$N,
-  	math: math$N,
+  	of: of$N,
   	aliases: aliases$N,
   	name: name$N,
   	percentTranslated: percentTranslated$N
@@ -8496,6 +8781,7 @@
   	CONTROL_REPEAT: "maimaita %1",
   	CONTROL_FOREVER: "har abada",
   	CONTROL_IF: "idan %1 sai",
+  	CONTROL_ELSE: "ko kuma",
   	CONTROL_WAITUNTIL: "jira har %1",
   	CONTROL_REPEATUNTIL: "maimaita har zuwa %1",
   	CONTROL_STOP: "tsaya %1",
@@ -8569,7 +8855,6 @@
   	DATA_ITEMNUMOFLIST: "abun # na %1 cikin %2",
   	DATA_LENGTHOFLIST: "tsawon %1",
   	DATA_LISTCONTAINSITEM: "%1 ya ƙunshi %2?",
-  	CONTROL_ELSE: "ko kuma",
   	SENSING_USERID: "shaidar mai amfani",
   	SENSING_LOUD: "da ƙara?",
   	"text2speech.speakAndWaitBlock": "yi magana%1",
@@ -8634,6 +8919,8 @@
   	"boost.getTiltAngle": "karkata kwanar %1",
   	"boost.setLightHue": "saita launin haske zuwa %1"
   };
+  var fullBlocks$M = [
+  ];
   var dropdowns$M = {
   };
   var ignorelt$M = [
@@ -8666,28 +8953,35 @@
   	Variables: "abubuwa masu canzawa",
   	"My Blocks": "tubalai na"
   };
-  var math$M = [
-  	"abs",
-  	"ƙasa",
-  	"rufi",
-  	"sqrt",
-  	"sin",
-  	"cos",
-  	"tan",
-  	"asin",
-  	"acos",
-  	"atan",
-  	"In",
-  	"log",
-  	"e ^",
-  	"10 ^"
-  ];
+  var of$M = {
+  	math: [
+  		"abs",
+  		"ƙasa",
+  		"rufi",
+  		"sqrt",
+  		"sin",
+  		"cos",
+  		"tan",
+  		"asin",
+  		"acos",
+  		"atan",
+  		"In",
+  		"log",
+  		"e ^",
+  		"10 ^"
+  	],
+  	list: [
+  	],
+  	text: [
+  	]
+  };
   var aliases$M = {
   };
   var name$M = "Hausa";
   var percentTranslated$M = 100;
   var ha = {
   	commands: commands$M,
+  	fullBlocks: fullBlocks$M,
   	dropdowns: dropdowns$M,
   	ignorelt: ignorelt$M,
   	soundEffects: soundEffects$M,
@@ -8696,7 +8990,7 @@
   	definePrefix: definePrefix$M,
   	defineSuffix: defineSuffix$M,
   	palette: palette$M,
-  	math: math$M,
+  	of: of$M,
   	aliases: aliases$M,
   	name: name$M,
   	percentTranslated: percentTranslated$M
@@ -8775,6 +9069,7 @@
   	CONTROL_REPEAT: "חזור  %1 פעמים",
   	CONTROL_FOREVER: "לעולמים",
   	CONTROL_IF: "אם %1 אז",
+  	CONTROL_ELSE: "אחרת",
   	CONTROL_WAITUNTIL: "חכה עד ש %1",
   	CONTROL_REPEATUNTIL: "חזור עד ש %1",
   	CONTROL_STOP: "עצור %1",
@@ -8848,7 +9143,6 @@
   	DATA_ITEMNUMOFLIST: "מספר פריט של %1 ב- %2",
   	DATA_LENGTHOFLIST: "האורך של %1",
   	DATA_LISTCONTAINSITEM: "%1 מכיל %2?",
-  	CONTROL_ELSE: "אחרת",
   	SENSING_USERID: "זהות המשתמש",
   	SENSING_LOUD: "עוצמת קול?",
   	"text2speech.speakAndWaitBlock": "הקרא %1",
@@ -8913,6 +9207,8 @@
   	"boost.getTiltAngle": "זווית הטיה %1",
   	"boost.setLightHue": "קבע צבע אור ל %1"
   };
+  var fullBlocks$L = [
+  ];
   var dropdowns$L = {
   };
   var ignorelt$L = [
@@ -8945,22 +9241,28 @@
   	Variables: "משתנים",
   	"My Blocks": "הלבנים שלי"
   };
-  var math$L = [
-  	"ערך מוחלט",
-  	"עיגול למטה",
-  	"עיגול למעלה",
-  	"שורש ריבועי",
-  	"sin",
-  	"cos",
-  	"tan",
-  	"asin",
-  	"acos",
-  	"atan",
-  	"ln",
-  	"log",
-  	"‏e בחזקה",
-  	"‏10 בחזקה"
-  ];
+  var of$L = {
+  	math: [
+  		"ערך מוחלט",
+  		"עיגול למטה",
+  		"עיגול למעלה",
+  		"שורש ריבועי",
+  		"sin",
+  		"cos",
+  		"tan",
+  		"asin",
+  		"acos",
+  		"atan",
+  		"ln",
+  		"log",
+  		"‏e בחזקה",
+  		"‏10 בחזקה"
+  	],
+  	list: [
+  	],
+  	text: [
+  	]
+  };
   var aliases$L = {
   	"הסתובב שמאל %1 מעלות": "MOTION_TURNLEFT",
   	"הסתובב ימינה %1 מעלות": "MOTION_TURNRIGHT",
@@ -8971,6 +9273,7 @@
   var percentTranslated$L = 100;
   var he = {
   	commands: commands$L,
+  	fullBlocks: fullBlocks$L,
   	dropdowns: dropdowns$L,
   	ignorelt: ignorelt$L,
   	soundEffects: soundEffects$L,
@@ -8979,7 +9282,7 @@
   	definePrefix: definePrefix$L,
   	defineSuffix: defineSuffix$L,
   	palette: palette$L,
-  	math: math$L,
+  	of: of$L,
   	aliases: aliases$L,
   	name: name$L,
   	percentTranslated: percentTranslated$L
@@ -9058,6 +9361,7 @@
   	CONTROL_REPEAT: "%1 बार दोहराएं",
   	CONTROL_FOREVER: "सदैव",
   	CONTROL_IF: "यदि %1 तो",
+  	CONTROL_ELSE: "या",
   	CONTROL_WAITUNTIL: "रुके %1 क्षण तक",
   	CONTROL_REPEATUNTIL: "%1  तक दोहराते रहे",
   	CONTROL_STOP: "रोकें %1",
@@ -9131,7 +9435,6 @@
   	DATA_ITEMNUMOFLIST: "%2 में से %1 की चीज #",
   	DATA_LENGTHOFLIST: "%1 की लम्बाई",
   	DATA_LISTCONTAINSITEM: "%1 में सम्मिलित %2 ?",
-  	CONTROL_ELSE: "या",
   	SENSING_USERID: "यूजर आइ डी",
   	SENSING_LOUD: "जोरसे ?",
   	"text2speech.speakAndWaitBlock": "बोलो %1",
@@ -9196,6 +9499,8 @@
   	"boost.getTiltAngle": "झुकाव की दिशा %1",
   	"boost.setLightHue": "लाइट के रंग को %1 सेट करें"
   };
+  var fullBlocks$K = [
+  ];
   var dropdowns$K = {
   };
   var ignorelt$K = [
@@ -9228,22 +9533,28 @@
   	Variables: "चर वस्तुएँ",
   	"My Blocks": "मेरे खण्ड"
   };
-  var math$K = [
-  	"निरपेक्ष मूल्य",
-  	"floor",
-  	"ceiling",
-  	"sqrt",
-  	"sin",
-  	"cos",
-  	"tan",
-  	"asin",
-  	"acos",
-  	"atan",
-  	"ln",
-  	"log",
-  	"e ^",
-  	"10^"
-  ];
+  var of$K = {
+  	math: [
+  		"निरपेक्ष मूल्य",
+  		"floor",
+  		"ceiling",
+  		"sqrt",
+  		"sin",
+  		"cos",
+  		"tan",
+  		"asin",
+  		"acos",
+  		"atan",
+  		"ln",
+  		"log",
+  		"e ^",
+  		"10^"
+  	],
+  	list: [
+  	],
+  	text: [
+  	]
+  };
   var aliases$K = {
   	"%1 डिग्री से बाएं घूम जाए": "MOTION_TURNLEFT",
   	"%1 डिग्री से दाएं घूम जाए": "MOTION_TURNRIGHT",
@@ -9254,6 +9565,7 @@
   var percentTranslated$K = 100;
   var hi = {
   	commands: commands$K,
+  	fullBlocks: fullBlocks$K,
   	dropdowns: dropdowns$K,
   	ignorelt: ignorelt$K,
   	soundEffects: soundEffects$K,
@@ -9262,7 +9574,7 @@
   	definePrefix: definePrefix$K,
   	defineSuffix: defineSuffix$K,
   	palette: palette$K,
-  	math: math$K,
+  	of: of$K,
   	aliases: aliases$K,
   	name: name$K,
   	percentTranslated: percentTranslated$K
@@ -9341,6 +9653,7 @@
   	CONTROL_REPEAT: "ponovi %1",
   	CONTROL_FOREVER: "ponavljaj",
   	CONTROL_IF: "ako %1 onda",
+  	CONTROL_ELSE: "inače",
   	CONTROL_WAITUNTIL: "čekaj do %1",
   	CONTROL_REPEATUNTIL: "ponavljaj dok nije %1",
   	CONTROL_STOP: "zaustavi %1",
@@ -9414,7 +9727,6 @@
   	DATA_ITEMNUMOFLIST: "element # od %1 u %2",
   	DATA_LENGTHOFLIST: "dužina %1",
   	DATA_LISTCONTAINSITEM: "Sadrži li %1 %2?",
-  	CONTROL_ELSE: "inače",
   	SENSING_USERID: "korisnički id",
   	SENSING_LOUD: "glasno?",
   	"text2speech.speakAndWaitBlock": "govori %1",
@@ -9479,6 +9791,8 @@
   	"boost.getTiltAngle": "kut nagiba %1",
   	"boost.setLightHue": "set light color to %1"
   };
+  var fullBlocks$J = [
+  ];
   var dropdowns$J = {
   };
   var ignorelt$J = [
@@ -9511,22 +9825,28 @@
   	Variables: "Varijable",
   	"My Blocks": "Moji Blokovi"
   };
-  var math$J = [
-  	"apsolutno",
-  	"donja vrijednost",
-  	"gornja vrijednost",
-  	"korijen",
-  	"sin",
-  	"cos",
-  	"tan",
-  	"asin",
-  	"acos",
-  	"atan",
-  	"ln",
-  	"log",
-  	"e ^",
-  	"10 ^"
-  ];
+  var of$J = {
+  	math: [
+  		"apsolutno",
+  		"donja vrijednost",
+  		"gornja vrijednost",
+  		"korijen",
+  		"sin",
+  		"cos",
+  		"tan",
+  		"asin",
+  		"acos",
+  		"atan",
+  		"ln",
+  		"log",
+  		"e ^",
+  		"10 ^"
+  	],
+  	list: [
+  	],
+  	text: [
+  	]
+  };
   var aliases$J = {
   	"skreni lijevo %1 stupnjeva": "MOTION_TURNLEFT",
   	"skreni desno %1 stupnjeva": "MOTION_TURNRIGHT",
@@ -9537,6 +9857,7 @@
   var percentTranslated$J = 100;
   var hr = {
   	commands: commands$J,
+  	fullBlocks: fullBlocks$J,
   	dropdowns: dropdowns$J,
   	ignorelt: ignorelt$J,
   	soundEffects: soundEffects$J,
@@ -9545,7 +9866,7 @@
   	definePrefix: definePrefix$J,
   	defineSuffix: defineSuffix$J,
   	palette: palette$J,
-  	math: math$J,
+  	of: of$J,
   	aliases: aliases$J,
   	name: name$J,
   	percentTranslated: percentTranslated$J
@@ -9624,6 +9945,7 @@
   	CONTROL_REPEAT: "repete %1",
   	CONTROL_FOREVER: "pou toujou",
   	CONTROL_IF: "si %1 ebyen",
+  	CONTROL_ELSE: "si non",
   	CONTROL_WAITUNTIL: "tann jiska %1",
   	CONTROL_REPEATUNTIL: "repete jiska %1",
   	CONTROL_STOP: "kanpe %1",
@@ -9697,7 +10019,6 @@
   	DATA_ITEMNUMOFLIST: "bagay # de %1 nan %2",
   	DATA_LENGTHOFLIST: "longè %1 a",
   	DATA_LISTCONTAINSITEM: "èske %1 genyen %2 ladan l ?",
-  	CONTROL_ELSE: "si non",
   	SENSING_USERID: "idantite itilizatè",
   	SENSING_LOUD: "fò ?",
   	"text2speech.speakAndWaitBlock": "pale %1",
@@ -9762,6 +10083,8 @@
   	"boost.getTiltAngle": "ang li panche %1",
   	"boost.setLightHue": "mete koulè limyè sou %1"
   };
+  var fullBlocks$I = [
+  ];
   var dropdowns$I = {
   };
   var ignorelt$I = [
@@ -9794,28 +10117,35 @@
   	Variables: "Varyab",
   	"My Blocks": "Blòk mwen yo"
   };
-  var math$I = [
-  	"abs",
-  	"desann pou awondi chif la",
-  	"monte pou awondi chif la",
-  	"rasin kare",
-  	"sin",
-  	"cos",
-  	"tan",
-  	"asin",
-  	"acos",
-  	"atan",
-  	"ln",
-  	"log",
-  	"e ^",
-  	"10 ^"
-  ];
+  var of$I = {
+  	math: [
+  		"abs",
+  		"desann pou awondi chif la",
+  		"monte pou awondi chif la",
+  		"rasin kare",
+  		"sin",
+  		"cos",
+  		"tan",
+  		"asin",
+  		"acos",
+  		"atan",
+  		"ln",
+  		"log",
+  		"e ^",
+  		"10 ^"
+  	],
+  	list: [
+  	],
+  	text: [
+  	]
+  };
   var aliases$I = {
   };
   var name$I = "Kreyòl ayisyen";
   var percentTranslated$I = 100;
   var ht = {
   	commands: commands$I,
+  	fullBlocks: fullBlocks$I,
   	dropdowns: dropdowns$I,
   	ignorelt: ignorelt$I,
   	soundEffects: soundEffects$I,
@@ -9824,7 +10154,7 @@
   	definePrefix: definePrefix$I,
   	defineSuffix: defineSuffix$I,
   	palette: palette$I,
-  	math: math$I,
+  	of: of$I,
   	aliases: aliases$I,
   	name: name$I,
   	percentTranslated: percentTranslated$I
@@ -9903,6 +10233,7 @@
   	CONTROL_REPEAT: "ismételd %1",
   	CONTROL_FOREVER: "mindig",
   	CONTROL_IF: "ha %1 akkor",
+  	CONTROL_ELSE: "különben",
   	CONTROL_WAITUNTIL: "várj eddig: %1",
   	CONTROL_REPEATUNTIL: "ismételd eddig: %1",
   	CONTROL_STOP: "álljon le %1",
@@ -9976,7 +10307,6 @@
   	DATA_ITEMNUMOFLIST: "%1 sorszáma %2 listában",
   	DATA_LENGTHOFLIST: "%1 hossza",
   	DATA_LISTCONTAINSITEM: "%1 tartalmazza %2?",
-  	CONTROL_ELSE: "különben",
   	SENSING_USERID: "felhasználóazonosító",
   	SENSING_LOUD: "hangos?",
   	"text2speech.speakAndWaitBlock": "mondd %1",
@@ -10041,6 +10371,8 @@
   	"boost.getTiltAngle": "%1 billenési szög",
   	"boost.setLightHue": "lámpa színe legyen %1"
   };
+  var fullBlocks$H = [
+  ];
   var dropdowns$H = {
   };
   var ignorelt$H = [
@@ -10073,22 +10405,28 @@
   	Variables: "Változók",
   	"My Blocks": "Blokkjaim"
   };
-  var math$H = [
-  	"abszolut érték",
-  	"lefelé kerekítve",
-  	"felfelé kerekítve",
-  	"gyök",
-  	"sin",
-  	"cos",
-  	"tg",
-  	"arcsin",
-  	"arccos",
-  	"arctan",
-  	"ln",
-  	"log",
-  	"e^",
-  	"10^"
-  ];
+  var of$H = {
+  	math: [
+  		"abszolut érték",
+  		"lefelé kerekítve",
+  		"felfelé kerekítve",
+  		"gyök",
+  		"sin",
+  		"cos",
+  		"tg",
+  		"arcsin",
+  		"arccos",
+  		"arctan",
+  		"ln",
+  		"log",
+  		"e^",
+  		"10^"
+  	],
+  	list: [
+  	],
+  	text: [
+  	]
+  };
   var aliases$H = {
   	"fordulj balra %1 fokot": "MOTION_TURNLEFT",
   	"fordulj jobbra %1 fokot": "MOTION_TURNRIGHT",
@@ -10100,6 +10438,7 @@
   var percentTranslated$H = 100;
   var hu = {
   	commands: commands$H,
+  	fullBlocks: fullBlocks$H,
   	dropdowns: dropdowns$H,
   	ignorelt: ignorelt$H,
   	soundEffects: soundEffects$H,
@@ -10108,7 +10447,7 @@
   	definePrefix: definePrefix$H,
   	defineSuffix: defineSuffix$H,
   	palette: palette$H,
-  	math: math$H,
+  	of: of$H,
   	aliases: aliases$H,
   	name: name$H,
   	percentTranslated: percentTranslated$H
@@ -10187,6 +10526,7 @@
   	CONTROL_REPEAT: "կրկնել %1",
   	CONTROL_FOREVER: "անվերջ",
   	CONTROL_IF: "եթե %1 ապա",
+  	CONTROL_ELSE: "այլապես",
   	CONTROL_WAITUNTIL: "սպասել մինչև %1",
   	CONTROL_REPEATUNTIL: "կրկնել մինչև %1",
   	CONTROL_STOP: "դադարեցնել %1",
@@ -10260,7 +10600,6 @@
   	DATA_ITEMNUMOFLIST: "%1 տարրի համարը %2 -ում",
   	DATA_LENGTHOFLIST: "%1 -ի երկարությունը",
   	DATA_LISTCONTAINSITEM: "%1-ը պարունակու՞մ է %2",
-  	CONTROL_ELSE: "այլապես",
   	SENSING_USERID: "օգտատիրոջ id",
   	SENSING_LOUD: "ձայնը բա՞րձր է",
   	"text2speech.speakAndWaitBlock": "ասել %1",
@@ -10325,6 +10664,8 @@
   	"boost.getTiltAngle": "թեքել անկյունը %1",
   	"boost.setLightHue": "սահմանել լույսի գույնը %1"
   };
+  var fullBlocks$G = [
+  ];
   var dropdowns$G = {
   };
   var ignorelt$G = [
@@ -10357,28 +10698,35 @@
   	Variables: "Փոփոխա­­կան",
   	"My Blocks": "Մասնիկ"
   };
-  var math$G = [
-  	"մոդուլ",
-  	"ամբողջ թիվ՝ վար",
-  	"ամբողջ թիվ՝ վեր",
-  	"արմատ",
-  	"sin",
-  	"cos",
-  	"tan",
-  	"arcsin",
-  	"arccos",
-  	"arctan",
-  	"ln",
-  	"log",
-  	"e ^",
-  	"10 ^"
-  ];
+  var of$G = {
+  	math: [
+  		"մոդուլ",
+  		"ամբողջ թիվ՝ վար",
+  		"ամբողջ թիվ՝ վեր",
+  		"արմատ",
+  		"sin",
+  		"cos",
+  		"tan",
+  		"arcsin",
+  		"arccos",
+  		"arctan",
+  		"ln",
+  		"log",
+  		"e ^",
+  		"10 ^"
+  	],
+  	list: [
+  	],
+  	text: [
+  	]
+  };
   var aliases$G = {
   };
   var name$G = "Հայերեն";
   var percentTranslated$G = 100;
   var hy = {
   	commands: commands$G,
+  	fullBlocks: fullBlocks$G,
   	dropdowns: dropdowns$G,
   	ignorelt: ignorelt$G,
   	soundEffects: soundEffects$G,
@@ -10387,7 +10735,7 @@
   	definePrefix: definePrefix$G,
   	defineSuffix: defineSuffix$G,
   	palette: palette$G,
-  	math: math$G,
+  	of: of$G,
   	aliases: aliases$G,
   	name: name$G,
   	percentTranslated: percentTranslated$G
@@ -10466,6 +10814,7 @@
   	CONTROL_REPEAT: "ulangi %1 kali",
   	CONTROL_FOREVER: "selamanya",
   	CONTROL_IF: "jika %1",
+  	CONTROL_ELSE: "jika tidak",
   	CONTROL_WAITUNTIL: "tunggu sampai %1",
   	CONTROL_REPEATUNTIL: "ulangi sampai %1",
   	CONTROL_STOP: "berhenti %1",
@@ -10539,7 +10888,6 @@
   	DATA_ITEMNUMOFLIST: "benda # dari %1 di %2",
   	DATA_LENGTHOFLIST: "panjang dari %1",
   	DATA_LISTCONTAINSITEM: "%1 berisi %2?",
-  	CONTROL_ELSE: "jika tidak",
   	SENSING_USERID: "id pengguna",
   	SENSING_LOUD: "nyaring?",
   	"text2speech.speakAndWaitBlock": "ujarkan %1",
@@ -10604,6 +10952,8 @@
   	"boost.getTiltAngle": "sudut kemiringan %1",
   	"boost.setLightHue": "atur warna lampu ke %1"
   };
+  var fullBlocks$F = [
+  ];
   var dropdowns$F = {
   };
   var ignorelt$F = [
@@ -10636,22 +10986,28 @@
   	Variables: "Variabel",
   	"My Blocks": "Balok Saya"
   };
-  var math$F = [
-  	"abs",
-  	"floor",
-  	"ceil",
-  	"akar kuadrat",
-  	"sin",
-  	"cos",
-  	"tan",
-  	"asin",
-  	"acos",
-  	"atan",
-  	"ln",
-  	"log",
-  	"e ^",
-  	"10 ^"
-  ];
+  var of$F = {
+  	math: [
+  		"abs",
+  		"floor",
+  		"ceil",
+  		"akar kuadrat",
+  		"sin",
+  		"cos",
+  		"tan",
+  		"asin",
+  		"acos",
+  		"atan",
+  		"ln",
+  		"log",
+  		"e ^",
+  		"10 ^"
+  	],
+  	list: [
+  	],
+  	text: [
+  	]
+  };
   var aliases$F = {
   	"putar ke kiri %1 derajat": "MOTION_TURNLEFT",
   	"putar ke kanan %1 derajat": "MOTION_TURNRIGHT",
@@ -10662,6 +11018,7 @@
   var percentTranslated$F = 100;
   var id = {
   	commands: commands$F,
+  	fullBlocks: fullBlocks$F,
   	dropdowns: dropdowns$F,
   	ignorelt: ignorelt$F,
   	soundEffects: soundEffects$F,
@@ -10670,7 +11027,7 @@
   	definePrefix: definePrefix$F,
   	defineSuffix: defineSuffix$F,
   	palette: palette$F,
-  	math: math$F,
+  	of: of$F,
   	aliases: aliases$F,
   	name: name$F,
   	percentTranslated: percentTranslated$F
@@ -10749,6 +11106,7 @@
   	CONTROL_REPEAT: "endurtaka %1 sinnum",
   	CONTROL_FOREVER: "endalaust",
   	CONTROL_IF: "ef %1 þá",
+  	CONTROL_ELSE: "annars",
   	CONTROL_WAITUNTIL: "bíða þangað til %1",
   	CONTROL_REPEATUNTIL: "endurtaka þar til %1",
   	CONTROL_STOP: "stöðva %1",
@@ -10822,7 +11180,6 @@
   	DATA_ITEMNUMOFLIST: "item # of %1 in %2",
   	DATA_LENGTHOFLIST: "lengd %1",
   	DATA_LISTCONTAINSITEM: "inniheldur %1, %2?",
-  	CONTROL_ELSE: "annars",
   	SENSING_USERID: "einkenni notenda",
   	SENSING_LOUD: "hávær?",
   	"text2speech.speakAndWaitBlock": "tala %1",
@@ -10887,6 +11244,8 @@
   	"boost.getTiltAngle": "tilt angle %1",
   	"boost.setLightHue": "set light color to %1"
   };
+  var fullBlocks$E = [
+  ];
   var dropdowns$E = {
   };
   var ignorelt$E = [
@@ -10919,28 +11278,35 @@
   	Variables: "Breytur",
   	"My Blocks": "Mínir kubbar"
   };
-  var math$E = [
-  	"abs",
-  	"rúna niður",
-  	"rúna upp",
-  	"kvaðratrót",
-  	"sínus",
-  	"kósínus",
-  	"tangens",
-  	"arksínus",
-  	"arkcósínus",
-  	"arktangens",
-  	"ln",
-  	"log",
-  	"e ^",
-  	"10 ^"
-  ];
+  var of$E = {
+  	math: [
+  		"abs",
+  		"rúna niður",
+  		"rúna upp",
+  		"kvaðratrót",
+  		"sínus",
+  		"kósínus",
+  		"tangens",
+  		"arksínus",
+  		"arkcósínus",
+  		"arktangens",
+  		"ln",
+  		"log",
+  		"e ^",
+  		"10 ^"
+  	],
+  	list: [
+  	],
+  	text: [
+  	]
+  };
   var aliases$E = {
   };
   var name$E = "Íslenska";
   var percentTranslated$E = 100;
   var is = {
   	commands: commands$E,
+  	fullBlocks: fullBlocks$E,
   	dropdowns: dropdowns$E,
   	ignorelt: ignorelt$E,
   	soundEffects: soundEffects$E,
@@ -10949,7 +11315,7 @@
   	definePrefix: definePrefix$E,
   	defineSuffix: defineSuffix$E,
   	palette: palette$E,
-  	math: math$E,
+  	of: of$E,
   	aliases: aliases$E,
   	name: name$E,
   	percentTranslated: percentTranslated$E
@@ -11028,6 +11394,7 @@
   	CONTROL_REPEAT: "ripeti %1  volte",
   	CONTROL_FOREVER: "per sempre",
   	CONTROL_IF: "se %1 allora",
+  	CONTROL_ELSE: "altrimenti",
   	CONTROL_WAITUNTIL: "attendi fino a quando %1",
   	CONTROL_REPEATUNTIL: "ripeti fino a quando %1",
   	CONTROL_STOP: "ferma %1",
@@ -11101,7 +11468,6 @@
   	DATA_ITEMNUMOFLIST: "posizione di %1 in %2",
   	DATA_LENGTHOFLIST: "lunghezza di %1",
   	DATA_LISTCONTAINSITEM: "%1 contiene %2",
-  	CONTROL_ELSE: "altrimenti",
   	SENSING_USERID: "user id",
   	SENSING_LOUD: "volume alto?",
   	"text2speech.speakAndWaitBlock": "pronuncia %1",
@@ -11166,6 +11532,8 @@
   	"boost.getTiltAngle": "angolo inclinazione %1",
   	"boost.setLightHue": "porta colore luci a %1"
   };
+  var fullBlocks$D = [
+  ];
   var dropdowns$D = {
   };
   var ignorelt$D = [
@@ -11198,22 +11566,28 @@
   	Variables: "Variabili",
   	"My Blocks": "I Miei Blocchi"
   };
-  var math$D = [
-  	"valore assoluto",
-  	"intero inferiore",
-  	"intero superiore",
-  	"radice quadrata",
-  	"sen",
-  	"cos",
-  	"tan",
-  	"arcsen",
-  	"arccos",
-  	"arctan",
-  	"ln",
-  	"log",
-  	"e ^",
-  	"10 ^"
-  ];
+  var of$D = {
+  	math: [
+  		"valore assoluto",
+  		"intero inferiore",
+  		"intero superiore",
+  		"radice quadrata",
+  		"sen",
+  		"cos",
+  		"tan",
+  		"arcsen",
+  		"arccos",
+  		"arctan",
+  		"ln",
+  		"log",
+  		"e ^",
+  		"10 ^"
+  	],
+  	list: [
+  	],
+  	text: [
+  	]
+  };
   var aliases$D = {
   	"ruota in senso antiorario di %1 gradi": "MOTION_TURNLEFT",
   	"ruota in senso orario di %1 gradi": "MOTION_TURNRIGHT",
@@ -11224,6 +11598,7 @@
   var percentTranslated$D = 100;
   var it = {
   	commands: commands$D,
+  	fullBlocks: fullBlocks$D,
   	dropdowns: dropdowns$D,
   	ignorelt: ignorelt$D,
   	soundEffects: soundEffects$D,
@@ -11232,7 +11607,7 @@
   	definePrefix: definePrefix$D,
   	defineSuffix: defineSuffix$D,
   	palette: palette$D,
-  	math: math$D,
+  	of: of$D,
   	aliases: aliases$D,
   	name: name$D,
   	percentTranslated: percentTranslated$D
@@ -11311,6 +11686,7 @@
   	CONTROL_REPEAT: "%1 回繰り返す",
   	CONTROL_FOREVER: "ずっと",
   	CONTROL_IF: "もし %1 なら",
+  	CONTROL_ELSE: "でなければ",
   	CONTROL_WAITUNTIL: "%1 まで待つ",
   	CONTROL_REPEATUNTIL: "%1 まで繰り返す",
   	CONTROL_STOP: " %1",
@@ -11384,7 +11760,6 @@
   	DATA_ITEMNUMOFLIST: "%2中の%1の場所",
   	DATA_LENGTHOFLIST: "%1 の長さ",
   	DATA_LISTCONTAINSITEM: "%1 に %2 が含まれる",
-  	CONTROL_ELSE: "でなければ",
   	SENSING_USERID: "ユーザーID",
   	SENSING_LOUD: "うるさい",
   	"text2speech.speakAndWaitBlock": "%1としゃべる",
@@ -11449,6 +11824,8 @@
   	"boost.getTiltAngle": "%1方向の傾き",
   	"boost.setLightHue": "ライトの色を%1にする"
   };
+  var fullBlocks$C = [
+  ];
   var dropdowns$C = {
   };
   var ignorelt$C = [
@@ -11481,22 +11858,28 @@
   	Variables: "変数",
   	"My Blocks": "ブロック定義"
   };
-  var math$C = [
-  	"絶対値",
-  	"切り下げ",
-  	"切り上げ",
-  	"平方根",
-  	"sin",
-  	"cos",
-  	"tan",
-  	"asin",
-  	"acos",
-  	"atan",
-  	"ln",
-  	"log",
-  	"e ^",
-  	"10 ^"
-  ];
+  var of$C = {
+  	math: [
+  		"絶対値",
+  		"切り下げ",
+  		"切り上げ",
+  		"平方根",
+  		"sin",
+  		"cos",
+  		"tan",
+  		"asin",
+  		"acos",
+  		"atan",
+  		"ln",
+  		"log",
+  		"e ^",
+  		"10 ^"
+  	],
+  	list: [
+  	],
+  	text: [
+  	]
+  };
   var aliases$C = {
   	"左に %1 度回す": "MOTION_TURNLEFT",
   	"反時計回りに %1 度回す": "MOTION_TURNLEFT",
@@ -11509,6 +11892,7 @@
   var percentTranslated$C = 100;
   var ja = {
   	commands: commands$C,
+  	fullBlocks: fullBlocks$C,
   	dropdowns: dropdowns$C,
   	ignorelt: ignorelt$C,
   	soundEffects: soundEffects$C,
@@ -11517,7 +11901,7 @@
   	definePrefix: definePrefix$C,
   	defineSuffix: defineSuffix$C,
   	palette: palette$C,
-  	math: math$C,
+  	of: of$C,
   	aliases: aliases$C,
   	name: name$C,
   	percentTranslated: percentTranslated$C
@@ -11596,6 +11980,7 @@
   	CONTROL_REPEAT: "%1 かいくりかえす",
   	CONTROL_FOREVER: "ずっと",
   	CONTROL_IF: "もし %1 なら",
+  	CONTROL_ELSE: "でなければ",
   	CONTROL_WAITUNTIL: "%1 までまつ",
   	CONTROL_REPEATUNTIL: "%1 までくりかえす",
   	CONTROL_STOP: " %1",
@@ -11669,7 +12054,6 @@
   	DATA_ITEMNUMOFLIST: "%2なかの%1のばしょ",
   	DATA_LENGTHOFLIST: "%1 のながさ",
   	DATA_LISTCONTAINSITEM: "%1 に %2 がふくまれる",
-  	CONTROL_ELSE: "でなければ",
   	SENSING_USERID: "ユーザーID",
   	SENSING_LOUD: "うるさい",
   	"text2speech.speakAndWaitBlock": "%1としゃべる",
@@ -11734,6 +12118,8 @@
   	"boost.getTiltAngle": "%1ほうこうのかたむき",
   	"boost.setLightHue": "ライトのいろを%1にする"
   };
+  var fullBlocks$B = [
+  ];
   var dropdowns$B = {
   };
   var ignorelt$B = [
@@ -11766,22 +12152,28 @@
   	Variables: "へんすう",
   	"My Blocks": "ブロックていぎ"
   };
-  var math$B = [
-  	"ぜったいち",
-  	"きりさげ",
-  	"きりあげ",
-  	"へいほうこん",
-  	"sin",
-  	"cos",
-  	"tan",
-  	"asin",
-  	"acos",
-  	"atan",
-  	"ln",
-  	"log",
-  	"e ^",
-  	"10 ^"
-  ];
+  var of$B = {
+  	math: [
+  		"ぜったいち",
+  		"きりさげ",
+  		"きりあげ",
+  		"へいほうこん",
+  		"sin",
+  		"cos",
+  		"tan",
+  		"asin",
+  		"acos",
+  		"atan",
+  		"ln",
+  		"log",
+  		"e ^",
+  		"10 ^"
+  	],
+  	list: [
+  	],
+  	text: [
+  	]
+  };
   var aliases$B = {
   	"ひだりに %1 どまわす": "MOTION_TURNLEFT",
   	"はんとけいまわりに %1 どまわす": "MOTION_TURNLEFT",
@@ -11794,6 +12186,7 @@
   var percentTranslated$B = 100;
   var ja_Hira = {
   	commands: commands$B,
+  	fullBlocks: fullBlocks$B,
   	dropdowns: dropdowns$B,
   	ignorelt: ignorelt$B,
   	soundEffects: soundEffects$B,
@@ -11802,7 +12195,7 @@
   	definePrefix: definePrefix$B,
   	defineSuffix: defineSuffix$B,
   	palette: palette$B,
-  	math: math$B,
+  	of: of$B,
   	aliases: aliases$B,
   	name: name$B,
   	percentTranslated: percentTranslated$B
@@ -11881,6 +12274,7 @@
   	CONTROL_REPEAT: "გაიმეორე %1ჯერ",
   	CONTROL_FOREVER: "მუდმივად",
   	CONTROL_IF: "თუ %1 მაშინ",
+  	CONTROL_ELSE: "სხვა შემთხვევაში",
   	CONTROL_WAITUNTIL: "იცადე მანამ %1",
   	CONTROL_REPEATUNTIL: "გაიმეორე მანამ %1",
   	CONTROL_STOP: "გააჩერე %1",
@@ -11954,7 +12348,6 @@
   	DATA_ITEMNUMOFLIST: "%1 ელემენტის № %2ში",
   	DATA_LENGTHOFLIST: "%1ს სიგრძე",
   	DATA_LISTCONTAINSITEM: "%1 შეიცავს %2ს?",
-  	CONTROL_ELSE: "სხვა შემთხვევაში",
   	SENSING_USERID: "მომხმარებლის id",
   	SENSING_LOUD: "ხმა მაღალია?",
   	"text2speech.speakAndWaitBlock": "თქვი %1",
@@ -12019,6 +12412,8 @@
   	"boost.getTiltAngle": "დახრის კუთხე %1",
   	"boost.setLightHue": "დააყენე ნათურის ფერი %1"
   };
+  var fullBlocks$A = [
+  ];
   var dropdowns$A = {
   };
   var ignorelt$A = [
@@ -12051,28 +12446,35 @@
   	Variables: "ცვლადები",
   	"My Blocks": "ჩემი ბლოკები"
   };
-  var math$A = [
-  	"abs",
-  	"უმცირესი მთელი",
-  	"უდიდესი მთელი",
-  	"კვადრატული ფესვი",
-  	"sin",
-  	"cos",
-  	"tan",
-  	"asin",
-  	"acos",
-  	"atan",
-  	"ln",
-  	"log",
-  	"e ^",
-  	"10^"
-  ];
+  var of$A = {
+  	math: [
+  		"abs",
+  		"უმცირესი მთელი",
+  		"უდიდესი მთელი",
+  		"კვადრატული ფესვი",
+  		"sin",
+  		"cos",
+  		"tan",
+  		"asin",
+  		"acos",
+  		"atan",
+  		"ln",
+  		"log",
+  		"e ^",
+  		"10^"
+  	],
+  	list: [
+  	],
+  	text: [
+  	]
+  };
   var aliases$A = {
   };
   var name$A = "ქართული ენა";
   var percentTranslated$A = 100;
   var ka = {
   	commands: commands$A,
+  	fullBlocks: fullBlocks$A,
   	dropdowns: dropdowns$A,
   	ignorelt: ignorelt$A,
   	soundEffects: soundEffects$A,
@@ -12081,7 +12483,7 @@
   	definePrefix: definePrefix$A,
   	defineSuffix: defineSuffix$A,
   	palette: palette$A,
-  	math: math$A,
+  	of: of$A,
   	aliases: aliases$A,
   	name: name$A,
   	percentTranslated: percentTranslated$A
@@ -12160,6 +12562,7 @@
   	CONTROL_REPEAT: "%1 рет қайталау",
   	CONTROL_FOREVER: "әрқашан",
   	CONTROL_IF: "егер %1, онда",
+  	CONTROL_ELSE: "әйтпесе",
   	CONTROL_WAITUNTIL: "%1 секундка дейін күту",
   	CONTROL_REPEATUNTIL: "%1 болғанға дейін қайталау",
   	CONTROL_STOP: "тоқтату %1",
@@ -12233,7 +12636,6 @@
   	DATA_ITEMNUMOFLIST: "%2дегі %1 мүшесінің #",
   	DATA_LENGTHOFLIST: "%1дің ұзындығы",
   	DATA_LISTCONTAINSITEM: "%1де %2 бар ма?",
-  	CONTROL_ELSE: "әйтпесе",
   	SENSING_USERID: "қолданушы id",
   	SENSING_LOUD: "дауысу тым жоғары ма?",
   	"text2speech.speakAndWaitBlock": "%1 айту",
@@ -12298,6 +12700,8 @@
   	"boost.getTiltAngle": "%1 еңкею бұрышы",
   	"boost.setLightHue": "жарық түсін %1 орнат"
   };
+  var fullBlocks$z = [
+  ];
   var dropdowns$z = {
   };
   var ignorelt$z = [
@@ -12332,28 +12736,35 @@
   	Variables: "айнымалылар",
   	"My Blocks": "Менің блоктарым"
   };
-  var math$z = [
-  	"модуль",
-  	"еден",
-  	"шектеу",
-  	"квадрат түбір",
-  	"sin",
-  	"cos",
-  	"tan",
-  	"asin",
-  	"acos",
-  	"atan",
-  	"ln",
-  	"log",
-  	"e ^",
-  	"10 ^"
-  ];
+  var of$z = {
+  	math: [
+  		"модуль",
+  		"еден",
+  		"шектеу",
+  		"квадрат түбір",
+  		"sin",
+  		"cos",
+  		"tan",
+  		"asin",
+  		"acos",
+  		"atan",
+  		"ln",
+  		"log",
+  		"e ^",
+  		"10 ^"
+  	],
+  	list: [
+  	],
+  	text: [
+  	]
+  };
   var aliases$z = {
   };
   var name$z = "қазақша";
   var percentTranslated$z = 100;
   var kk = {
   	commands: commands$z,
+  	fullBlocks: fullBlocks$z,
   	dropdowns: dropdowns$z,
   	ignorelt: ignorelt$z,
   	soundEffects: soundEffects$z,
@@ -12362,7 +12773,7 @@
   	definePrefix: definePrefix$z,
   	defineSuffix: defineSuffix$z,
   	palette: palette$z,
-  	math: math$z,
+  	of: of$z,
   	aliases: aliases$z,
   	name: name$z,
   	percentTranslated: percentTranslated$z
@@ -12441,6 +12852,7 @@
   	CONTROL_REPEAT: "ធ្វើដដែលៗ %1 ដង",
   	CONTROL_FOREVER: "រហូត",
   	CONTROL_IF: "ប្រសិន %1 នោះ",
+  	CONTROL_ELSE: "បើមិនដូច្នោះទេ",
   	CONTROL_WAITUNTIL: "ចាំរហូតដល់ %1",
   	CONTROL_REPEATUNTIL: "ធ្វើដដែលៗរហូតដល់ %1",
   	CONTROL_STOP: "ឈប់ %1",
@@ -12514,7 +12926,6 @@
   	DATA_ITEMNUMOFLIST: "លេខទីតាំងនៃធាតុ %1 ក្នុង %2",
   	DATA_LENGTHOFLIST: "ប្រវែងនៃ %1",
   	DATA_LISTCONTAINSITEM: "%1 មាន %2?",
-  	CONTROL_ELSE: "បើមិនដូច្នោះទេ",
   	SENSING_USERID: "លេខសម្គាល់អ្នកប្រើ",
   	SENSING_LOUD: "លឺ?",
   	"text2speech.speakAndWaitBlock": "និយាយ %1",
@@ -12579,6 +12990,8 @@
   	"boost.getTiltAngle": "លម្អៀងមុំ %1",
   	"boost.setLightHue": "ដាក់ពណ៌របស់ភ្លើងទៅជា %1"
   };
+  var fullBlocks$y = [
+  ];
   var dropdowns$y = {
   };
   var ignorelt$y = [
@@ -12611,28 +13024,35 @@
   	Variables: "អថេរ",
   	"My Blocks": "ប្លុកខ្ញុំ"
   };
-  var math$y = [
-  	"តម្លៃដាច់ខាត",
-  	"បង្គត់ចុះ",
-  	"បង្គត់ឡើង",
-  	"ឫស​ការ៉េ",
-  	"sin",
-  	"cos",
-  	"tan",
-  	"asin",
-  	"acos",
-  	"atan",
-  	"ln",
-  	"log",
-  	"e ^",
-  	"10 ^"
-  ];
+  var of$y = {
+  	math: [
+  		"តម្លៃដាច់ខាត",
+  		"បង្គត់ចុះ",
+  		"បង្គត់ឡើង",
+  		"ឫស​ការ៉េ",
+  		"sin",
+  		"cos",
+  		"tan",
+  		"asin",
+  		"acos",
+  		"atan",
+  		"ln",
+  		"log",
+  		"e ^",
+  		"10 ^"
+  	],
+  	list: [
+  	],
+  	text: [
+  	]
+  };
   var aliases$y = {
   };
   var name$y = "ភាសាខ្មែរ";
   var percentTranslated$y = 100;
   var km = {
   	commands: commands$y,
+  	fullBlocks: fullBlocks$y,
   	dropdowns: dropdowns$y,
   	ignorelt: ignorelt$y,
   	soundEffects: soundEffects$y,
@@ -12641,7 +13061,7 @@
   	definePrefix: definePrefix$y,
   	defineSuffix: defineSuffix$y,
   	palette: palette$y,
-  	math: math$y,
+  	of: of$y,
   	aliases: aliases$y,
   	name: name$y,
   	percentTranslated: percentTranslated$y
@@ -12720,6 +13140,7 @@
   	CONTROL_REPEAT: "%1 번 반복하기",
   	CONTROL_FOREVER: "무한 반복하기",
   	CONTROL_IF: "만약 %1 (이)라면",
+  	CONTROL_ELSE: "아니면",
   	CONTROL_WAITUNTIL: "%1 까지 기다리기",
   	CONTROL_REPEATUNTIL: "%1 까지 반복하기",
   	CONTROL_STOP: "멈추기 %1",
@@ -12793,7 +13214,6 @@
   	DATA_ITEMNUMOFLIST: "%2 리스트에서 %1 항목의 위치",
   	DATA_LENGTHOFLIST: "%1 의 길이",
   	DATA_LISTCONTAINSITEM: "%1 이(가) %2 을(를) 포함하는가?",
-  	CONTROL_ELSE: "아니면",
   	SENSING_USERID: "사용자 번호",
   	SENSING_LOUD: "소리가 큰가?",
   	"text2speech.speakAndWaitBlock": "%1 말하기",
@@ -12858,6 +13278,8 @@
   	"boost.getTiltAngle": "tilt angle %1",
   	"boost.setLightHue": "set light color to %1"
   };
+  var fullBlocks$x = [
+  ];
   var dropdowns$x = {
   };
   var ignorelt$x = [
@@ -12890,28 +13312,35 @@
   	Variables: "변수",
   	"My Blocks": "내 블록"
   };
-  var math$x = [
-  	"절댓값",
-  	"버림",
-  	"올림",
-  	"제곱근",
-  	"sin",
-  	"cos",
-  	"tan",
-  	"asin",
-  	"acos",
-  	"atan",
-  	"ln",
-  	"log",
-  	"e ^",
-  	"10 ^"
-  ];
+  var of$x = {
+  	math: [
+  		"절댓값",
+  		"버림",
+  		"올림",
+  		"제곱근",
+  		"sin",
+  		"cos",
+  		"tan",
+  		"asin",
+  		"acos",
+  		"atan",
+  		"ln",
+  		"log",
+  		"e ^",
+  		"10 ^"
+  	],
+  	list: [
+  	],
+  	text: [
+  	]
+  };
   var aliases$x = {
   };
   var name$x = "한국어";
   var percentTranslated$x = 100;
   var ko = {
   	commands: commands$x,
+  	fullBlocks: fullBlocks$x,
   	dropdowns: dropdowns$x,
   	ignorelt: ignorelt$x,
   	soundEffects: soundEffects$x,
@@ -12920,7 +13349,7 @@
   	definePrefix: definePrefix$x,
   	defineSuffix: defineSuffix$x,
   	palette: palette$x,
-  	math: math$x,
+  	of: of$x,
   	aliases: aliases$x,
   	name: name$x,
   	percentTranslated: percentTranslated$x
@@ -12999,6 +13428,7 @@
   	CONTROL_REPEAT: "%1 caran dubare bike",
   	CONTROL_FOREVER: "berdewamî",
   	CONTROL_IF: "heke %1 be",
+  	CONTROL_ELSE: "ne ew be",
   	CONTROL_WAITUNTIL: "heta ku bibe %1 bisekine",
   	CONTROL_REPEATUNTIL: "heta ku bibe %1 dubare bike",
   	CONTROL_STOP: "rawestîne %1",
@@ -13072,7 +13502,6 @@
   	DATA_ITEMNUMOFLIST: "hêmana %1 ya %2ê",
   	DATA_LENGTHOFLIST: "dirêjiya %1ê",
   	DATA_LISTCONTAINSITEM: "%1 di nav %2ê de heye?",
-  	CONTROL_ELSE: "ne ew be",
   	SENSING_USERID: "nasnameya bikarhêner",
   	SENSING_LOUD: "denge bilind?",
   	"text2speech.speakAndWaitBlock": "bipeyive %1",
@@ -13137,6 +13566,8 @@
   	"boost.getTiltAngle": "pîvana xwarbûnê %1",
   	"boost.setLightHue": "rengê ronahiyê bike %1"
   };
+  var fullBlocks$w = [
+  ];
   var dropdowns$w = {
   };
   var ignorelt$w = [
@@ -13171,28 +13602,35 @@
   	Variables: "Guherok",
   	"My Blocks": "Blokên Min"
   };
-  var math$w = [
-  	"nirxê mutlaq",
-  	"bigindirîne erdê",
-  	"bigindirîne jorê",
-  	"sqrt",
-  	"sin",
-  	"cos",
-  	"tan",
-  	"asin",
-  	"acos",
-  	"atan",
-  	"In",
-  	"log",
-  	"e ^",
-  	"10 ^"
-  ];
+  var of$w = {
+  	math: [
+  		"nirxê mutlaq",
+  		"bigindirîne erdê",
+  		"bigindirîne jorê",
+  		"sqrt",
+  		"sin",
+  		"cos",
+  		"tan",
+  		"asin",
+  		"acos",
+  		"atan",
+  		"In",
+  		"log",
+  		"e ^",
+  		"10 ^"
+  	],
+  	list: [
+  	],
+  	text: [
+  	]
+  };
   var aliases$w = {
   };
   var name$w = "Kurdî";
   var percentTranslated$w = 100;
   var ku = {
   	commands: commands$w,
+  	fullBlocks: fullBlocks$w,
   	dropdowns: dropdowns$w,
   	ignorelt: ignorelt$w,
   	soundEffects: soundEffects$w,
@@ -13201,7 +13639,7 @@
   	definePrefix: definePrefix$w,
   	defineSuffix: defineSuffix$w,
   	palette: palette$w,
-  	math: math$w,
+  	of: of$w,
   	aliases: aliases$w,
   	name: name$w,
   	percentTranslated: percentTranslated$w
@@ -13280,6 +13718,7 @@
   	CONTROL_REPEAT: "kartok %1",
   	CONTROL_FOREVER: "kartok be galo",
   	CONTROL_IF: "jeigu %1",
+  	CONTROL_ELSE: "kitais atvejais",
   	CONTROL_WAITUNTIL: "palauk, kol pasidarys %1",
   	CONTROL_REPEATUNTIL: "kartok, kol pasidarys %1",
   	CONTROL_STOP: "sustok %1",
@@ -13353,7 +13792,6 @@
   	DATA_ITEMNUMOFLIST: "%1 vieta sąraše %2",
   	DATA_LENGTHOFLIST: "%1 ilgis",
   	DATA_LISTCONTAINSITEM: "%1 turi %2?",
-  	CONTROL_ELSE: "kitais atvejais",
   	SENSING_USERID: "vartotojo ID",
   	SENSING_LOUD: "garsiai?",
   	"text2speech.speakAndWaitBlock": "sakyti %1",
@@ -13418,6 +13856,8 @@
   	"boost.getTiltAngle": "paversk kryptimi %1",
   	"boost.setLightHue": "keisti šviesos spalvą į %1"
   };
+  var fullBlocks$v = [
+  ];
   var dropdowns$v = {
   };
   var ignorelt$v = [
@@ -13450,28 +13890,35 @@
   	Variables: "Kintamieji",
   	"My Blocks": "Mano Komandos"
   };
-  var math$v = [
-  	"teigiama reikšmė",
-  	"apvalinimas žemyn",
-  	"apvalinimas aukštyn",
-  	"kvadratinė šaknis",
-  	"sin",
-  	"cos",
-  	"tg",
-  	"arcsin",
-  	"arccos",
-  	"arctg",
-  	"ln",
-  	"log",
-  	"e ^",
-  	"10 ^"
-  ];
+  var of$v = {
+  	math: [
+  		"teigiama reikšmė",
+  		"apvalinimas žemyn",
+  		"apvalinimas aukštyn",
+  		"kvadratinė šaknis",
+  		"sin",
+  		"cos",
+  		"tg",
+  		"arcsin",
+  		"arccos",
+  		"arctg",
+  		"ln",
+  		"log",
+  		"e ^",
+  		"10 ^"
+  	],
+  	list: [
+  	],
+  	text: [
+  	]
+  };
   var aliases$v = {
   };
   var name$v = "Lietuvių";
   var percentTranslated$v = 100;
   var lt = {
   	commands: commands$v,
+  	fullBlocks: fullBlocks$v,
   	dropdowns: dropdowns$v,
   	ignorelt: ignorelt$v,
   	soundEffects: soundEffects$v,
@@ -13480,7 +13927,7 @@
   	definePrefix: definePrefix$v,
   	defineSuffix: defineSuffix$v,
   	palette: palette$v,
-  	math: math$v,
+  	of: of$v,
   	aliases: aliases$v,
   	name: name$v,
   	percentTranslated: percentTranslated$v
@@ -13559,6 +14006,7 @@
   	CONTROL_REPEAT: "atkārtot %1",
   	CONTROL_FOREVER: "nepārtraukti",
   	CONTROL_IF: "ja %1 tad",
+  	CONTROL_ELSE: "citādi",
   	CONTROL_WAITUNTIL: "gaidīt līdz %1",
   	CONTROL_REPEATUNTIL: "atkārtot līdz %1",
   	CONTROL_STOP: "apturēt %1",
@@ -13632,7 +14080,6 @@
   	DATA_ITEMNUMOFLIST: "vienuma %1 # sarakstā %2",
   	DATA_LENGTHOFLIST: "%1 garums",
   	DATA_LISTCONTAINSITEM: "%1 satur %2?",
-  	CONTROL_ELSE: "citādi",
   	SENSING_USERID: "lietotāja id",
   	SENSING_LOUD: "skaļš?",
   	"text2speech.speakAndWaitBlock": "teikt %1",
@@ -13697,6 +14144,8 @@
   	"boost.getTiltAngle": "tilt angle %1",
   	"boost.setLightHue": "set light color to %1"
   };
+  var fullBlocks$u = [
+  ];
   var dropdowns$u = {
   };
   var ignorelt$u = [
@@ -13729,28 +14178,35 @@
   	Variables: "Mainīgie",
   	"My Blocks": "Mani bloki"
   };
-  var math$u = [
-  	"modulis (absolūtā vērtība)",
-  	"apaļot uz leju",
-  	"apaļot uz augšu",
-  	"kvadrātsakne",
-  	"sin",
-  	"cos",
-  	"tan",
-  	"asin",
-  	"acos",
-  	"atan",
-  	"In",
-  	"log",
-  	"e ^",
-  	"10 ^"
-  ];
+  var of$u = {
+  	math: [
+  		"modulis (absolūtā vērtība)",
+  		"apaļot uz leju",
+  		"apaļot uz augšu",
+  		"kvadrātsakne",
+  		"sin",
+  		"cos",
+  		"tan",
+  		"asin",
+  		"acos",
+  		"atan",
+  		"In",
+  		"log",
+  		"e ^",
+  		"10 ^"
+  	],
+  	list: [
+  	],
+  	text: [
+  	]
+  };
   var aliases$u = {
   };
   var name$u = "Latviešu";
   var percentTranslated$u = 100;
   var lv = {
   	commands: commands$u,
+  	fullBlocks: fullBlocks$u,
   	dropdowns: dropdowns$u,
   	ignorelt: ignorelt$u,
   	soundEffects: soundEffects$u,
@@ -13759,7 +14215,7 @@
   	definePrefix: definePrefix$u,
   	defineSuffix: defineSuffix$u,
   	palette: palette$u,
-  	math: math$u,
+  	of: of$u,
   	aliases: aliases$u,
   	name: name$u,
   	percentTranslated: percentTranslated$u
@@ -13838,6 +14294,7 @@
   	CONTROL_REPEAT: "tōaitia %1",
   	CONTROL_FOREVER: "mō ake, ake mahia",
   	CONTROL_IF: "mēnā %1 mahia",
+  	CONTROL_ELSE: "kē atu",
   	CONTROL_WAITUNTIL: "tatari kia %1",
   	CONTROL_REPEATUNTIL: "tōaitia tonutia kia %1",
   	CONTROL_STOP: "katia %1",
@@ -13911,7 +14368,6 @@
   	DATA_ITEMNUMOFLIST: "te tūemi # %1 o %2",
   	DATA_LENGTHOFLIST: "te roanga o te %1",
   	DATA_LISTCONTAINSITEM: "kei roto i %1 te %2?",
-  	CONTROL_ELSE: "kē atu",
   	SENSING_USERID: "tohu tuakiri",
   	SENSING_LOUD: "hoihoi?",
   	"text2speech.speakAndWaitBlock": "kīia %1",
@@ -13976,6 +14432,8 @@
   	"boost.getTiltAngle": "tilt angle %1",
   	"boost.setLightHue": "set light color to %1"
   };
+  var fullBlocks$t = [
+  ];
   var dropdowns$t = {
   };
   var ignorelt$t = [
@@ -14008,28 +14466,35 @@
   	Variables: "Ngā Taurangi",
   	"My Blocks": "Aku Paraka"
   };
-  var math$t = [
-  	"abs",
-  	"papa",
-  	"tuanui",
-  	"sqrt",
-  	"sin",
-  	"cos",
-  	"tan",
-  	"asin",
-  	"acos",
-  	"atan",
-  	"ln",
-  	"log",
-  	"e ^",
-  	"10 ^"
-  ];
+  var of$t = {
+  	math: [
+  		"abs",
+  		"papa",
+  		"tuanui",
+  		"sqrt",
+  		"sin",
+  		"cos",
+  		"tan",
+  		"asin",
+  		"acos",
+  		"atan",
+  		"ln",
+  		"log",
+  		"e ^",
+  		"10 ^"
+  	],
+  	list: [
+  	],
+  	text: [
+  	]
+  };
   var aliases$t = {
   };
   var name$t = "Māori";
   var percentTranslated$t = 100;
   var mi = {
   	commands: commands$t,
+  	fullBlocks: fullBlocks$t,
   	dropdowns: dropdowns$t,
   	ignorelt: ignorelt$t,
   	soundEffects: soundEffects$t,
@@ -14038,7 +14503,7 @@
   	definePrefix: definePrefix$t,
   	defineSuffix: defineSuffix$t,
   	palette: palette$t,
-  	math: math$t,
+  	of: of$t,
   	aliases: aliases$t,
   	name: name$t,
   	percentTranslated: percentTranslated$t
@@ -14117,6 +14582,7 @@
   	CONTROL_REPEAT: "%1 удаа давтах",
   	CONTROL_FOREVER: "Үргэлж",
   	CONTROL_IF: "хэрэв %1 бол",
+  	CONTROL_ELSE: "эсвэл",
   	CONTROL_WAITUNTIL: "%1 болтол хүлээх",
   	CONTROL_REPEATUNTIL: "%1 болтол давт",
   	CONTROL_STOP: "зогсоо %1",
@@ -14190,7 +14656,6 @@
   	DATA_ITEMNUMOFLIST: "%2 доторх %1-н # хэсэг",
   	DATA_LENGTHOFLIST: "%1 жагсаалтын урт",
   	DATA_LISTCONTAINSITEM: "%1 жагсаалт %2-г агуулж байвал",
-  	CONTROL_ELSE: "эсвэл",
   	SENSING_USERID: "хэрэглэгчийн ID",
   	SENSING_LOUD: "чанга уу?",
   	"text2speech.speakAndWaitBlock": "%1 үгийг хэл",
@@ -14255,6 +14720,8 @@
   	"boost.getTiltAngle": "%1 өнцгөөр хазайлга",
   	"boost.setLightHue": "гэрлийн өнгийг %1 болго"
   };
+  var fullBlocks$s = [
+  ];
   var dropdowns$s = {
   };
   var ignorelt$s = [
@@ -14288,28 +14755,35 @@
   	Variables: "Хувьсагч",
   	"My Blocks": "Миний блокууд"
   };
-  var math$s = [
-  	"модуль",
-  	"доош бүхэлд тоймлох",
-  	"дээш бүхэлд тоймлох",
-  	"квадрат язгуур",
-  	"sin",
-  	"cos",
-  	"tan",
-  	"asin",
-  	"acos",
-  	"atan",
-  	"ln",
-  	"log",
-  	"e ^",
-  	"10 ^"
-  ];
+  var of$s = {
+  	math: [
+  		"модуль",
+  		"доош бүхэлд тоймлох",
+  		"дээш бүхэлд тоймлох",
+  		"квадрат язгуур",
+  		"sin",
+  		"cos",
+  		"tan",
+  		"asin",
+  		"acos",
+  		"atan",
+  		"ln",
+  		"log",
+  		"e ^",
+  		"10 ^"
+  	],
+  	list: [
+  	],
+  	text: [
+  	]
+  };
   var aliases$s = {
   };
   var name$s = "Монгол хэл";
   var percentTranslated$s = 100;
   var mn = {
   	commands: commands$s,
+  	fullBlocks: fullBlocks$s,
   	dropdowns: dropdowns$s,
   	ignorelt: ignorelt$s,
   	soundEffects: soundEffects$s,
@@ -14318,7 +14792,7 @@
   	definePrefix: definePrefix$s,
   	defineSuffix: defineSuffix$s,
   	palette: palette$s,
-  	math: math$s,
+  	of: of$s,
   	aliases: aliases$s,
   	name: name$s,
   	percentTranslated: percentTranslated$s
@@ -14397,6 +14871,7 @@
   	CONTROL_REPEAT: "gjenta %1 ganger",
   	CONTROL_FOREVER: "gjenta for alltid",
   	CONTROL_IF: "hvis %1",
+  	CONTROL_ELSE: "ellers",
   	CONTROL_WAITUNTIL: "vent til %1",
   	CONTROL_REPEATUNTIL: "gjenta til %1",
   	CONTROL_STOP: "stopp %1",
@@ -14470,7 +14945,6 @@
   	DATA_ITEMNUMOFLIST: "posisjon av %1 i %2",
   	DATA_LENGTHOFLIST: "lengden av %1",
   	DATA_LISTCONTAINSITEM: "%1 inneholder %2?",
-  	CONTROL_ELSE: "ellers",
   	SENSING_USERID: "brukernavn",
   	SENSING_LOUD: "høy lyd?",
   	"text2speech.speakAndWaitBlock": "si %1",
@@ -14535,6 +15009,8 @@
   	"boost.getTiltAngle": "helningsvinkel %1",
   	"boost.setLightHue": "sett lysfarge %1"
   };
+  var fullBlocks$r = [
+  ];
   var dropdowns$r = {
   };
   var ignorelt$r = [
@@ -14567,22 +15043,28 @@
   	Variables: "Variabler",
   	"My Blocks": "Mine klosser"
   };
-  var math$r = [
-  	"absoluttverdi",
-  	"avrund ned",
-  	"avrund opp",
-  	"kvadratrot",
-  	"sin",
-  	"cos",
-  	"tan",
-  	"arcsin",
-  	"arccos",
-  	"arctan",
-  	"ln",
-  	"log",
-  	"e ^",
-  	"10 ^"
-  ];
+  var of$r = {
+  	math: [
+  		"absoluttverdi",
+  		"avrund ned",
+  		"avrund opp",
+  		"kvadratrot",
+  		"sin",
+  		"cos",
+  		"tan",
+  		"arcsin",
+  		"arccos",
+  		"arctan",
+  		"ln",
+  		"log",
+  		"e ^",
+  		"10 ^"
+  	],
+  	list: [
+  	],
+  	text: [
+  	]
+  };
   var aliases$r = {
   	"vend venstre %1 grader": "MOTION_TURNLEFT",
   	"vend høyre %1 grader": "MOTION_TURNRIGHT",
@@ -14593,6 +15075,7 @@
   var percentTranslated$r = 100;
   var nb = {
   	commands: commands$r,
+  	fullBlocks: fullBlocks$r,
   	dropdowns: dropdowns$r,
   	ignorelt: ignorelt$r,
   	soundEffects: soundEffects$r,
@@ -14601,7 +15084,7 @@
   	definePrefix: definePrefix$r,
   	defineSuffix: defineSuffix$r,
   	palette: palette$r,
-  	math: math$r,
+  	of: of$r,
   	aliases: aliases$r,
   	name: name$r,
   	percentTranslated: percentTranslated$r
@@ -14680,6 +15163,7 @@
   	CONTROL_REPEAT: "herhaal %1",
   	CONTROL_FOREVER: "herhaal",
   	CONTROL_IF: "als %1 dan",
+  	CONTROL_ELSE: "anders",
   	CONTROL_WAITUNTIL: "wacht tot %1",
   	CONTROL_REPEATUNTIL: "herhaal tot %1",
   	CONTROL_STOP: "stop %1",
@@ -14753,7 +15237,6 @@
   	DATA_ITEMNUMOFLIST: "item # van %1 in %2",
   	DATA_LENGTHOFLIST: "lengte van %1",
   	DATA_LISTCONTAINSITEM: "%1 bevat %2?",
-  	CONTROL_ELSE: "anders",
   	SENSING_USERID: "gebruiker id",
   	SENSING_LOUD: "luid?",
   	"text2speech.speakAndWaitBlock": "zeg %1",
@@ -14818,6 +15301,8 @@
   	"boost.getTiltAngle": "kantelhoek %1",
   	"boost.setLightHue": "zet lichtkleur op %1"
   };
+  var fullBlocks$q = [
+  ];
   var dropdowns$q = {
   };
   var ignorelt$q = [
@@ -14850,22 +15335,28 @@
   	Variables: "Variabelen",
   	"My Blocks": "Mijn blokken"
   };
-  var math$q = [
-  	"absoluut",
-  	"beneden",
-  	"boven",
-  	"wortel",
-  	"sin",
-  	"cos",
-  	"tan",
-  	"arcsin",
-  	"arccos",
-  	"arctan",
-  	"ln",
-  	"log",
-  	"e ^",
-  	"10 ^"
-  ];
+  var of$q = {
+  	math: [
+  		"absoluut",
+  		"beneden",
+  		"boven",
+  		"wortel",
+  		"sin",
+  		"cos",
+  		"tan",
+  		"arcsin",
+  		"arccos",
+  		"arctan",
+  		"ln",
+  		"log",
+  		"e ^",
+  		"10 ^"
+  	],
+  	list: [
+  	],
+  	text: [
+  	]
+  };
   var aliases$q = {
   	"draai %1 graden naar links": "MOTION_TURNLEFT",
   	"draai %1 graden naar rechts": "MOTION_TURNRIGHT",
@@ -14876,6 +15367,7 @@
   var percentTranslated$q = 100;
   var nl = {
   	commands: commands$q,
+  	fullBlocks: fullBlocks$q,
   	dropdowns: dropdowns$q,
   	ignorelt: ignorelt$q,
   	soundEffects: soundEffects$q,
@@ -14884,7 +15376,7 @@
   	definePrefix: definePrefix$q,
   	defineSuffix: defineSuffix$q,
   	palette: palette$q,
-  	math: math$q,
+  	of: of$q,
   	aliases: aliases$q,
   	name: name$q,
   	percentTranslated: percentTranslated$q
@@ -14963,6 +15455,7 @@
   	CONTROL_REPEAT: "gjenta %1 gongar",
   	CONTROL_FOREVER: "for alltid",
   	CONTROL_IF: "viss %1",
+  	CONTROL_ELSE: "elles",
   	CONTROL_WAITUNTIL: "vent til %1",
   	CONTROL_REPEATUNTIL: "gjenta til %1",
   	CONTROL_STOP: "stopp %1",
@@ -15036,7 +15529,6 @@
   	DATA_ITEMNUMOFLIST: "posisjon til %1 i %2",
   	DATA_LENGTHOFLIST: "lengda til %1",
   	DATA_LISTCONTAINSITEM: "%1 inneheld %2?",
-  	CONTROL_ELSE: "elles",
   	SENSING_USERID: "brukar-id",
   	SENSING_LOUD: "høg lyd?",
   	"text2speech.speakAndWaitBlock": "les opp %1",
@@ -15101,6 +15593,8 @@
   	"boost.getTiltAngle": "hellingsvinkel %1",
   	"boost.setLightHue": "set lysfargen til %1"
   };
+  var fullBlocks$p = [
+  ];
   var dropdowns$p = {
   };
   var ignorelt$p = [
@@ -15133,28 +15627,35 @@
   	Variables: "Variablar",
   	"My Blocks": "Mine klossar"
   };
-  var math$p = [
-  	"abs",
-  	"golv",
-  	"tak",
-  	"kvadratrot",
-  	"sin",
-  	"cos",
-  	"tan",
-  	"arcsin",
-  	"arccos",
-  	"arctan",
-  	"ln",
-  	"log",
-  	"e^",
-  	"10^"
-  ];
+  var of$p = {
+  	math: [
+  		"abs",
+  		"golv",
+  		"tak",
+  		"kvadratrot",
+  		"sin",
+  		"cos",
+  		"tan",
+  		"arcsin",
+  		"arccos",
+  		"arctan",
+  		"ln",
+  		"log",
+  		"e^",
+  		"10^"
+  	],
+  	list: [
+  	],
+  	text: [
+  	]
+  };
   var aliases$p = {
   };
   var name$p = "Norsk Nynorsk";
   var percentTranslated$p = 100;
   var nn = {
   	commands: commands$p,
+  	fullBlocks: fullBlocks$p,
   	dropdowns: dropdowns$p,
   	ignorelt: ignorelt$p,
   	soundEffects: soundEffects$p,
@@ -15163,7 +15664,7 @@
   	definePrefix: definePrefix$p,
   	defineSuffix: defineSuffix$p,
   	palette: palette$p,
-  	math: math$p,
+  	of: of$p,
   	aliases: aliases$p,
   	name: name$p,
   	percentTranslated: percentTranslated$p
@@ -15242,6 +15743,7 @@
   	CONTROL_REPEAT: "bušeletša %1",
   	CONTROL_FOREVER: "ka go sa felego",
   	CONTROL_IF: "ge e le %1 kemoka",
+  	CONTROL_ELSE: "enngwe",
   	CONTROL_WAITUNTIL: "ema go fihlela %1",
   	CONTROL_REPEATUNTIL: "bušeletša go fihlela %1",
   	CONTROL_STOP: "ema %1",
@@ -15315,7 +15817,6 @@
   	DATA_ITEMNUMOFLIST: "selo # sa %1 go %2",
   	DATA_LENGTHOFLIST: "botelele bja %1",
   	DATA_LISTCONTAINSITEM: "%1 e na le %2",
-  	CONTROL_ELSE: "enngwe",
   	SENSING_USERID: "boitsebišo bja tšhomišo",
   	SENSING_LOUD: "rasa?",
   	"text2speech.speakAndWaitBlock": "bolela %1",
@@ -15380,6 +15881,8 @@
   	"boost.getTiltAngle": "sekamiša sekhutlo %1",
   	"boost.setLightHue": "bea mmala wa seetša go %1"
   };
+  var fullBlocks$o = [
+  ];
   var dropdowns$o = {
   };
   var ignorelt$o = [
@@ -15412,28 +15915,35 @@
   	Variables: "Diphetošo",
   	"My Blocks": "Dipoloko tša Ka"
   };
-  var math$o = [
-  	"abs",
-  	"floor",
-  	"ceiling",
-  	"sqrt",
-  	"sin",
-  	"cos",
-  	"tan",
-  	"asin",
-  	"acos",
-  	"atan",
-  	"Ka gare",
-  	"log",
-  	"e ^",
-  	"10 ^"
-  ];
+  var of$o = {
+  	math: [
+  		"abs",
+  		"floor",
+  		"ceiling",
+  		"sqrt",
+  		"sin",
+  		"cos",
+  		"tan",
+  		"asin",
+  		"acos",
+  		"atan",
+  		"Ka gare",
+  		"log",
+  		"e ^",
+  		"10 ^"
+  	],
+  	list: [
+  	],
+  	text: [
+  	]
+  };
   var aliases$o = {
   };
   var name$o = "Sepedi";
   var percentTranslated$o = 100;
   var nso = {
   	commands: commands$o,
+  	fullBlocks: fullBlocks$o,
   	dropdowns: dropdowns$o,
   	ignorelt: ignorelt$o,
   	soundEffects: soundEffects$o,
@@ -15442,7 +15952,7 @@
   	definePrefix: definePrefix$o,
   	defineSuffix: defineSuffix$o,
   	palette: palette$o,
-  	math: math$o,
+  	of: of$o,
   	aliases: aliases$o,
   	name: name$o,
   	percentTranslated: percentTranslated$o
@@ -15521,6 +16031,7 @@
   	CONTROL_REPEAT: "repetir %1",
   	CONTROL_FOREVER: "per totjorn",
   	CONTROL_IF: "se %1 alara",
+  	CONTROL_ELSE: "senon",
   	CONTROL_WAITUNTIL: "esperar fins a %1",
   	CONTROL_REPEATUNTIL: "repetir fins a %1",
   	CONTROL_STOP: "estòp %1",
@@ -15594,7 +16105,6 @@
   	DATA_ITEMNUMOFLIST: "element # de %1 dins %2",
   	DATA_LENGTHOFLIST: "longor de %1",
   	DATA_LISTCONTAINSITEM: "%1 conten %2 ?",
-  	CONTROL_ELSE: "senon",
   	SENSING_USERID: "id d'utilizator",
   	SENSING_LOUD: "fòrt ?",
   	"text2speech.speakAndWaitBlock": "dire %1",
@@ -15659,6 +16169,8 @@
   	"boost.getTiltAngle": "Anle d'enclinason %1",
   	"boost.setLightHue": "reglar la color del lum sus %1"
   };
+  var fullBlocks$n = [
+  ];
   var dropdowns$n = {
   };
   var ignorelt$n = [
@@ -15691,28 +16203,35 @@
   	Variables: "Variablas",
   	"My Blocks": "Mos Blòcs"
   };
-  var math$n = [
-  	"abs",
-  	"arredondit.inf",
-  	"arredondit.sup",
-  	"rasiga",
-  	"sin",
-  	"cos",
-  	"tan",
-  	"asin",
-  	"acos",
-  	"atan",
-  	"ln",
-  	"log",
-  	"e ^",
-  	"10 ^"
-  ];
+  var of$n = {
+  	math: [
+  		"abs",
+  		"arredondit.inf",
+  		"arredondit.sup",
+  		"rasiga",
+  		"sin",
+  		"cos",
+  		"tan",
+  		"asin",
+  		"acos",
+  		"atan",
+  		"ln",
+  		"log",
+  		"e ^",
+  		"10 ^"
+  	],
+  	list: [
+  	],
+  	text: [
+  	]
+  };
   var aliases$n = {
   };
   var name$n = "Occitan";
   var percentTranslated$n = 100;
   var oc = {
   	commands: commands$n,
+  	fullBlocks: fullBlocks$n,
   	dropdowns: dropdowns$n,
   	ignorelt: ignorelt$n,
   	soundEffects: soundEffects$n,
@@ -15721,7 +16240,7 @@
   	definePrefix: definePrefix$n,
   	defineSuffix: defineSuffix$n,
   	palette: palette$n,
-  	math: math$n,
+  	of: of$n,
   	aliases: aliases$n,
   	name: name$n,
   	percentTranslated: percentTranslated$n
@@ -15800,6 +16319,7 @@
   	CONTROL_REPEAT: "%1 ପୁନରାବୃତ୍ତି କର",
   	CONTROL_FOREVER: "ସବୁ ଦିନ ପାଇଁ",
   	CONTROL_IF: "ଯଦି %1 ତେବେ",
+  	CONTROL_ELSE: "ଅଥବା",
   	CONTROL_WAITUNTIL: "%1 ସେକେଣ୍ଡ ପର୍ଯନ୍ତ ଅପେକ୍ଷା କର",
   	CONTROL_REPEATUNTIL: "%1 ପର୍ଯନ୍ତ ପୁନରାବୃତ୍ତି କର",
   	CONTROL_STOP: "ବନ୍ଦ କର %1",
@@ -15873,7 +16393,6 @@
   	DATA_ITEMNUMOFLIST: "%2 ରେ %1 ତମ ବସ୍ତୁ",
   	DATA_LENGTHOFLIST: "%1 ର ଦୈର୍ଘ୍ୟ",
   	DATA_LISTCONTAINSITEM: "%1 ରେ %2 ଅଛି କି?",
-  	CONTROL_ELSE: "ଅଥବା",
   	SENSING_USERID: "ବ୍ୟବହାରକାରୀ ର ଚିହ୍ନ",
   	SENSING_LOUD: "ଅଧିକ?",
   	"text2speech.speakAndWaitBlock": "କୁହ %1",
@@ -15938,6 +16457,8 @@
   	"boost.getTiltAngle": "ଝୁଙ୍କାଇବାର ଦିଗ %1",
   	"boost.setLightHue": "ଆଲୁଅ କଲଡର %1 ରଖ"
   };
+  var fullBlocks$m = [
+  ];
   var dropdowns$m = {
   };
   var ignorelt$m = [
@@ -15971,28 +16492,35 @@
   	Variables: "ଭେରିଏବଲ୍ ଗୁଡିକ",
   	"My Blocks": "ମୋ ବ୍ଲକ ଗୁଡି଼କ"
   };
-  var math$m = [
-  	"ଏବିଏସ",
-  	"ତଳ",
-  	"ଛାତ",
-  	"sqrt",
-  	"sin",
-  	"cos",
-  	"tan",
-  	"asin",
-  	"cosec",
-  	"cot",
-  	"ln",
-  	"log",
-  	"e ^",
-  	"10^"
-  ];
+  var of$m = {
+  	math: [
+  		"ଏବିଏସ",
+  		"ତଳ",
+  		"ଛାତ",
+  		"sqrt",
+  		"sin",
+  		"cos",
+  		"tan",
+  		"asin",
+  		"cosec",
+  		"cot",
+  		"ln",
+  		"log",
+  		"e ^",
+  		"10^"
+  	],
+  	list: [
+  	],
+  	text: [
+  	]
+  };
   var aliases$m = {
   };
   var name$m = "ଓଡ଼ିଆ";
   var percentTranslated$m = 100;
   var or = {
   	commands: commands$m,
+  	fullBlocks: fullBlocks$m,
   	dropdowns: dropdowns$m,
   	ignorelt: ignorelt$m,
   	soundEffects: soundEffects$m,
@@ -16001,7 +16529,7 @@
   	definePrefix: definePrefix$m,
   	defineSuffix: defineSuffix$m,
   	palette: palette$m,
-  	math: math$m,
+  	of: of$m,
   	aliases: aliases$m,
   	name: name$m,
   	percentTranslated: percentTranslated$m
@@ -16080,6 +16608,7 @@
   	CONTROL_REPEAT: "powtórz %1 razy",
   	CONTROL_FOREVER: "zawsze",
   	CONTROL_IF: "jeżeli %1 to",
+  	CONTROL_ELSE: "w przeciwnym razie",
   	CONTROL_WAITUNTIL: "czekaj aż %1",
   	CONTROL_REPEATUNTIL: "powtarzaj aż %1",
   	CONTROL_STOP: "zatrzymaj %1",
@@ -16153,7 +16682,6 @@
   	DATA_ITEMNUMOFLIST: "pozycja %1 na liście %2",
   	DATA_LENGTHOFLIST: "długość %1",
   	DATA_LISTCONTAINSITEM: "%1 zawiera %2?",
-  	CONTROL_ELSE: "w przeciwnym razie",
   	SENSING_USERID: "ID użytkownika",
   	SENSING_LOUD: "głośno?",
   	"text2speech.speakAndWaitBlock": "Powiedz %1",
@@ -16218,6 +16746,8 @@
   	"boost.getTiltAngle": "Kąt pochylenia %1",
   	"boost.setLightHue": "Ustaw kolor światła na %1"
   };
+  var fullBlocks$l = [
+  ];
   var dropdowns$l = {
   };
   var ignorelt$l = [
@@ -16250,22 +16780,28 @@
   	Variables: "Zmienne",
   	"My Blocks": "Moje bloki"
   };
-  var math$l = [
-  	"wartość bezwzględna",
-  	"podłoga",
-  	"sufit",
-  	"pierwiastek kwadratowy",
-  	"sinus",
-  	"cosinus",
-  	"tangens",
-  	"arcus sinus",
-  	"arcus cosinus",
-  	"arcus tangens",
-  	"logarytm naturalny",
-  	"log",
-  	"e ^",
-  	"10 ^"
-  ];
+  var of$l = {
+  	math: [
+  		"wartość bezwzględna",
+  		"podłoga",
+  		"sufit",
+  		"pierwiastek kwadratowy",
+  		"sinus",
+  		"cosinus",
+  		"tangens",
+  		"arcus sinus",
+  		"arcus cosinus",
+  		"arcus tangens",
+  		"logarytm naturalny",
+  		"log",
+  		"e ^",
+  		"10 ^"
+  	],
+  	list: [
+  	],
+  	text: [
+  	]
+  };
   var aliases$l = {
   	"obróć w lewo o %1 stopni": "MOTION_TURNLEFT",
   	"obróć w prawo o %1 stopni": "MOTION_TURNRIGHT",
@@ -16276,6 +16812,7 @@
   var percentTranslated$l = 100;
   var pl = {
   	commands: commands$l,
+  	fullBlocks: fullBlocks$l,
   	dropdowns: dropdowns$l,
   	ignorelt: ignorelt$l,
   	soundEffects: soundEffects$l,
@@ -16284,7 +16821,7 @@
   	definePrefix: definePrefix$l,
   	defineSuffix: defineSuffix$l,
   	palette: palette$l,
-  	math: math$l,
+  	of: of$l,
   	aliases: aliases$l,
   	name: name$l,
   	percentTranslated: percentTranslated$l
@@ -16363,6 +16900,7 @@
   	CONTROL_REPEAT: "repete %1 vezes",
   	CONTROL_FOREVER: "repete para sempre",
   	CONTROL_IF: "se %1 , então",
+  	CONTROL_ELSE: "senão,",
   	CONTROL_WAITUNTIL: "espera até que %1",
   	CONTROL_REPEATUNTIL: "até que %1 , repete",
   	CONTROL_STOP: "pára %1",
@@ -16436,7 +16974,6 @@
   	DATA_ITEMNUMOFLIST: "o número do item %1 em %2",
   	DATA_LENGTHOFLIST: "o comprimento de %1",
   	DATA_LISTCONTAINSITEM: "%1 contém %2",
-  	CONTROL_ELSE: "senão,",
   	SENSING_USERID: "o ID de utilizador",
   	SENSING_LOUD: "o som é forte",
   	"text2speech.speakAndWaitBlock": "fala %1",
@@ -16501,6 +17038,8 @@
   	"boost.getTiltAngle": "o ângulo da inclinação %1",
   	"boost.setLightHue": "altera a cor da luz para %1"
   };
+  var fullBlocks$k = [
+  ];
   var dropdowns$k = {
   };
   var ignorelt$k = [
@@ -16533,22 +17072,28 @@
   	Variables: "Variáveis",
   	"My Blocks": "Os Meus Blocos"
   };
-  var math$k = [
-  	"o valor absoluto",
-  	"o chão (o maior inteiro não superior)",
-  	"o tecto (menor inteiro não inferior)",
-  	"a raiz quadrada",
-  	"o seno",
-  	"o cosseno",
-  	"a tangente",
-  	"o arco-seno",
-  	"o arco-cosseno",
-  	"o arco-tangente",
-  	"o logaritmo natural",
-  	"o logaritmo",
-  	"a exponencial",
-  	"10 ^"
-  ];
+  var of$k = {
+  	math: [
+  		"o valor absoluto",
+  		"o chão (o maior inteiro não superior)",
+  		"o tecto (menor inteiro não inferior)",
+  		"a raiz quadrada",
+  		"o seno",
+  		"o cosseno",
+  		"a tangente",
+  		"o arco-seno",
+  		"o arco-cosseno",
+  		"o arco-tangente",
+  		"o logaritmo natural",
+  		"o logaritmo",
+  		"a exponencial",
+  		"10 ^"
+  	],
+  	list: [
+  	],
+  	text: [
+  	]
+  };
   var aliases$k = {
   	"gira para a esquerda %1 º": "MOTION_TURNLEFT",
   	"gira para a direita %1 º": "MOTION_TURNRIGHT",
@@ -16559,6 +17104,7 @@
   var percentTranslated$k = 100;
   var pt = {
   	commands: commands$k,
+  	fullBlocks: fullBlocks$k,
   	dropdowns: dropdowns$k,
   	ignorelt: ignorelt$k,
   	soundEffects: soundEffects$k,
@@ -16567,7 +17113,7 @@
   	definePrefix: definePrefix$k,
   	defineSuffix: defineSuffix$k,
   	palette: palette$k,
-  	math: math$k,
+  	of: of$k,
   	aliases: aliases$k,
   	name: name$k,
   	percentTranslated: percentTranslated$k
@@ -16646,6 +17192,7 @@
   	CONTROL_REPEAT: "repita %1 vezes",
   	CONTROL_FOREVER: "sempre",
   	CONTROL_IF: "se %1 então",
+  	CONTROL_ELSE: "senão",
   	CONTROL_WAITUNTIL: "espere até que %1",
   	CONTROL_REPEATUNTIL: "repita até que %1",
   	CONTROL_STOP: "pare %1",
@@ -16719,7 +17266,6 @@
   	DATA_ITEMNUMOFLIST: "item # de %1 em %2",
   	DATA_LENGTHOFLIST: "tamanho de %1",
   	DATA_LISTCONTAINSITEM: "%1 contém %2?",
-  	CONTROL_ELSE: "senão",
   	SENSING_USERID: "id do usuário",
   	SENSING_LOUD: "alto?",
   	"text2speech.speakAndWaitBlock": "fale %1",
@@ -16784,6 +17330,8 @@
   	"boost.getTiltAngle": "ângulo de inclinação %1",
   	"boost.setLightHue": "defina a cor como %1"
   };
+  var fullBlocks$j = [
+  ];
   var dropdowns$j = {
   };
   var ignorelt$j = [
@@ -16816,28 +17364,35 @@
   	Variables: "Variáveis",
   	"My Blocks": "Meus Blocos"
   };
-  var math$j = [
-  	"módulo",
-  	"arredondamento para baixo de",
-  	"arredondamento para cima de",
-  	"raiz quadrada",
-  	"sen",
-  	"cos",
-  	"tg",
-  	"arcsen",
-  	"arccos",
-  	"arctg",
-  	"ln",
-  	"logaritmo",
-  	"e elevado à",
-  	"10 elevado à"
-  ];
+  var of$j = {
+  	math: [
+  		"módulo",
+  		"arredondamento para baixo de",
+  		"arredondamento para cima de",
+  		"raiz quadrada",
+  		"sen",
+  		"cos",
+  		"tg",
+  		"arcsen",
+  		"arccos",
+  		"arctg",
+  		"ln",
+  		"logaritmo",
+  		"e elevado à",
+  		"10 elevado à"
+  	],
+  	list: [
+  	],
+  	text: [
+  	]
+  };
   var aliases$j = {
   };
   var name$j = "Português Brasileiro";
   var percentTranslated$j = 100;
   var pt_br = {
   	commands: commands$j,
+  	fullBlocks: fullBlocks$j,
   	dropdowns: dropdowns$j,
   	ignorelt: ignorelt$j,
   	soundEffects: soundEffects$j,
@@ -16846,7 +17401,7 @@
   	definePrefix: definePrefix$j,
   	defineSuffix: defineSuffix$j,
   	palette: palette$j,
-  	math: math$j,
+  	of: of$j,
   	aliases: aliases$j,
   	name: name$j,
   	percentTranslated: percentTranslated$j
@@ -16925,6 +17480,7 @@
   	CONTROL_REPEAT: "musuqmanta %1",
   	CONTROL_FOREVER: "wiñaypaq",
   	CONTROL_IF: "icha %1 hinaptin",
+  	CONTROL_ELSE: "ñataq",
   	CONTROL_WAITUNTIL: "suyaykuy askama %1",
   	CONTROL_REPEATUNTIL: "musuqmanta ruray askama %1",
   	CONTROL_STOP: "sayay %1",
@@ -16998,7 +17554,6 @@
   	DATA_ITEMNUMOFLIST: "Imakuna # kaypa %1 in %2",
   	DATA_LENGTHOFLIST: "sunin %1",
   	DATA_LISTCONTAINSITEM: "%1  kachkanchu %2?",
-  	CONTROL_ELSE: "ñataq",
   	SENSING_USERID: "id llamkaqpa",
   	SENSING_LOUD: "qapari?",
   	"text2speech.speakAndWaitBlock": "rimay %1",
@@ -17063,6 +17618,8 @@
   	"boost.getTiltAngle": "Kuchuq kinraychasqa %1",
   	"boost.setLightHue": "akchiqpa llimpinta churay %1"
   };
+  var fullBlocks$i = [
+  ];
   var dropdowns$i = {
   };
   var ignorelt$i = [
@@ -17095,28 +17652,35 @@
   	Variables: "hukniraq",
   	"My Blocks": "champaykuna"
   };
-  var math$i = [
-  	"abs",
-  	"allpa",
-  	"qata",
-  	"sqrt",
-  	"sin",
-  	"cos",
-  	"tan",
-  	"asin",
-  	"acos",
-  	"atan",
-  	"in",
-  	"Qallarichiy",
-  	"Y ^",
-  	"10 ^"
-  ];
+  var of$i = {
+  	math: [
+  		"abs",
+  		"allpa",
+  		"qata",
+  		"sqrt",
+  		"sin",
+  		"cos",
+  		"tan",
+  		"asin",
+  		"acos",
+  		"atan",
+  		"in",
+  		"Qallarichiy",
+  		"Y ^",
+  		"10 ^"
+  	],
+  	list: [
+  	],
+  	text: [
+  	]
+  };
   var aliases$i = {
   };
   var name$i = "Kichwa";
   var percentTranslated$i = 100;
   var qu = {
   	commands: commands$i,
+  	fullBlocks: fullBlocks$i,
   	dropdowns: dropdowns$i,
   	ignorelt: ignorelt$i,
   	soundEffects: soundEffects$i,
@@ -17125,7 +17689,7 @@
   	definePrefix: definePrefix$i,
   	defineSuffix: defineSuffix$i,
   	palette: palette$i,
-  	math: math$i,
+  	of: of$i,
   	aliases: aliases$i,
   	name: name$i,
   	percentTranslated: percentTranslated$i
@@ -17204,6 +17768,7 @@
   	CONTROL_REPEAT: "haka ʾou %1",
   	CONTROL_FOREVER: "mo āŋa paurō te hora",
   	CONTROL_IF: "eʾe %1 oira",
+  	CONTROL_ELSE: "eʾe ina",
   	CONTROL_WAITUNTIL: "tiaki ki %1",
   	CONTROL_REPEATUNTIL: "hakaʾou ki %1",
   	CONTROL_STOP: "noho %1",
@@ -17277,7 +17842,6 @@
   	DATA_ITEMNUMOFLIST: "# o te meʾe he %1 i te %2",
   	DATA_LENGTHOFLIST: "roa roa o te %1",
   	DATA_LISTCONTAINSITEM: "¿%2 e ai era te %1?",
-  	CONTROL_ELSE: "eʾe ina",
   	SENSING_USERID: "id o te kope kori",
   	SENSING_LOUD: "¿poŋeha?",
   	"text2speech.speakAndWaitBlock": "e ki %1",
@@ -17342,6 +17906,8 @@
   	"boost.getTiltAngle": "tilt angle %1",
   	"boost.setLightHue": "haka tano te peni o te morī ki te %1"
   };
+  var fullBlocks$h = [
+  ];
   var dropdowns$h = {
   };
   var ignorelt$h = [
@@ -17376,28 +17942,35 @@
   	Variables: "variables",
   	"My Blocks": "taʾaku avhata poto roa mekera"
   };
-  var math$h = [
-  	"valor absoluto",
-  	"suelo",
-  	"techo",
-  	"raíz cuadrada",
-  	"sen",
-  	"cos",
-  	"tan",
-  	"arcsen",
-  	"arccos",
-  	"arctan",
-  	"ln",
-  	"log",
-  	"e ^",
-  	"10 ^"
-  ];
+  var of$h = {
+  	math: [
+  		"valor absoluto",
+  		"suelo",
+  		"techo",
+  		"raíz cuadrada",
+  		"sen",
+  		"cos",
+  		"tan",
+  		"arcsen",
+  		"arccos",
+  		"arctan",
+  		"ln",
+  		"log",
+  		"e ^",
+  		"10 ^"
+  	],
+  	list: [
+  	],
+  	text: [
+  	]
+  };
   var aliases$h = {
   };
   var name$h = "Rapa Nui";
   var percentTranslated$h = 100;
   var rap = {
   	commands: commands$h,
+  	fullBlocks: fullBlocks$h,
   	dropdowns: dropdowns$h,
   	ignorelt: ignorelt$h,
   	soundEffects: soundEffects$h,
@@ -17406,7 +17979,7 @@
   	definePrefix: definePrefix$h,
   	defineSuffix: defineSuffix$h,
   	palette: palette$h,
-  	math: math$h,
+  	of: of$h,
   	aliases: aliases$h,
   	name: name$h,
   	percentTranslated: percentTranslated$h
@@ -17485,6 +18058,7 @@
   	CONTROL_REPEAT: "repetă %1",
   	CONTROL_FOREVER: "la infinit",
   	CONTROL_IF: "dacă %1 atunci",
+  	CONTROL_ELSE: "altfel",
   	CONTROL_WAITUNTIL: "așteaptă până când %1",
   	CONTROL_REPEATUNTIL: "repetă până când %1",
   	CONTROL_STOP: "stop %1",
@@ -17558,7 +18132,6 @@
   	DATA_ITEMNUMOFLIST: "nr. elementului %1 în %2",
   	DATA_LENGTHOFLIST: "lungimea lui %1",
   	DATA_LISTCONTAINSITEM: "%1 conține %2?",
-  	CONTROL_ELSE: "altfel",
   	SENSING_USERID: "id utilizator",
   	SENSING_LOUD: "tare?",
   	"text2speech.speakAndWaitBlock": "spune %1",
@@ -17623,6 +18196,8 @@
   	"boost.getTiltAngle": "unghiul de înclinare %1",
   	"boost.setLightHue": "setează culoare LED la %1"
   };
+  var fullBlocks$g = [
+  ];
   var dropdowns$g = {
   };
   var ignorelt$g = [
@@ -17655,22 +18230,28 @@
   	Variables: "Variabile",
   	"My Blocks": "Blocurile mele"
   };
-  var math$g = [
-  	"modul",
-  	"partea întreagă",
-  	"rotunjire prin adaos",
-  	"radical",
-  	"sin",
-  	"cos",
-  	"tan",
-  	"asin",
-  	"acos",
-  	"atan",
-  	"ln",
-  	"log",
-  	"e ^",
-  	"10 ^"
-  ];
+  var of$g = {
+  	math: [
+  		"modul",
+  		"partea întreagă",
+  		"rotunjire prin adaos",
+  		"radical",
+  		"sin",
+  		"cos",
+  		"tan",
+  		"asin",
+  		"acos",
+  		"atan",
+  		"ln",
+  		"log",
+  		"e ^",
+  		"10 ^"
+  	],
+  	list: [
+  	],
+  	text: [
+  	]
+  };
   var aliases$g = {
   	"rotește la stânga %1 grade": "MOTION_TURNLEFT",
   	"rotește la dreapta %1 grade": "MOTION_TURNRIGHT",
@@ -17681,6 +18262,7 @@
   var percentTranslated$g = 100;
   var ro = {
   	commands: commands$g,
+  	fullBlocks: fullBlocks$g,
   	dropdowns: dropdowns$g,
   	ignorelt: ignorelt$g,
   	soundEffects: soundEffects$g,
@@ -17689,7 +18271,7 @@
   	definePrefix: definePrefix$g,
   	defineSuffix: defineSuffix$g,
   	palette: palette$g,
-  	math: math$g,
+  	of: of$g,
   	aliases: aliases$g,
   	name: name$g,
   	percentTranslated: percentTranslated$g
@@ -17768,6 +18350,7 @@
   	CONTROL_REPEAT: "повторить %1 раз",
   	CONTROL_FOREVER: "повторять всегда",
   	CONTROL_IF: "если %1 , то",
+  	CONTROL_ELSE: "иначе",
   	CONTROL_WAITUNTIL: "ждать до %1",
   	CONTROL_REPEATUNTIL: "повторять пока не %1",
   	CONTROL_STOP: "стоп %1",
@@ -17841,7 +18424,6 @@
   	DATA_ITEMNUMOFLIST: "№ элемента %1 в %2",
   	DATA_LENGTHOFLIST: "длина списка %1",
   	DATA_LISTCONTAINSITEM: "%1 содержит %2?",
-  	CONTROL_ELSE: "иначе",
   	SENSING_USERID: "id пользователя",
   	SENSING_LOUD: "громко?",
   	"text2speech.speakAndWaitBlock": "сказать %1",
@@ -17906,6 +18488,8 @@
   	"boost.getTiltAngle": "угол наклона %1",
   	"boost.setLightHue": "установить цвет лампочки %1"
   };
+  var fullBlocks$f = [
+  ];
   var dropdowns$f = {
   };
   var ignorelt$f = [
@@ -17938,22 +18522,28 @@
   	Variables: "Переменные",
   	"My Blocks": "Другие блоки"
   };
-  var math$f = [
-  	"модуль",
-  	"целое меньшее",
-  	"целое большее",
-  	"квадратный корень",
-  	"sin",
-  	"cos",
-  	"tan",
-  	"asin",
-  	"acos",
-  	"atan",
-  	"ln",
-  	"log",
-  	"e ^",
-  	"10 ^"
-  ];
+  var of$f = {
+  	math: [
+  		"модуль",
+  		"целое меньшее",
+  		"целое большее",
+  		"квадратный корень",
+  		"sin",
+  		"cos",
+  		"tan",
+  		"asin",
+  		"acos",
+  		"atan",
+  		"ln",
+  		"log",
+  		"e ^",
+  		"10 ^"
+  	],
+  	list: [
+  	],
+  	text: [
+  	]
+  };
   var aliases$f = {
   	"повернуть влево на %1 градусов": "MOTION_TURNLEFT",
   	"повернуть вправо на %1 градусов": "MOTION_TURNRIGHT",
@@ -17964,6 +18554,7 @@
   var percentTranslated$f = 100;
   var ru = {
   	commands: commands$f,
+  	fullBlocks: fullBlocks$f,
   	dropdowns: dropdowns$f,
   	ignorelt: ignorelt$f,
   	soundEffects: soundEffects$f,
@@ -17972,7 +18563,7 @@
   	definePrefix: definePrefix$f,
   	defineSuffix: defineSuffix$f,
   	palette: palette$f,
-  	math: math$f,
+  	of: of$f,
   	aliases: aliases$f,
   	name: name$f,
   	percentTranslated: percentTranslated$f
@@ -18051,6 +18642,7 @@
   	CONTROL_REPEAT: "opakuj %1",
   	CONTROL_FOREVER: "opakuj stále",
   	CONTROL_IF: "ak %1",
+  	CONTROL_ELSE: "inak",
   	CONTROL_WAITUNTIL: "čakaj až kým %1",
   	CONTROL_REPEATUNTIL: "opakuj až kým %1",
   	CONTROL_STOP: "zastav %1",
@@ -18124,7 +18716,6 @@
   	DATA_ITEMNUMOFLIST: "poradie prvku %1 v %2",
   	DATA_LENGTHOFLIST: "dĺžka %1",
   	DATA_LISTCONTAINSITEM: "%1 obsahuje %2?",
-  	CONTROL_ELSE: "inak",
   	SENSING_USERID: "užívateľské id",
   	SENSING_LOUD: "hlasný?",
   	"text2speech.speakAndWaitBlock": "povedz %1",
@@ -18189,6 +18780,8 @@
   	"boost.getTiltAngle": "tilt angle %1",
   	"boost.setLightHue": "set light color to %1"
   };
+  var fullBlocks$e = [
+  ];
   var dropdowns$e = {
   };
   var ignorelt$e = [
@@ -18221,28 +18814,35 @@
   	Variables: "Premenné",
   	"My Blocks": "Nové bloky"
   };
-  var math$e = [
-  	"abs",
-  	"zaokrúhli nadol",
-  	"zaokrúhli nahor",
-  	"odmocnina",
-  	"sin",
-  	"cos",
-  	"tg",
-  	"arcsin",
-  	"arccos",
-  	"arctg",
-  	"ln",
-  	"log",
-  	"exp",
-  	"10 ^"
-  ];
+  var of$e = {
+  	math: [
+  		"abs",
+  		"zaokrúhli nadol",
+  		"zaokrúhli nahor",
+  		"odmocnina",
+  		"sin",
+  		"cos",
+  		"tg",
+  		"arcsin",
+  		"arccos",
+  		"arctg",
+  		"ln",
+  		"log",
+  		"exp",
+  		"10 ^"
+  	],
+  	list: [
+  	],
+  	text: [
+  	]
+  };
   var aliases$e = {
   };
   var name$e = "Slovenčina";
   var percentTranslated$e = 100;
   var sk = {
   	commands: commands$e,
+  	fullBlocks: fullBlocks$e,
   	dropdowns: dropdowns$e,
   	ignorelt: ignorelt$e,
   	soundEffects: soundEffects$e,
@@ -18251,7 +18851,7 @@
   	definePrefix: definePrefix$e,
   	defineSuffix: defineSuffix$e,
   	palette: palette$e,
-  	math: math$e,
+  	of: of$e,
   	aliases: aliases$e,
   	name: name$e,
   	percentTranslated: percentTranslated$e
@@ -18330,6 +18930,7 @@
   	CONTROL_REPEAT: "ponovi %1 krat",
   	CONTROL_FOREVER: "ponavljaj",
   	CONTROL_IF: "če %1 potem",
+  	CONTROL_ELSE: "sicer",
   	CONTROL_WAITUNTIL: "počakaj dokler ni %1",
   	CONTROL_REPEATUNTIL: "ponavljaj dokler ni %1",
   	CONTROL_STOP: "ustavi %1",
@@ -18403,7 +19004,6 @@
   	DATA_ITEMNUMOFLIST: "predmet # od %1 v %2",
   	DATA_LENGTHOFLIST: "dolžina %1",
   	DATA_LISTCONTAINSITEM: "Ali %1 vsebuje %2?",
-  	CONTROL_ELSE: "sicer",
   	SENSING_USERID: "uporabnikova številka",
   	SENSING_LOUD: "glasno?",
   	"text2speech.speakAndWaitBlock": "reci %1",
@@ -18468,6 +19068,8 @@
   	"boost.getTiltAngle": "kot nagiba %1",
   	"boost.setLightHue": "nastavi barvo svetlobe na %1"
   };
+  var fullBlocks$d = [
+  ];
   var dropdowns$d = {
   };
   var ignorelt$d = [
@@ -18500,22 +19102,28 @@
   	Variables: "Spremenljivke",
   	"My Blocks": "Moji bloki"
   };
-  var math$d = [
-  	"absolutna vrednost",
-  	"zaokroženo navzdol",
-  	"zaokroženo navzgor",
-  	"kvadratni koren",
-  	"sin",
-  	"cos",
-  	"tg",
-  	"arcsin",
-  	"arccos",
-  	"arctg",
-  	"ln",
-  	"log",
-  	"e ^",
-  	"10 ^"
-  ];
+  var of$d = {
+  	math: [
+  		"absolutna vrednost",
+  		"zaokroženo navzdol",
+  		"zaokroženo navzgor",
+  		"kvadratni koren",
+  		"sin",
+  		"cos",
+  		"tg",
+  		"arcsin",
+  		"arccos",
+  		"arctg",
+  		"ln",
+  		"log",
+  		"e ^",
+  		"10 ^"
+  	],
+  	list: [
+  	],
+  	text: [
+  	]
+  };
   var aliases$d = {
   	"obrni se za %1 stopinj v levo": "MOTION_TURNLEFT",
   	"obrni se za %1 stopinj v desno": "MOTION_TURNRIGHT",
@@ -18526,6 +19134,7 @@
   var percentTranslated$d = 100;
   var sl = {
   	commands: commands$d,
+  	fullBlocks: fullBlocks$d,
   	dropdowns: dropdowns$d,
   	ignorelt: ignorelt$d,
   	soundEffects: soundEffects$d,
@@ -18534,7 +19143,7 @@
   	definePrefix: definePrefix$d,
   	defineSuffix: defineSuffix$d,
   	palette: palette$d,
-  	math: math$d,
+  	of: of$d,
   	aliases: aliases$d,
   	name: name$d,
   	percentTranslated: percentTranslated$d
@@ -18613,6 +19222,7 @@
   	CONTROL_REPEAT: "понови %1",
   	CONTROL_FOREVER: "понављај заувек",
   	CONTROL_IF: "ако је %1 онда",
+  	CONTROL_ELSE: "у супротном",
   	CONTROL_WAITUNTIL: "чекај док не %1",
   	CONTROL_REPEATUNTIL: "понављај до %1",
   	CONTROL_STOP: "заустави %1",
@@ -18686,7 +19296,6 @@
   	DATA_ITEMNUMOFLIST: "место од %1 у %2",
   	DATA_LENGTHOFLIST: "дужина %1",
   	DATA_LISTCONTAINSITEM: "да ли %1 садржи %2?",
-  	CONTROL_ELSE: "у супротном",
   	SENSING_USERID: "корисников ид",
   	SENSING_LOUD: "гласно?",
   	"text2speech.speakAndWaitBlock": "изговори %1",
@@ -18751,6 +19360,8 @@
   	"boost.getTiltAngle": "угао нагиба %1",
   	"boost.setLightHue": "подеси боју светлости на %1"
   };
+  var fullBlocks$c = [
+  ];
   var dropdowns$c = {
   };
   var ignorelt$c = [
@@ -18783,28 +19394,35 @@
   	Variables: "Променљиве",
   	"My Blocks": "Моји блокови"
   };
-  var math$c = [
-  	"абс",
-  	"цео део",
-  	"цео+1",
-  	"корен",
-  	"sin",
-  	"cos",
-  	"tg",
-  	"arcsin",
-  	"arccos",
-  	"arctan",
-  	"ln",
-  	"log",
-  	"e ^",
-  	"10 ^"
-  ];
+  var of$c = {
+  	math: [
+  		"абс",
+  		"цео део",
+  		"цео+1",
+  		"корен",
+  		"sin",
+  		"cos",
+  		"tg",
+  		"arcsin",
+  		"arccos",
+  		"arctan",
+  		"ln",
+  		"log",
+  		"e ^",
+  		"10 ^"
+  	],
+  	list: [
+  	],
+  	text: [
+  	]
+  };
   var aliases$c = {
   };
   var name$c = "Српски";
   var percentTranslated$c = 100;
   var sr = {
   	commands: commands$c,
+  	fullBlocks: fullBlocks$c,
   	dropdowns: dropdowns$c,
   	ignorelt: ignorelt$c,
   	soundEffects: soundEffects$c,
@@ -18813,7 +19431,7 @@
   	definePrefix: definePrefix$c,
   	defineSuffix: defineSuffix$c,
   	palette: palette$c,
-  	math: math$c,
+  	of: of$c,
   	aliases: aliases$c,
   	name: name$c,
   	percentTranslated: percentTranslated$c
@@ -18892,6 +19510,7 @@
   	CONTROL_REPEAT: "repetera %1",
   	CONTROL_FOREVER: "för alltid",
   	CONTROL_IF: "om %1 då",
+  	CONTROL_ELSE: "annars",
   	CONTROL_WAITUNTIL: "vänta tills %1",
   	CONTROL_REPEATUNTIL: "repetera tills %1",
   	CONTROL_STOP: "stoppa %1",
@@ -18965,7 +19584,6 @@
   	DATA_ITEMNUMOFLIST: "post # av %1 i %2",
   	DATA_LENGTHOFLIST: "längden av %1",
   	DATA_LISTCONTAINSITEM: "%1 innehåller %2",
-  	CONTROL_ELSE: "annars",
   	SENSING_USERID: "användarnamn",
   	SENSING_LOUD: "högt ljud?",
   	"text2speech.speakAndWaitBlock": "säg %1",
@@ -19030,6 +19648,8 @@
   	"boost.getTiltAngle": "lutningsvinkel %1",
   	"boost.setLightHue": "sätt ljusets färg till %1"
   };
+  var fullBlocks$b = [
+  ];
   var dropdowns$b = {
   };
   var ignorelt$b = [
@@ -19062,28 +19682,35 @@
   	Variables: "Variabler",
   	"My Blocks": "Mina block"
   };
-  var math$b = [
-  	"abs",
-  	"golv",
-  	"tak",
-  	"sqrt",
-  	"sin",
-  	"cos",
-  	"tan",
-  	"asin",
-  	"acos",
-  	"atan",
-  	"ln",
-  	"log",
-  	"e ^",
-  	"10 ^"
-  ];
+  var of$b = {
+  	math: [
+  		"abs",
+  		"golv",
+  		"tak",
+  		"sqrt",
+  		"sin",
+  		"cos",
+  		"tan",
+  		"asin",
+  		"acos",
+  		"atan",
+  		"ln",
+  		"log",
+  		"e ^",
+  		"10 ^"
+  	],
+  	list: [
+  	],
+  	text: [
+  	]
+  };
   var aliases$b = {
   };
   var name$b = "Svenska";
   var percentTranslated$b = 100;
   var sv = {
   	commands: commands$b,
+  	fullBlocks: fullBlocks$b,
   	dropdowns: dropdowns$b,
   	ignorelt: ignorelt$b,
   	soundEffects: soundEffects$b,
@@ -19092,7 +19719,7 @@
   	definePrefix: definePrefix$b,
   	defineSuffix: defineSuffix$b,
   	palette: palette$b,
-  	math: math$b,
+  	of: of$b,
   	aliases: aliases$b,
   	name: name$b,
   	percentTranslated: percentTranslated$b
@@ -19171,6 +19798,7 @@
   	CONTROL_REPEAT: "rudia %1",
   	CONTROL_FOREVER: "milele",
   	CONTROL_IF: "ikiwa %1 basi",
+  	CONTROL_ELSE: "isivyo",
   	CONTROL_WAITUNTIL: "subiri hadi %1",
   	CONTROL_REPEATUNTIL: "rudia hadi %1",
   	CONTROL_STOP: "komesha %1",
@@ -19244,7 +19872,6 @@
   	DATA_ITEMNUMOFLIST: "kipengee # kati ya %1 katika %2",
   	DATA_LENGTHOFLIST: "urefu wa %1",
   	DATA_LISTCONTAINSITEM: "%1 ina %2?",
-  	CONTROL_ELSE: "isivyo",
   	SENSING_USERID: "kitambulisho cha mtumiaji",
   	SENSING_LOUD: "kuna sauti kubwa?",
   	"text2speech.speakAndWaitBlock": "sema %1",
@@ -19309,6 +19936,8 @@
   	"boost.getTiltAngle": "pembe ya mwinamo %1",
   	"boost.setLightHue": "weka rangi ya mwangaza kuwa %1"
   };
+  var fullBlocks$a = [
+  ];
   var dropdowns$a = {
   };
   var ignorelt$a = [
@@ -19341,28 +19970,35 @@
   	Variables: "Vibadilika",
   	"My Blocks": "Bloku Zangu"
   };
-  var math$a = [
-  	"abs",
-  	"kadiria chini namba kamili",
-  	"kadiria juu namba kamili",
-  	"kipeo cha pili",
-  	"sin",
-  	"cos",
-  	"tan",
-  	"asin",
-  	"acos",
-  	"atan",
-  	"ln",
-  	"log",
-  	"e ^",
-  	"10 ^"
-  ];
+  var of$a = {
+  	math: [
+  		"abs",
+  		"kadiria chini namba kamili",
+  		"kadiria juu namba kamili",
+  		"kipeo cha pili",
+  		"sin",
+  		"cos",
+  		"tan",
+  		"asin",
+  		"acos",
+  		"atan",
+  		"ln",
+  		"log",
+  		"e ^",
+  		"10 ^"
+  	],
+  	list: [
+  	],
+  	text: [
+  	]
+  };
   var aliases$a = {
   };
   var name$a = "Kiswahili";
   var percentTranslated$a = 100;
   var sw = {
   	commands: commands$a,
+  	fullBlocks: fullBlocks$a,
   	dropdowns: dropdowns$a,
   	ignorelt: ignorelt$a,
   	soundEffects: soundEffects$a,
@@ -19371,7 +20007,7 @@
   	definePrefix: definePrefix$a,
   	defineSuffix: defineSuffix$a,
   	palette: palette$a,
-  	math: math$a,
+  	of: of$a,
   	aliases: aliases$a,
   	name: name$a,
   	percentTranslated: percentTranslated$a
@@ -19450,6 +20086,7 @@
   	CONTROL_REPEAT: "ทำซ้ำ %1",
   	CONTROL_FOREVER: "วนซ้ำตลอด",
   	CONTROL_IF: "ถ้า %1 แล้ว",
+  	CONTROL_ELSE: "มิฉะนั้น",
   	CONTROL_WAITUNTIL: "รอจนกระทั่ง %1",
   	CONTROL_REPEATUNTIL: "ทำซ้ำจน %1",
   	CONTROL_STOP: "หยุด %1",
@@ -19523,7 +20160,6 @@
   	DATA_ITEMNUMOFLIST: "รายการ # ของ %1 จาก %2",
   	DATA_LENGTHOFLIST: "ความยาวของ %1",
   	DATA_LISTCONTAINSITEM: "%1 มี %2?",
-  	CONTROL_ELSE: "มิฉะนั้น",
   	SENSING_USERID: "รหัสผู้ใช้",
   	SENSING_LOUD: "เสียงดัง?",
   	"text2speech.speakAndWaitBlock": "พูด %1",
@@ -19588,6 +20224,8 @@
   	"boost.getTiltAngle": "มุมเอียง %1",
   	"boost.setLightHue": "ตั้งสีหลอดไฟเป็น %1"
   };
+  var fullBlocks$9 = [
+  ];
   var dropdowns$9 = {
   };
   var ignorelt$9 = [
@@ -19620,28 +20258,35 @@
   	Variables: "ตัวแปร",
   	"My Blocks": "บล็อกของฉัน"
   };
-  var math$9 = [
-  	"ค่าสัมบูรณ์",
-  	"พื้น",
-  	"เพดาน",
-  	"รากที่สอง",
-  	"sin",
-  	"cos",
-  	"tan",
-  	"asin",
-  	"acos",
-  	"atan",
-  	"ln",
-  	"log",
-  	"e ^",
-  	"10 ^"
-  ];
+  var of$9 = {
+  	math: [
+  		"ค่าสัมบูรณ์",
+  		"พื้น",
+  		"เพดาน",
+  		"รากที่สอง",
+  		"sin",
+  		"cos",
+  		"tan",
+  		"asin",
+  		"acos",
+  		"atan",
+  		"ln",
+  		"log",
+  		"e ^",
+  		"10 ^"
+  	],
+  	list: [
+  	],
+  	text: [
+  	]
+  };
   var aliases$9 = {
   };
   var name$9 = "ไทย";
   var percentTranslated$9 = 100;
   var th = {
   	commands: commands$9,
+  	fullBlocks: fullBlocks$9,
   	dropdowns: dropdowns$9,
   	ignorelt: ignorelt$9,
   	soundEffects: soundEffects$9,
@@ -19650,7 +20295,7 @@
   	definePrefix: definePrefix$9,
   	defineSuffix: defineSuffix$9,
   	palette: palette$9,
-  	math: math$9,
+  	of: of$9,
   	aliases: aliases$9,
   	name: name$9,
   	percentTranslated: percentTranslated$9
@@ -19729,6 +20374,7 @@
   	CONTROL_REPEAT: "boeletsa %1",
   	CONTROL_FOREVER: "gosafeleng",
   	CONTROL_IF: "fa %1 gona",
+  	CONTROL_ELSE: "gongwe",
   	CONTROL_WAITUNTIL: "leta go fitlhela go %1",
   	CONTROL_REPEATUNTIL: "boeletsa go fitlhela go %1",
   	CONTROL_STOP: "ema %1",
@@ -19802,7 +20448,6 @@
   	DATA_ITEMNUMOFLIST: "selwana # sa %1 go %2",
   	DATA_LENGTHOFLIST: "boleele jwa %1",
   	DATA_LISTCONTAINSITEM: "%1 e tshotse %2?",
-  	CONTROL_ELSE: "gongwe",
   	SENSING_USERID: "tiriso ya go ikitsise",
   	SENSING_LOUD: "modumo?",
   	"text2speech.speakAndWaitBlock": "bua %1",
@@ -19867,6 +20512,8 @@
   	"boost.getTiltAngle": "sekamisa enkele %1",
   	"boost.setLightHue": "tshuma lebone la mmala go %1"
   };
+  var fullBlocks$8 = [
+  ];
   var dropdowns$8 = {
   };
   var ignorelt$8 = [
@@ -19899,28 +20546,35 @@
   	Variables: "Dipharologano",
   	"My Blocks": "Diboloko tsa me"
   };
-  var math$8 = [
-  	"abs",
-  	"boalo",
-  	"Ceiling",
-  	"sqrt",
-  	"sin",
-  	"cos",
-  	"tan",
-  	"asin",
-  	"acos",
-  	"atan",
-  	"gare",
-  	"log",
-  	"e ^",
-  	"10 ^"
-  ];
+  var of$8 = {
+  	math: [
+  		"abs",
+  		"boalo",
+  		"Ceiling",
+  		"sqrt",
+  		"sin",
+  		"cos",
+  		"tan",
+  		"asin",
+  		"acos",
+  		"atan",
+  		"gare",
+  		"log",
+  		"e ^",
+  		"10 ^"
+  	],
+  	list: [
+  	],
+  	text: [
+  	]
+  };
   var aliases$8 = {
   };
   var name$8 = "Setswana";
   var percentTranslated$8 = 100;
   var tn = {
   	commands: commands$8,
+  	fullBlocks: fullBlocks$8,
   	dropdowns: dropdowns$8,
   	ignorelt: ignorelt$8,
   	soundEffects: soundEffects$8,
@@ -19929,7 +20583,7 @@
   	definePrefix: definePrefix$8,
   	defineSuffix: defineSuffix$8,
   	palette: palette$8,
-  	math: math$8,
+  	of: of$8,
   	aliases: aliases$8,
   	name: name$8,
   	percentTranslated: percentTranslated$8
@@ -20008,6 +20662,7 @@
   	CONTROL_REPEAT: "%1 defa tekrarla",
   	CONTROL_FOREVER: "sürekli tekrarla",
   	CONTROL_IF: "eğer %1 ise",
+  	CONTROL_ELSE: "değilse",
   	CONTROL_WAITUNTIL: "%1 olana kadar bekle",
   	CONTROL_REPEATUNTIL: "%1 olana kadar tekrarla",
   	CONTROL_STOP: "durdur %1",
@@ -20081,7 +20736,6 @@
   	DATA_ITEMNUMOFLIST: "%2 in %1 öğesinin # öğesi",
   	DATA_LENGTHOFLIST: "%1 in uzunluğu",
   	DATA_LISTCONTAINSITEM: "%1, %2 i içeriyor mu?",
-  	CONTROL_ELSE: "değilse",
   	SENSING_USERID: "kullanıcı kimliği",
   	SENSING_LOUD: "gürültülü mü?",
   	"text2speech.speakAndWaitBlock": "konuş %1",
@@ -20146,6 +20800,8 @@
   	"boost.getTiltAngle": "eğim açısı %1",
   	"boost.setLightHue": "ışık rengini %1 olarak ayarla"
   };
+  var fullBlocks$7 = [
+  ];
   var dropdowns$7 = {
   };
   var ignorelt$7 = [
@@ -20179,22 +20835,28 @@
   	Variables: "Değişkenler",
   	"My Blocks": "Bloklarım"
   };
-  var math$7 = [
-  	"mutlak değer",
-  	"aşağı yuvarla",
-  	"yukarı yuvarla",
-  	"karekök",
-  	"sinüs",
-  	"kosinüs",
-  	"tanjant",
-  	"arcsinüs",
-  	"arckosinüs",
-  	"arctanjant",
-  	"ln",
-  	"logaritma",
-  	"e ^",
-  	"10 ^"
-  ];
+  var of$7 = {
+  	math: [
+  		"mutlak değer",
+  		"aşağı yuvarla",
+  		"yukarı yuvarla",
+  		"karekök",
+  		"sinüs",
+  		"kosinüs",
+  		"tanjant",
+  		"arcsinüs",
+  		"arckosinüs",
+  		"arctanjant",
+  		"ln",
+  		"logaritma",
+  		"e ^",
+  		"10 ^"
+  	],
+  	list: [
+  	],
+  	text: [
+  	]
+  };
   var aliases$7 = {
   	"%1 derece sola dön": "MOTION_TURNLEFT",
   	"%1 derece sağa dön": "MOTION_TURNRIGHT",
@@ -20207,6 +20869,7 @@
   var percentTranslated$7 = 100;
   var tr = {
   	commands: commands$7,
+  	fullBlocks: fullBlocks$7,
   	dropdowns: dropdowns$7,
   	ignorelt: ignorelt$7,
   	soundEffects: soundEffects$7,
@@ -20215,7 +20878,7 @@
   	definePrefix: definePrefix$7,
   	defineSuffix: defineSuffix$7,
   	palette: palette$7,
-  	math: math$7,
+  	of: of$7,
   	aliases: aliases$7,
   	name: name$7,
   	percentTranslated: percentTranslated$7
@@ -20294,6 +20957,7 @@
   	CONTROL_REPEAT: "повторити %1",
   	CONTROL_FOREVER: "завжди",
   	CONTROL_IF: "якщо %1 то",
+  	CONTROL_ELSE: "інакше",
   	CONTROL_WAITUNTIL: "чекати поки %1",
   	CONTROL_REPEATUNTIL: "повторити до %1",
   	CONTROL_STOP: "зупинити %1",
@@ -20367,7 +21031,6 @@
   	DATA_ITEMNUMOFLIST: "елемент # %1 з %2",
   	DATA_LENGTHOFLIST: "довжина %1",
   	DATA_LISTCONTAINSITEM: "%1 містить %2?",
-  	CONTROL_ELSE: "інакше",
   	SENSING_USERID: "користувач ID",
   	SENSING_LOUD: "гучно?",
   	"text2speech.speakAndWaitBlock": "говорити %1",
@@ -20432,6 +21095,8 @@
   	"boost.getTiltAngle": "кут нахилу %1",
   	"boost.setLightHue": "встановити колір світла в %1"
   };
+  var fullBlocks$6 = [
+  ];
   var dropdowns$6 = {
   };
   var ignorelt$6 = [
@@ -20464,28 +21129,35 @@
   	Variables: "Змінні",
   	"My Blocks": "Мої блоки"
   };
-  var math$6 = [
-  	"abs",
-  	"менше ціле",
-  	"більше ціле",
-  	"sqrt",
-  	"sin",
-  	"cos",
-  	"tan",
-  	"asin",
-  	"acos",
-  	"atan",
-  	"ln",
-  	"log",
-  	"e ^",
-  	"10 ^"
-  ];
+  var of$6 = {
+  	math: [
+  		"abs",
+  		"менше ціле",
+  		"більше ціле",
+  		"sqrt",
+  		"sin",
+  		"cos",
+  		"tan",
+  		"asin",
+  		"acos",
+  		"atan",
+  		"ln",
+  		"log",
+  		"e ^",
+  		"10 ^"
+  	],
+  	list: [
+  	],
+  	text: [
+  	]
+  };
   var aliases$6 = {
   };
   var name$6 = "Українська";
   var percentTranslated$6 = 100;
   var uk = {
   	commands: commands$6,
+  	fullBlocks: fullBlocks$6,
   	dropdowns: dropdowns$6,
   	ignorelt: ignorelt$6,
   	soundEffects: soundEffects$6,
@@ -20494,7 +21166,7 @@
   	definePrefix: definePrefix$6,
   	defineSuffix: defineSuffix$6,
   	palette: palette$6,
-  	math: math$6,
+  	of: of$6,
   	aliases: aliases$6,
   	name: name$6,
   	percentTranslated: percentTranslated$6
@@ -20573,6 +21245,7 @@
   	CONTROL_REPEAT: "%1 marta takrorlash",
   	CONTROL_FOREVER: "har doim",
   	CONTROL_IF: "agar %1 bo'lsa",
+  	CONTROL_ELSE: "aks holda",
   	CONTROL_WAITUNTIL: "%1 gacha kutish",
   	CONTROL_REPEATUNTIL: "%1 gacha takrorlash",
   	CONTROL_STOP: "to'xtatish %1",
@@ -20646,7 +21319,6 @@
   	DATA_ITEMNUMOFLIST: "%2 ro'yxatda %1 mavzuning joylashuvi",
   	DATA_LENGTHOFLIST: "uzunligidan %1",
   	DATA_LISTCONTAINSITEM: "%1 %2 ni ichiga oladimi?",
-  	CONTROL_ELSE: "aks holda",
   	SENSING_USERID: "foydalanuvchi ID",
   	SENSING_LOUD: "baland ovoz?",
   	"text2speech.speakAndWaitBlock": "gapirish %1",
@@ -20711,6 +21383,8 @@
   	"boost.getTiltAngle": "%1 burilish burchagi",
   	"boost.setLightHue": "ochiq rangni %1 ga o'rnatish"
   };
+  var fullBlocks$5 = [
+  ];
   var dropdowns$5 = {
   };
   var ignorelt$5 = [
@@ -20744,28 +21418,35 @@
   	Variables: "O'zgaruvchi",
   	"My Blocks": "Mening bloklarim"
   };
-  var math$5 = [
-  	"modul",
-  	"pol",
-  	"ship",
-  	"sqrt",
-  	"sinus qiymati",
-  	"kosinus qiymati",
-  	"tan qiymati",
-  	"asinus qiymati",
-  	"akosinus qiymati",
-  	"atan qiymati",
-  	"Ichida",
-  	"logarifm",
-  	"e ^",
-  	"10 ^"
-  ];
+  var of$5 = {
+  	math: [
+  		"modul",
+  		"pol",
+  		"ship",
+  		"sqrt",
+  		"sinus qiymati",
+  		"kosinus qiymati",
+  		"tan qiymati",
+  		"asinus qiymati",
+  		"akosinus qiymati",
+  		"atan qiymati",
+  		"Ichida",
+  		"logarifm",
+  		"e ^",
+  		"10 ^"
+  	],
+  	list: [
+  	],
+  	text: [
+  	]
+  };
   var aliases$5 = {
   };
   var name$5 = "Oʻzbekcha";
   var percentTranslated$5 = 100;
   var uz = {
   	commands: commands$5,
+  	fullBlocks: fullBlocks$5,
   	dropdowns: dropdowns$5,
   	ignorelt: ignorelt$5,
   	soundEffects: soundEffects$5,
@@ -20774,7 +21455,7 @@
   	definePrefix: definePrefix$5,
   	defineSuffix: defineSuffix$5,
   	palette: palette$5,
-  	math: math$5,
+  	of: of$5,
   	aliases: aliases$5,
   	name: name$5,
   	percentTranslated: percentTranslated$5
@@ -20853,6 +21534,7 @@
   	CONTROL_REPEAT: "lặp lại %1",
   	CONTROL_FOREVER: "liên tục",
   	CONTROL_IF: "nếu %1 thì",
+  	CONTROL_ELSE: "nếu không thì",
   	CONTROL_WAITUNTIL: "đợi đến khi %1",
   	CONTROL_REPEATUNTIL: "lặp lại cho đến khi %1",
   	CONTROL_STOP: "dừng lại %1",
@@ -20926,7 +21608,6 @@
   	DATA_ITEMNUMOFLIST: "số thứ tự của %1 trong %2",
   	DATA_LENGTHOFLIST: "kích thước của %1",
   	DATA_LISTCONTAINSITEM: "%1 chứa phần tử %2?",
-  	CONTROL_ELSE: "nếu không thì",
   	SENSING_USERID: "id người dùng",
   	SENSING_LOUD: "tiếng to?",
   	"text2speech.speakAndWaitBlock": "nói %1",
@@ -20991,6 +21672,8 @@
   	"boost.getTiltAngle": "tilt angle %1",
   	"boost.setLightHue": "set light color to %1"
   };
+  var fullBlocks$4 = [
+  ];
   var dropdowns$4 = {
   };
   var ignorelt$4 = [
@@ -21024,28 +21707,35 @@
   	Variables: "Các biến số",
   	"My Blocks": "Khối của tôi"
   };
-  var math$4 = [
-  	"giá trị tuyệt đối",
-  	"làm tròn xuống",
-  	"trần",
-  	"căn bậc hai",
-  	"sin",
-  	"cos",
-  	"tan",
-  	"asin",
-  	"acos",
-  	"atan",
-  	"trong",
-  	"log",
-  	"e ^",
-  	"10 ^"
-  ];
+  var of$4 = {
+  	math: [
+  		"giá trị tuyệt đối",
+  		"làm tròn xuống",
+  		"trần",
+  		"căn bậc hai",
+  		"sin",
+  		"cos",
+  		"tan",
+  		"asin",
+  		"acos",
+  		"atan",
+  		"trong",
+  		"log",
+  		"e ^",
+  		"10 ^"
+  	],
+  	list: [
+  	],
+  	text: [
+  	]
+  };
   var aliases$4 = {
   };
   var name$4 = "Tiếng Việt";
   var percentTranslated$4 = 100;
   var vi = {
   	commands: commands$4,
+  	fullBlocks: fullBlocks$4,
   	dropdowns: dropdowns$4,
   	ignorelt: ignorelt$4,
   	soundEffects: soundEffects$4,
@@ -21054,7 +21744,7 @@
   	definePrefix: definePrefix$4,
   	defineSuffix: defineSuffix$4,
   	palette: palette$4,
-  	math: math$4,
+  	of: of$4,
   	aliases: aliases$4,
   	name: name$4,
   	percentTranslated: percentTranslated$4
@@ -21133,6 +21823,7 @@
   	CONTROL_REPEAT: "phinda %1",
   	CONTROL_FOREVER: "naphakade",
   	CONTROL_IF: "if %1 then",
+  	CONTROL_ELSE: "okunye",
   	CONTROL_WAITUNTIL: "linda kude kube %1",
   	CONTROL_REPEATUNTIL: "pinda kude kube %1",
   	CONTROL_STOP: "yima %1",
@@ -21206,7 +21897,6 @@
   	DATA_ITEMNUMOFLIST: "into # ye %1 kwi %2",
   	DATA_LENGTHOFLIST: "Ubude be %1",
   	DATA_LISTCONTAINSITEM: "%1 iqulathe %2",
-  	CONTROL_ELSE: "okunye",
   	SENSING_USERID: "isazisi somsebenzisi",
   	SENSING_LOUD: "ingxolo?",
   	"text2speech.speakAndWaitBlock": "thetha %1",
@@ -21271,6 +21961,8 @@
   	"boost.getTiltAngle": "kekelisaa iengile %1",
   	"boost.setLightHue": "lungiselela umbala wokukhanya %1"
   };
+  var fullBlocks$3 = [
+  ];
   var dropdowns$3 = {
   };
   var ignorelt$3 = [
@@ -21303,28 +21995,35 @@
   	Variables: "iiveriyebhl",
   	"My Blocks": "Ibhloko zam"
   };
-  var math$3 = [
-  	"abs",
-  	"umgangatho",
-  	"isilingi",
-  	"sqrt",
-  	"sin",
-  	"cos",
-  	"tan",
-  	"asin",
-  	"acos",
-  	"atan",
-  	"phakathi",
-  	"log",
-  	"e ^",
-  	"10 ^"
-  ];
+  var of$3 = {
+  	math: [
+  		"abs",
+  		"umgangatho",
+  		"isilingi",
+  		"sqrt",
+  		"sin",
+  		"cos",
+  		"tan",
+  		"asin",
+  		"acos",
+  		"atan",
+  		"phakathi",
+  		"log",
+  		"e ^",
+  		"10 ^"
+  	],
+  	list: [
+  	],
+  	text: [
+  	]
+  };
   var aliases$3 = {
   };
   var name$3 = "isiXhosa";
   var percentTranslated$3 = 100;
   var xh = {
   	commands: commands$3,
+  	fullBlocks: fullBlocks$3,
   	dropdowns: dropdowns$3,
   	ignorelt: ignorelt$3,
   	soundEffects: soundEffects$3,
@@ -21333,7 +22032,7 @@
   	definePrefix: definePrefix$3,
   	defineSuffix: defineSuffix$3,
   	palette: palette$3,
-  	math: math$3,
+  	of: of$3,
   	aliases: aliases$3,
   	name: name$3,
   	percentTranslated: percentTranslated$3
@@ -21412,6 +22111,7 @@
   	CONTROL_REPEAT: "重复执行 %1 次",
   	CONTROL_FOREVER: "重复执行",
   	CONTROL_IF: "如果 %1 那么",
+  	CONTROL_ELSE: "否则",
   	CONTROL_WAITUNTIL: "等待 %1",
   	CONTROL_REPEATUNTIL: "重复执行直到 %1",
   	CONTROL_STOP: "停止 %1",
@@ -21485,7 +22185,6 @@
   	DATA_ITEMNUMOFLIST: "%2 中第一个 %1 的编号",
   	DATA_LENGTHOFLIST: "%1 的项目数",
   	DATA_LISTCONTAINSITEM: "%1 包含 %2 ?",
-  	CONTROL_ELSE: "否则",
   	SENSING_USERID: "用户id",
   	SENSING_LOUD: "响声？",
   	"text2speech.speakAndWaitBlock": "朗读 %1",
@@ -21550,6 +22249,8 @@
   	"boost.getTiltAngle": "向%1倾角",
   	"boost.setLightHue": "将灯光颜色设为%1"
   };
+  var fullBlocks$2 = [
+  ];
   var dropdowns$2 = {
   };
   var ignorelt$2 = [
@@ -21582,22 +22283,28 @@
   	Variables: "变量",
   	"My Blocks": "自制积木"
   };
-  var math$2 = [
-  	"绝对值",
-  	"向下取整",
-  	"向上取整",
-  	"平方根",
-  	"sin",
-  	"cos",
-  	"tan",
-  	"asin",
-  	"acos",
-  	"atan",
-  	"ln",
-  	"log",
-  	"e ^",
-  	"10 ^"
-  ];
+  var of$2 = {
+  	math: [
+  		"绝对值",
+  		"向下取整",
+  		"向上取整",
+  		"平方根",
+  		"sin",
+  		"cos",
+  		"tan",
+  		"asin",
+  		"acos",
+  		"atan",
+  		"ln",
+  		"log",
+  		"e ^",
+  		"10 ^"
+  	],
+  	list: [
+  	],
+  	text: [
+  	]
+  };
   var aliases$2 = {
   	"左转 %1 度": "MOTION_TURNLEFT",
   	"右转 %1 度": "MOTION_TURNRIGHT",
@@ -21608,6 +22315,7 @@
   var percentTranslated$2 = 100;
   var zh_cn = {
   	commands: commands$2,
+  	fullBlocks: fullBlocks$2,
   	dropdowns: dropdowns$2,
   	ignorelt: ignorelt$2,
   	soundEffects: soundEffects$2,
@@ -21616,7 +22324,7 @@
   	definePrefix: definePrefix$2,
   	defineSuffix: defineSuffix$2,
   	palette: palette$2,
-  	math: math$2,
+  	of: of$2,
   	aliases: aliases$2,
   	name: name$2,
   	percentTranslated: percentTranslated$2
@@ -21695,6 +22403,7 @@
   	CONTROL_REPEAT: "重複 %1 次",
   	CONTROL_FOREVER: "重複無限次",
   	CONTROL_IF: "如果 %1 那麼",
+  	CONTROL_ELSE: "否則",
   	CONTROL_WAITUNTIL: "等待直到 %1",
   	CONTROL_REPEATUNTIL: "重複直到 %1",
   	CONTROL_STOP: "停止 %1",
@@ -21768,7 +22477,6 @@
   	DATA_ITEMNUMOFLIST: "%1 在 %2 裡的項目編號",
   	DATA_LENGTHOFLIST: "清單 %1 的長度",
   	DATA_LISTCONTAINSITEM: "清單 %1 包含 %2？",
-  	CONTROL_ELSE: "否則",
   	SENSING_USERID: "用戶 ID",
   	SENSING_LOUD: "大聲？",
   	"text2speech.speakAndWaitBlock": "唸出 %1",
@@ -21833,6 +22541,8 @@
   	"boost.getTiltAngle": "傾斜角度 %1",
   	"boost.setLightHue": "LED 顏色設為 %1"
   };
+  var fullBlocks$1 = [
+  ];
   var dropdowns$1 = {
   };
   var ignorelt$1 = [
@@ -21865,22 +22575,28 @@
   	Variables: "變數",
   	"My Blocks": "函式積木"
   };
-  var math$1 = [
-  	"絕對值",
-  	"無條件捨去",
-  	"無條件進位",
-  	"平方根",
-  	"sin",
-  	"cos",
-  	"tan",
-  	"asin",
-  	"acos",
-  	"atan",
-  	"ln",
-  	"log",
-  	"e ^",
-  	"10 ^"
-  ];
+  var of$1 = {
+  	math: [
+  		"絕對值",
+  		"無條件捨去",
+  		"無條件進位",
+  		"平方根",
+  		"sin",
+  		"cos",
+  		"tan",
+  		"asin",
+  		"acos",
+  		"atan",
+  		"ln",
+  		"log",
+  		"e ^",
+  		"10 ^"
+  	],
+  	list: [
+  	],
+  	text: [
+  	]
+  };
   var aliases$1 = {
   	"左轉 %1 度": "MOTION_TURNLEFT",
   	"右轉 %1 度": "MOTION_TURNRIGHT",
@@ -21891,6 +22607,7 @@
   var percentTranslated$1 = 100;
   var zh_tw = {
   	commands: commands$1,
+  	fullBlocks: fullBlocks$1,
   	dropdowns: dropdowns$1,
   	ignorelt: ignorelt$1,
   	soundEffects: soundEffects$1,
@@ -21899,7 +22616,7 @@
   	definePrefix: definePrefix$1,
   	defineSuffix: defineSuffix$1,
   	palette: palette$1,
-  	math: math$1,
+  	of: of$1,
   	aliases: aliases$1,
   	name: name$1,
   	percentTranslated: percentTranslated$1
@@ -21978,6 +22695,7 @@
   	CONTROL_REPEAT: "phinda %1",
   	CONTROL_FOREVER: "phakade",
   	CONTROL_IF: "uma %1 lapho ke",
+  	CONTROL_ELSE: "noma",
   	CONTROL_WAITUNTIL: "linda kuze kube  %1",
   	CONTROL_REPEATUNTIL: "phinda kuze kube %1",
   	CONTROL_STOP: "ima %1",
@@ -22051,7 +22769,6 @@
   	DATA_ITEMNUMOFLIST: "into # yaku %1 ku %2",
   	DATA_LENGTHOFLIST: "ubude be %1",
   	DATA_LISTCONTAINSITEM: "%1 iqukethe %2",
-  	CONTROL_ELSE: "noma",
   	SENSING_USERID: "umsebenzisi ID",
   	SENSING_LOUD: "kukhulu umsindo? / Umsindo uphezulu?",
   	"text2speech.speakAndWaitBlock": "khuluma %1",
@@ -22116,6 +22833,8 @@
   	"boost.getTiltAngle": "tshekisa engeli  %1",
   	"boost.setLightHue": "hlela ukhanya kombala ukuyise %1"
   };
+  var fullBlocks = [
+  ];
   var dropdowns = {
   };
   var ignorelt = [
@@ -22148,28 +22867,35 @@
   	Variables: "okuguqukayo",
   	"My Blocks": "Amabhulokisi ami"
   };
-  var math = [
-  	"abs",
-  	"phansi",
-  	"uphahla",
-  	"sqrt",
-  	"sin",
-  	"cos",
-  	"tan",
-  	"asin",
-  	"acos",
-  	"atan",
-  	"ln",
-  	"log",
-  	"e ^",
-  	"10 ^"
-  ];
+  var of = {
+  	math: [
+  		"abs",
+  		"phansi",
+  		"uphahla",
+  		"sqrt",
+  		"sin",
+  		"cos",
+  		"tan",
+  		"asin",
+  		"acos",
+  		"atan",
+  		"ln",
+  		"log",
+  		"e ^",
+  		"10 ^"
+  	],
+  	list: [
+  	],
+  	text: [
+  	]
+  };
   var aliases = {
   };
   var name = "isiZulu";
   var percentTranslated = 100;
   var zu = {
   	commands: commands,
+  	fullBlocks: fullBlocks,
   	dropdowns: dropdowns,
   	ignorelt: ignorelt,
   	soundEffects: soundEffects,
@@ -22178,7 +22904,7 @@
   	definePrefix: definePrefix,
   	defineSuffix: defineSuffix,
   	palette: palette,
-  	math: math,
+  	of: of,
   	aliases: aliases,
   	name: name,
   	percentTranslated: percentTranslated
