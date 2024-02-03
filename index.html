@@ -191,14 +191,14 @@
       var hash = '#?'
       if (obj.style) hash += 'style=' + encodeURIComponent(obj.style) + '&'
       if (obj.lang) hash += 'lang=' + encodeURIComponent(obj.lang) + '&'
-      hash += 'script=' + encodeURIComponent(obj.script)
+      hash += 'script=' + escape(obj.script)
       setHash(hash)
     } else if (obj.style) {
       setHash('#?lang=' + encodeURIComponent(obj.lang) + '&script=' + encodeURIComponent(obj.script));
     } else if (obj.lang) {
       setHash('#?lang=' + encodeURIComponent(obj.lang) + '&script=' + encodeURIComponent(obj.script));
     } else if (obj.script) {
-      setHash('#' + encodeURIComponent(obj.script));
+      setHash('#' + escape(obj.script));
     } else {
       if (!(location.hash == '' || location.hash == '#')) {
         setHash('#');
