@@ -26,7 +26,7 @@
 <main>
   
   <div id="side">
-    <div>
+    <div id="options">
       <select id="choose-style">
         <option value="snap" selected>Snap!</option>
         <option value="scratch2">Scratch 2.0</option>
@@ -37,6 +37,13 @@
       <select id="choose-lang">
         <option value="">Select language…</option>
       </select>
+      
+      <br>
+
+      <input type="checkbox" name="zebraColoring" id="zebraColoring">
+      <label for="zebraColoring">Zebra Coloring</label>
+      <input type="checkbox" name="blockWrapping" id="blockWrapping">
+      <label for="blockWrapping">Block Wrapping</label>
     </div>
   
     <div id="editor"></div>
@@ -59,7 +66,6 @@
 <script src=/lib/codemirror.build.js></script>
 
 <script>
-  const snapblocks = scratchblocks
   var editor = document.getElementById('editor');
   var exportSVGLink = document.getElementById('export-svg');
   var exportPNGLink = document.getElementById('export-png');
@@ -131,7 +137,22 @@
     objUpdated();
   });
 
+  var chooseOptions = {
+    zebraColoring: document.getElementById('zebraColoring'),
+    wrap: document.getElementById('blockWrapping'),
+  }
 
+  var options = {
+    zebraColoring: false,
+    wrap: false,
+  }
+
+  for (let [option, element] of Object.entries(chooseOptions)) {
+    element.addEventListener('change', () => {
+      options[option] = element.checked
+      objUpdated()
+    })
+  }
 
   /* Extract hash from location. Returns true if changed */
   function extractHash() {
@@ -211,6 +232,7 @@
     var docView = snapblocks.newView(doc, {
       style: obj.style,
       scale: /^scratch3($|-)/.test(obj.style) ? 0.675 : 1,
+      ...options,
     })
     var svg = docView.render()
     svg.classList.add("snapblocks-style-" + obj.style)
