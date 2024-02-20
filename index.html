@@ -72,6 +72,7 @@
 
   var obj = {
     style: 'snap',
+    options: {},
   };
   extractHash();
 
@@ -142,14 +143,10 @@
     wrap: document.getElementById('blockWrapping'),
   }
 
-  var options = {
-    zebraColoring: false,
-    wrap: false,
-  }
-
   for (let [option, element] of Object.entries(chooseOptions)) {
+    element.checked = obj.options[option]
     element.addEventListener('change', () => {
-      options[option] = element.checked
+      obj.options[option] = element.checked
       objUpdated()
     })
   }
@@ -174,56 +171,53 @@
   }
 
   function decodeHash() {
-    var hash = location.href.split('#')[1];
-    if (!hash) return;
-
-    if (!/^\?/.test(hash)) {
-      return {
-        script: decodeURIComponent(hash),
-      };
-    } else {
-      var newObj = {};
-      parts = hash.slice(1).split('&');
-      parts.forEach(function (part) {
-        var match = /^(.*)=(.*)$/.exec(part);
-        if (!match) return;
-        var key = decodeURIComponent(match[1]);
-        var value = decodeURIComponent(match[2]);
-        if (key === "lang" || key === "script" || key === "style") {
-          newObj[key] = value;
-        }
-      });
-      return newObj;
+    var url = new URL(location.href)
+    let newObj = {
+      options: {}
     }
+    for (const [key, value] of url.searchParams.entries()) {
+      if (["script", "style", "lang"].includes(unescape(key))) {
+        newObj[unescape(key)] = unescape(value)
+      } else {
+        if (value != "") {
+          newObj.options[unescape(key)] = unescape(value)
+        } else {
+          newObj.options[unescape(key)] = true
+        }
+      }
+    }
+
+    return newObj
   }
 
-  function setHash(hash) {
+  function setURL(url) {
     if (history && history.replaceState) {
-      history.replaceState("", "", hash);
+      history.replaceState("", "", url.toString());
     } else {
-      location.hash = hash;
+      location.href = url.toString();
     }
   }
 
   function objUpdated() {
     // set hash
-    if (obj.lang || obj.style) {
-      var hash = '#?'
-      if (obj.style) hash += 'style=' + encodeURIComponent(obj.style) + '&'
-      if (obj.lang) hash += 'lang=' + encodeURIComponent(obj.lang) + '&'
-      hash += 'script=' + escape(obj.script)
-      setHash(hash)
-    } else if (obj.style) {
-      setHash('#?lang=' + encodeURIComponent(obj.lang) + '&script=' + encodeURIComponent(obj.script));
-    } else if (obj.lang) {
-      setHash('#?lang=' + encodeURIComponent(obj.lang) + '&script=' + encodeURIComponent(obj.script));
-    } else if (obj.script) {
-      setHash('#' + escape(obj.script));
-    } else {
-      if (!(location.hash == '' || location.hash == '#')) {
-        setHash('#');
+    const url = new URL(location.origin)
+    const urlParams = new URLSearchParams();
+    if (obj.style) urlParams.set('style', escape(obj.style))
+    if (obj.lang) urlParams.set('lang', escape(obj.lang))
+    if (obj.options) {
+      for (let [option, value] of Object.entries(obj.options)) {
+        if ([true, false].includes(value)) {
+          if (value) {
+            urlParams.set(escape(option), '')
+          }
+        } else {
+          urlParams.set(escape(option), value)
+        }
       }
     }
+    urlParams.set('script', escape(obj.script))
+    url.search = urlParams
+    setURL(url)
 
     // render code
     var doc = window.doc = snapblocks.parse(obj.script, {
@@ -232,7 +226,7 @@
     var docView = snapblocks.newView(doc, {
       style: obj.style,
       scale: /^scratch3($|-)/.test(obj.style) ? 0.675 : 1,
-      ...options,
+      ...obj.options,
     })
     var svg = docView.render()
     svg.classList.add("snapblocks-style-" + obj.style)
@@ -254,7 +248,7 @@
     // include code in snapblocks links
     let translator = document.getElementById('translate-link')
     if (translator) {
-      translator.href = "/translator/" + '#' + encodeURIComponent(obj.script);
+      translator.href = "/translator/" + '#' + escape(obj.script);
     }
 
     // update language dropdown
