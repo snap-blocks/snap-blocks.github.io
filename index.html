@@ -13,7 +13,7 @@
 <h1>
   <div id=title>
     <a href="/">snapblocks</a>
-    <span class=author>v1.2.0 • by <a href="https://github.com/ego-lay-atman-bay">ego-lay-atman-bay</a></span>
+    <span class="author">v<span id="version"></span> • by <a href="https://github.com/ego-lay-atman-bay">ego-lay-atman-bay</a></span>
   </div>
   <span>
     <a target="_blank" href="https://en.scratch-wiki.info/wiki/Block_Plugin/Syntax">help</a>
@@ -67,6 +67,11 @@
 <script src=/lib/codemirror.build.js></script>
 
 <script>
+  let versionEl = document.getElementById("version")
+  if (versionEl) {
+    versionEl.innerText = snapblocks.version
+  }
+
   var editor = document.getElementById('editor');
   var exportSVGLink = document.getElementById('export-svg');
   var exportPNGLink = document.getElementById('export-png');
