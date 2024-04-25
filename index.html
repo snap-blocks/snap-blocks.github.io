@@ -182,6 +182,10 @@
 
   function decodeHash() {
     var url = new URL(location.href)
+    hash = url.hash
+    if (!url.search && url.hash) {
+      url.search = url.hash.slice(1, url.hash.length)
+    }
     let newObj = {
       options: {}
     }
