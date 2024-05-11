@@ -1,3 +1,7 @@
+:root {
+  color-scheme: light dark;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -11,9 +15,6 @@ body {
   padding: 1rem;
   margin: 0 auto;
   max-width: 60em;
-
-  background: white;
-  color: black;
 
   font-family: Noto Sans, sans-serif;
 }
@@ -53,16 +54,36 @@ h1 > span a b {
 }
 
 a {
-  color: black;
   text-decoration: none;
-  background: #fffccc;
 }
-a:hover {
-  border-bottom: 0.1em solid;
-  background: #fffc7d;
-}
+
 a:active {
   opacity: 0.4;
+}
+
+@media ( prefers-color-scheme: light ) {
+  a {
+    color: black;
+    background: #fffccc;
+  }
+
+  a:hover {
+    border-bottom: 0.1em solid;
+    background: #fffc7d;
+  }
+}
+@media ( prefers-color-scheme: dark ) {
+  body {
+    background: #1b1b1d;
+  }
+
+  a {
+    color: white;
+  }
+
+  a:hover {
+    border-bottom: 0.1em solid;
+  }
 }
 
 p {
