@@ -1,6 +1,6 @@
-Contents of [snap-snapblocks.github.io](http://snap-snapblocks.github.io).
+Contents of [snap-pblocks.github.io](http://snap-blocks.github.io).
 
 ---
 
-Main repository: <https://github.com/snap-snapblocks/snapblocks>
+Main repository: <https://github.com/snap-blocks/snapblocks>
 
