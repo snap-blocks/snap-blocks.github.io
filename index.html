@@ -47,6 +47,8 @@
       <label for="blockWrapping">Block Wrapping</label>
       <input type="checkbox" name="showSpaces" id="showSpaces">
       <label for="showSpaces">Show Spaces</label>
+      <input type="checkbox" name="santa" id="santa">
+      <label for="santa">Santa Hats</label>
     </div>
   
     <div id="editor"></div>
@@ -150,6 +152,7 @@
     zebraColoring: document.getElementById('zebraColoring'),
     wrap: document.getElementById('blockWrapping'),
     showSpaces: document.getElementById('showSpaces'),
+    santa: document.getElementById('santa'),
   }
 
   for (let [option, element] of Object.entries(chooseOptions)) {
